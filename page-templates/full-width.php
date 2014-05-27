@@ -5,8 +5,8 @@
  * Description: Displays a full-width page, with no sidebar. This template is great for pages
  * containing large amounts of content.
  *
- * @package Prism
- * @since Prism 1.0
+ * @package Tress
+ * @since Tress 1.0
  */
 
 get_header(); ?>

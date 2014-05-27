@@ -1,28 +1,28 @@
 <?php
 /**
- * Prism Theme Customizer support
+ * Tress Theme Customizer support
  *
  * @package WordPress
- * @subpackage Prism
- * @since Prism 1.0
+ * @subpackage Tress
+ * @since Tress 1.0
  */
 
 
 /**
  * Implement Theme Customizer additions and adjustments.
  *
- * @since Prism 1.0
+ * @since Tress 1.0
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function prism_customize_register($wp_customize) {
+function tress_customize_register($wp_customize) {
     
      $wp_customize->get_section( 'header_image'  )->priority     = 33;
 
     /** ===============
      * Extends CONTROLS class to add textarea
      */
-    class prism_customize_textarea_control extends WP_Customize_Control {
+    class tress_customize_textarea_control extends WP_Customize_Control {
 
         public $type = 'textarea';
 
@@ -50,7 +50,7 @@ function prism_customize_register($wp_customize) {
                         'name' => '_customize-dropdown-categories-' . $this->id,
                         'echo' => 0,
                         'hide_empty' => false,
-                        'show_option_none' => '&mdash; ' . __('Select', 'prism') . ' &mdash;',
+                        'show_option_none' => '&mdash; ' . __('Select', 'tress') . ' &mdash;',
                         'hide_if_empty' => false,
                         'selected' => $this->value(),
                     )
@@ -65,18 +65,18 @@ function prism_customize_register($wp_customize) {
 
     }
     // Add new section for theme layout and color schemes
-    $wp_customize->add_section('prism_notification_bar_settings', array(
-        'title' => __('Notification Bar', 'prism'),
+    $wp_customize->add_section('tress_notification_bar_settings', array(
+        'title' => __('Notification Bar', 'tress'),
         'priority' => 29,
     ));
     
     $wp_customize->add_setting('notification_text', array('default' => '',
-            'sanitize_js_callback' => 'prism_sanitize_escaping', 
+            'sanitize_js_callback' => 'tress_sanitize_escaping', 
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'notification_text', array(
-            'label' => __('Text/HTML', 'prism'),
-            'section' => 'prism_notification_bar_settings',
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'notification_text', array(
+            'label' => __('Text/HTML', 'tress'),
+            'section' => 'tress_notification_bar_settings',
             'settings' => 'notification_text',
             'priority' => 2,
         )));
@@ -88,48 +88,48 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('notification_link_text', array(
-            'label' => __('Link Text', 'prism'),
-            'section' => 'prism_notification_bar_settings',
+            'label' => __('Link Text', 'tress'),
+            'section' => 'tress_notification_bar_settings',
             'settings' => 'notification_link_text',
             'priority' => 4,
             
         ));
         
         // link url
-        $wp_customize->add_setting('notification_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('notification_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
         $wp_customize->add_control('notification_link_url', array(
-            'label' => __('Link URL', 'prism'),
-            'section' => 'prism_notification_bar_settings',
+            'label' => __('Link URL', 'tress'),
+            'section' => 'tress_notification_bar_settings',
             'settings' => 'notification_link_url',
             'priority' => 5,
             
         ));
     
     // Add new section for theme layout and color schemes
-    $wp_customize->add_section('prism_theme_layout_settings', array(
-        'title' => __('Color Scheme', 'prism'),
+    $wp_customize->add_section('tress_theme_layout_settings', array(
+        'title' => __('Color Scheme', 'tress'),
         'priority' => 30,
     ));
 
     // Add color scheme options
    
-    $wp_customize->add_setting('prism_bg_color_scheme', array(
+    $wp_customize->add_setting('tress_bg_color_scheme', array(
         'default' => 'light',
-        'sanitize_callback' => 'prism_sanitize_bg_color_scheme_option',
+        'sanitize_callback' => 'tress_sanitize_bg_color_scheme_option',
     ));
 
-    $wp_customize->add_control('prism_bg_color_scheme', array(
+    $wp_customize->add_control('tress_bg_color_scheme', array(
         'label' => 'Background Color Schemes',
-        'section' => 'prism_theme_layout_settings',
+        'section' => 'tress_theme_layout_settings',
         'default' => 'light',
         'type' => 'radio',
         'choices' => array(
-            'light' => __('Light', 'prism'),
-            'dark' => __('Dark', 'prism'),
+            'light' => __('Light', 'tress'),
+            'dark' => __('Dark', 'tress'),
            
            
         ),
@@ -137,33 +137,33 @@ function prism_customize_register($wp_customize) {
     
     // Add color scheme options
    
-    $wp_customize->add_setting('prism_color_scheme', array(
+    $wp_customize->add_setting('tress_color_scheme', array(
         'default' => 'blue',
-        'sanitize_callback' => 'prism_sanitize_color_scheme_option',
+        'sanitize_callback' => 'tress_sanitize_color_scheme_option',
     ));
 
-    $wp_customize->add_control('prism_color_scheme', array(
+    $wp_customize->add_control('tress_color_scheme', array(
         'label' => 'Color Schemes',
-        'section' => 'prism_theme_layout_settings',
+        'section' => 'tress_theme_layout_settings',
         'default' => 'red',
         'type' => 'radio',
         'choices' => array(
-            'blue' => __('Blue', 'prism'),
-            'red' => __('Red', 'prism'),
-            'green' => __('Green', 'prism'),
-            'gray' => __('Gray', 'prism'),
-            'purple' => __('Purple', 'prism'),
-            'orange' => __('Orange', 'prism'),
-            'brown' => __('Brown', 'prism'),
-            'pink' => __('Pink', 'prism'),
+            'blue' => __('Blue', 'tress'),
+            'red' => __('Red', 'tress'),
+            'green' => __('Green', 'tress'),
+            'gray' => __('Gray', 'tress'),
+            'purple' => __('Purple', 'tress'),
+            'orange' => __('Orange', 'tress'),
+            'brown' => __('Brown', 'tress'),
+            'pink' => __('Pink', 'tress'),
         ),
     ));
     
     
     
       // Add new section for custom favicon settings
-    $wp_customize->add_section('prism_custom_favicon_setting', array(
-        'title' => __('Custom Favicon', 'prism'),
+    $wp_customize->add_section('tress_custom_favicon_setting', array(
+        'title' => __('Custom Favicon', 'tress'),
         'priority' => 31,
     ));
     
@@ -174,7 +174,7 @@ function prism_customize_register($wp_customize) {
             new WP_Customize_Image_Control(
             $wp_customize, 'custom_favicon', array(
         'label' => 'Custom Favicon',
-        'section' => 'prism_custom_favicon_setting',
+        'section' => 'tress_custom_favicon_setting',
         'settings' => 'custom_favicon',
                  'priority' => 1,
             )
@@ -182,26 +182,26 @@ function prism_customize_register($wp_customize) {
     );
     
      // Add new section for custom favicon settings
-    $wp_customize->add_section('prism_tracking_code_setting', array(
-        'title' => __('Tracking Code', 'prism'),
+    $wp_customize->add_section('tress_tracking_code_setting', array(
+        'title' => __('Tracking Code', 'tress'),
         'priority' => 32,
     ));
     
     $wp_customize->add_setting('tracking_code', array('default' => '',
             'sanitize_callback' => 'sanitize_text_field',
-            'sanitize_js_callback' => 'prism_sanitize_escaping', 
+            'sanitize_js_callback' => 'tress_sanitize_escaping', 
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'tracking_code', array(
-            'label' => __('Tracking Code', 'prism'),
-            'section' => 'prism_tracking_code_setting',
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'tracking_code', array(
+            'label' => __('Tracking Code', 'tress'),
+            'section' => 'tress_tracking_code_setting',
             'settings' => 'tracking_code',
             'priority' => 2,
         )));
     
          // Add new section for Header Contact settings
     $wp_customize->add_section('header_contact_setting', array(
-        'title' => __('Header Contact', 'prism'),
+        'title' => __('Header Contact', 'tress'),
         'priority' => 34,
     ));
     
@@ -210,8 +210,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'header_contact', array(
-            'label' => __('Contact Detail', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'header_contact', array(
+            'label' => __('Contact Detail', 'tress'),
             'section' => 'header_contact_setting',
             'settings' => 'header_contact',
             'priority' => 2,
@@ -221,18 +221,18 @@ function prism_customize_register($wp_customize) {
         
            // Add new section for Social Icons
     $wp_customize->add_section('social_icon_setting', array(
-        'title' => __('Social Icons', 'prism'),
+        'title' => __('Social Icons', 'tress'),
         'priority' => 35,
     ));
     
     // link url
-        $wp_customize->add_setting('facebook_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('facebook_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
         $wp_customize->add_control('facebook_link_url', array(
-            'label' => __('Facebook URL', 'prism'),
+            'label' => __('Facebook URL', 'tress'),
             'section' => 'social_icon_setting',
             'settings' => 'facebook_link_url',
             'priority' => 1,
@@ -240,13 +240,13 @@ function prism_customize_register($wp_customize) {
         ));
         
         // link url
-        $wp_customize->add_setting('twitter_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('twitter_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
         $wp_customize->add_control('twitter_link_url', array(
-            'label' => __('Twitter URL', 'prism'),
+            'label' => __('Twitter URL', 'tress'),
             'section' => 'social_icon_setting',
             'settings' => 'twitter_link_url',
             'priority' => 2,
@@ -254,13 +254,13 @@ function prism_customize_register($wp_customize) {
         ));
         
         // link url
-        $wp_customize->add_setting('googleplus_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('googleplus_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
         $wp_customize->add_control('googleplus_link_url', array(
-            'label' => __('Google Plus URL', 'prism'),
+            'label' => __('Google Plus URL', 'tress'),
             'section' => 'social_icon_setting',
             'settings' => 'googleplus_link_url',
             'priority' => 3,
@@ -268,13 +268,13 @@ function prism_customize_register($wp_customize) {
         ));
         
         // link url
-        $wp_customize->add_setting('pinterest_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('pinterest_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
         $wp_customize->add_control('pinterest_link_url', array(
-            'label' => __('Pinterest URL', 'prism'),
+            'label' => __('Pinterest URL', 'tress'),
             'section' => 'social_icon_setting',
             'settings' => 'pinterest_link_url',
             'priority' => 4,
@@ -282,13 +282,13 @@ function prism_customize_register($wp_customize) {
         ));
         
         // link url
-        $wp_customize->add_setting('github_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('github_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
         $wp_customize->add_control('github_link_url', array(
-            'label' => __('Github URL', 'prism'),
+            'label' => __('Github URL', 'tress'),
             'section' => 'social_icon_setting',
             'settings' => 'github_link_url',
             'priority' => 5,
@@ -296,13 +296,13 @@ function prism_customize_register($wp_customize) {
         ));
         
         // link url
-        $wp_customize->add_setting('youtube_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('youtube_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
         $wp_customize->add_control('youtube_link_url', array(
-            'label' => __('Youtube URL', 'prism'),
+            'label' => __('Youtube URL', 'tress'),
             'section' => 'social_icon_setting',
             'settings' => 'youtube_link_url',
             'priority' => 6,
@@ -311,7 +311,7 @@ function prism_customize_register($wp_customize) {
         
     // Add new section for slider settings
     $wp_customize->add_section('home_slider_setting', array(
-        'title' => __('Home Slider', 'prism'),
+        'title' => __('Home Slider', 'tress'),
         'priority' => 36,
     ));
 
@@ -338,7 +338,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('slider_title_one', array(
-            'label' => __('Slider One Title', 'prism'),
+            'label' => __('Slider One Title', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_title_one',
              'priority' => 2,
@@ -351,7 +351,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('slider_one_url', array(
-            'label' => __('Slider One URL', 'prism'),
+            'label' => __('Slider One URL', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_one_url',
              'priority' => 3,
@@ -363,8 +363,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'slider_one_description', array(
-            'label' => __('Description', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'slider_one_description', array(
+            'label' => __('Description', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_one_description',
             'priority' => 4,
@@ -377,20 +377,20 @@ function prism_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('slider_one_link_text', array(
-        'label' => __('Slider One Link Text', 'prism'),
+        'label' => __('Slider One Link Text', 'tress'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_one_link_text',
         'priority' => 5,
     ));
 
     // link url
-    $wp_customize->add_setting('slider_one_link_url', array('default' => __('', 'prism'),
+    $wp_customize->add_setting('slider_one_link_url', array('default' => __('', 'tress'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('slider_one_link_url', array(
-        'label' => __('Slider One Link URL', 'prism'),
+        'label' => __('Slider One Link URL', 'tress'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_one_link_url',
         'priority' => 6,
@@ -419,7 +419,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('slider_title_two', array(
-            'label' => __('Slider Two Title', 'prism'),
+            'label' => __('Slider Two Title', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_title_two',
              'priority' => 8,
@@ -432,7 +432,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('slider_two_url', array(
-            'label' => __('Slider Two URL', 'prism'),
+            'label' => __('Slider Two URL', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_two_url',
              'priority' => 9,
@@ -444,8 +444,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'slider_two_description', array(
-            'label' => __('Description', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'slider_two_description', array(
+            'label' => __('Description', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_two_description',
             'priority' => 10,
@@ -458,20 +458,20 @@ function prism_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('slider_two_link_text', array(
-        'label' => __('Slider Two Link Text', 'prism'),
+        'label' => __('Slider Two Link Text', 'tress'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_two_link_text',
         'priority' => 11,
     ));
 
     // link url
-    $wp_customize->add_setting('slider_two_link_url', array('default' => __('', 'prism'),
+    $wp_customize->add_setting('slider_two_link_url', array('default' => __('', 'tress'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('slider_two_link_url', array(
-        'label' => __('Slider Two Link URL', 'prism'),
+        'label' => __('Slider Two Link URL', 'tress'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_two_link_url',
         'priority' => 12,
@@ -500,7 +500,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('slider_title_three', array(
-            'label' => __('Slider Three Title', 'prism'),
+            'label' => __('Slider Three Title', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_title_three',
              'priority' => 14,
@@ -513,7 +513,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('slider_three_url', array(
-            'label' => __('Slider Three URL', 'prism'),
+            'label' => __('Slider Three URL', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_three_url',
              'priority' => 15,
@@ -525,8 +525,8 @@ function prism_customize_register($wp_customize) {
            'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'slider_three_description', array(
-            'label' => __('Description', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'slider_three_description', array(
+            'label' => __('Description', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_three_description',
             'priority' => 16,
@@ -539,20 +539,20 @@ function prism_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('slider_three_link_text', array(
-        'label' => __('Slider Three Link Text', 'prism'),
+        'label' => __('Slider Three Link Text', 'tress'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_three_link_text',
         'priority' => 17,
     ));
 
     // link url
-    $wp_customize->add_setting('slider_three_link_url', array('default' => __('', 'prism'),
+    $wp_customize->add_setting('slider_three_link_url', array('default' => __('', 'tress'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
 
     $wp_customize->add_control('slider_three_link_url', array(
-        'label' => __('Slider Three Link URL', 'prism'),
+        'label' => __('Slider Three Link URL', 'tress'),
         'section' => 'home_slider_setting',
         'settings' => 'slider_three_link_url',
         'priority' => 18,
@@ -580,7 +580,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('slider_title_four', array(
-            'label' => __('Slider Four Title', 'prism'),
+            'label' => __('Slider Four Title', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_title_four',
              'priority' => 20,
@@ -593,7 +593,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('slider_four_url', array(
-            'label' => __('Slider Four URL', 'prism'),
+            'label' => __('Slider Four URL', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_four_url',
              'priority' => 21,
@@ -605,8 +605,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'slider_four_description', array(
-            'label' => __('Description', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'slider_four_description', array(
+            'label' => __('Description', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_four_description',
             'priority' => 22,
@@ -620,20 +620,20 @@ function prism_customize_register($wp_customize) {
         ));
 
         $wp_customize->add_control('slider_four_link_text', array(
-            'label' => __('Slider Four Link Text', 'prism'),
+            'label' => __('Slider Four Link Text', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_four_link_text',
             'priority' => 23,
         ));
 
         // link url
-        $wp_customize->add_setting('slider_four_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('slider_four_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport' => 'postMessage',
         ));
 
         $wp_customize->add_control('slider_four_link_url', array(
-            'label' => __('Slider Four Link URL', 'prism'),
+            'label' => __('Slider Four Link URL', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_four_link_url',
             'priority' => 24,
@@ -661,7 +661,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('slider_title_five', array(
-            'label' => __('Slider Five Title', 'prism'),
+            'label' => __('Slider Five Title', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_title_five',
              'priority' => 26,
@@ -674,7 +674,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('slider_five_url', array(
-            'label' => __('Slider Five URL', 'prism'),
+            'label' => __('Slider Five URL', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_five_url',
              'priority' => 27,
@@ -686,8 +686,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'slider_five_description', array(
-            'label' => __('Description', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'slider_five_description', array(
+            'label' => __('Description', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_five_description',
             'priority' => 28,
@@ -700,20 +700,20 @@ function prism_customize_register($wp_customize) {
         ));
 
         $wp_customize->add_control('slider_five_link_text', array(
-            'label' => __('Slider Five Link Text', 'prism'),
+            'label' => __('Slider Five Link Text', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_five_link_text',
             'priority' => 29,
         ));
 
         // link url
-        $wp_customize->add_setting('slider_five_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('slider_five_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport' => 'postMessage',
         ));
 
         $wp_customize->add_control('slider_five_link_url', array(
-            'label' => __('Slider Five Link URL', 'prism'),
+            'label' => __('Slider Five Link URL', 'tress'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_five_link_url',
             'priority' => 30,
@@ -721,7 +721,7 @@ function prism_customize_register($wp_customize) {
         
            // Add new section for Home Tagline settings
     $wp_customize->add_section('tagline_setting', array(
-        'title' => __('Home Tagline', 'prism'),
+        'title' => __('Home Tagline', 'tress'),
         'priority' => 37,
     ));
     
@@ -733,7 +733,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('tagline_title', array(
-            'label' => __('Tagline', 'prism'),
+            'label' => __('Tagline', 'tress'),
             'section' => 'tagline_setting',
             'settings' => 'tagline_title',
            
@@ -744,8 +744,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'tagline_description', array(
-            'label' => __('Description', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'tagline_description', array(
+            'label' => __('Description', 'tress'),
             'section' => 'tagline_setting',
             'settings' => 'tagline_description',
             'priority' => 20,
@@ -754,7 +754,7 @@ function prism_customize_register($wp_customize) {
             
      // Add new section for Home Featured Title settings
     $wp_customize->add_section('home_featured_title_setting', array(
-        'title' => __('Home Featured Title', 'prism'),
+        'title' => __('Home Featured Title', 'tress'),
         'priority' => 38,
     ));
     
@@ -765,7 +765,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('home_title', array(
-            'label' => __('Section Title', 'prism'),
+            'label' => __('Section Title', 'tress'),
             'section' => 'home_featured_title_setting',
             'settings' => 'home_title',
             'priority' => 1,
@@ -779,7 +779,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('home_menu_title', array(
-            'label' => __('Menu Title', 'prism'),
+            'label' => __('Menu Title', 'tress'),
             'section' => 'home_featured_title_setting',
             'settings' => 'home_menu_title',
             'priority' => 2,
@@ -788,7 +788,7 @@ function prism_customize_register($wp_customize) {
         
      // Add new section for Home Featured One settings
     $wp_customize->add_section('home_featured_one_setting', array(
-        'title' => __('Home Featured #1', 'prism'),
+        'title' => __('Home Featured #1', 'tress'),
         'priority' => 40,
     ));
     
@@ -815,7 +815,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('home_title_one', array(
-            'label' => __('Title', 'prism'),
+            'label' => __('Title', 'tress'),
             'section' => 'home_featured_one_setting',
             'settings' => 'home_title_one',
             'priority' => 2,
@@ -827,8 +827,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'home_description_one', array(
-            'label' => __('Description', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'home_description_one', array(
+            'label' => __('Description', 'tress'),
             'section' => 'home_featured_one_setting',
             'settings' => 'home_description_one',
             'priority' => 3,
@@ -841,7 +841,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('home_one_link_text', array(
-            'label' => __('Link Text', 'prism'),
+            'label' => __('Link Text', 'tress'),
             'section' => 'home_featured_one_setting',
             'settings' => 'home_one_link_text',
             'priority' => 4,
@@ -849,13 +849,13 @@ function prism_customize_register($wp_customize) {
         ));
         
         // link url
-        $wp_customize->add_setting('home_one_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('home_one_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
         $wp_customize->add_control('home_one_link_url', array(
-            'label' => __('Link URL', 'prism'),
+            'label' => __('Link URL', 'tress'),
             'section' => 'home_featured_one_setting',
             'settings' => 'home_one_link_url',
             'priority' => 5,
@@ -864,7 +864,7 @@ function prism_customize_register($wp_customize) {
         
        // Add new section for Home Featured Two settings
     $wp_customize->add_section('home_featured_two_setting', array(
-        'title' => __('Home Featured #2', 'prism'),
+        'title' => __('Home Featured #2', 'tress'),
         'priority' => 45,
     ));
     
@@ -891,7 +891,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('home_title_two', array(
-            'label' => __('Title', 'prism'),
+            'label' => __('Title', 'tress'),
             'section' => 'home_featured_two_setting',
             'settings' => 'home_title_two',
             'priority' => 2,
@@ -903,8 +903,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'home_description_two', array(
-            'label' => __('Description', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'home_description_two', array(
+            'label' => __('Description', 'tress'),
             'section' => 'home_featured_two_setting',
             'settings' => 'home_description_two',
             'priority' => 3,
@@ -917,7 +917,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('home_two_link_text', array(
-            'label' => __('Link Text', 'prism'),
+            'label' => __('Link Text', 'tress'),
             'section' => 'home_featured_two_setting',
             'settings' => 'home_two_link_text',
             'priority' => 4,
@@ -925,13 +925,13 @@ function prism_customize_register($wp_customize) {
         ));
         
         // link url
-        $wp_customize->add_setting('home_two_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('home_two_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
         $wp_customize->add_control('home_two_link_url', array(
-            'label' => __('Link URL', 'prism'),
+            'label' => __('Link URL', 'tress'),
             'section' => 'home_featured_two_setting',
             'settings' => 'home_two_link_url',
             'priority' => 5,
@@ -942,7 +942,7 @@ function prism_customize_register($wp_customize) {
         
         // Add new section for Home Featured Three settings
     $wp_customize->add_section('home_featured_three_setting', array(
-        'title' => __('Home Featured #3', 'prism'),
+        'title' => __('Home Featured #3', 'tress'),
         'priority' => 50,
     ));
     
@@ -969,7 +969,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('home_title_three', array(
-            'label' => __('Title', 'prism'),
+            'label' => __('Title', 'tress'),
             'section' => 'home_featured_three_setting',
             'settings' => 'home_title_three',
             'priority' => 2,
@@ -981,8 +981,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'home_description_three', array(
-            'label' => __('Description', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'home_description_three', array(
+            'label' => __('Description', 'tress'),
             'section' => 'home_featured_three_setting',
             'settings' => 'home_description_three',
             'priority' => 3,
@@ -995,7 +995,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('home_three_link_text', array(
-            'label' => __('Link Text', 'prism'),
+            'label' => __('Link Text', 'tress'),
             'section' => 'home_featured_three_setting',
             'settings' => 'home_three_link_text',
             'priority' => 4,
@@ -1003,13 +1003,13 @@ function prism_customize_register($wp_customize) {
         ));
         
         // link url
-        $wp_customize->add_setting('home_three_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('home_three_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
         $wp_customize->add_control('home_three_link_url', array(
-            'label' => __('Link URL', 'prism'),
+            'label' => __('Link URL', 'tress'),
             'section' => 'home_featured_three_setting',
             'settings' => 'home_three_link_url',
             'priority' => 5,
@@ -1019,7 +1019,7 @@ function prism_customize_register($wp_customize) {
         
          // Add new section for Home Featured One settings
     $wp_customize->add_section('home_featured_four_setting', array(
-        'title' => __('Home Featured #4', 'prism'),
+        'title' => __('Home Featured #4', 'tress'),
         'priority' => 51,
     ));
     
@@ -1046,7 +1046,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('home_title_four', array(
-            'label' => __('Title', 'prism'),
+            'label' => __('Title', 'tress'),
             'section' => 'home_featured_four_setting',
             'settings' => 'home_title_four',
             'priority' => 2,
@@ -1058,8 +1058,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'home_description_four', array(
-            'label' => __('Description', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'home_description_four', array(
+            'label' => __('Description', 'tress'),
             'section' => 'home_featured_four_setting',
             'settings' => 'home_description_four',
             'priority' => 3,
@@ -1072,7 +1072,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('home_four_link_text', array(
-            'label' => __('Link Text', 'prism'),
+            'label' => __('Link Text', 'tress'),
             'section' => 'home_featured_four_setting',
             'settings' => 'home_four_link_text',
             'priority' => 4,
@@ -1080,13 +1080,13 @@ function prism_customize_register($wp_customize) {
         ));
         
         // link url
-        $wp_customize->add_setting('home_four_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('home_four_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
         $wp_customize->add_control('home_four_link_url', array(
-            'label' => __('Link URL', 'prism'),
+            'label' => __('Link URL', 'tress'),
             'section' => 'home_featured_four_setting',
             'settings' => 'home_four_link_url',
             'priority' => 5,
@@ -1097,76 +1097,76 @@ function prism_customize_register($wp_customize) {
     
         
         // Add new section for displaying Featured Posts on Front Page
-    $wp_customize->add_section('prism_front_page_post_options', array(
-        'title' => __('Featured Posts', 'prism'),
-        'description' => __('Settings for displaying featured posts on Front Page', 'prism'),
+    $wp_customize->add_section('tress_front_page_post_options', array(
+        'title' => __('Featured Posts', 'tress'),
+        'description' => __('Settings for displaying featured posts on Front Page', 'tress'),
         'priority' => 55,
     ));
     // post Title
-        $wp_customize->add_setting('prism_post_title', array(
+        $wp_customize->add_setting('tress_post_title', array(
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control('prism_post_title', array(
-            'label' => __('Section Title', 'prism'),
-            'section' => 'prism_front_page_post_options',
-            'settings' => 'prism_post_title',
+        $wp_customize->add_control('tress_post_title', array(
+            'label' => __('Section Title', 'tress'),
+            'section' => 'tress_front_page_post_options',
+            'settings' => 'tress_post_title',
             'priority' => 1,
            
         ));
         
         // post Title
-        $wp_customize->add_setting('prism_post_menu_title', array(
+        $wp_customize->add_setting('tress_post_menu_title', array(
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control('prism_post_menu_title', array(
-            'label' => __('Menu Title', 'prism'),
-            'section' => 'prism_front_page_post_options',
-            'settings' => 'prism_post_menu_title',
+        $wp_customize->add_control('tress_post_menu_title', array(
+            'label' => __('Menu Title', 'tress'),
+            'section' => 'tress_front_page_post_options',
+            'settings' => 'tress_post_menu_title',
             'priority' => 2,
            
         ));
     // enable featured posts on front page?
-    $wp_customize->add_setting('prism_front_featured_posts_check', array(
+    $wp_customize->add_setting('tress_front_featured_posts_check', array(
         'default' => 1, 
-        'sanitize_callback' => 'prism_sanitize_checkbox',
+        'sanitize_callback' => 'tress_sanitize_checkbox',
     ));
-    $wp_customize->add_control('prism_front_featured_posts_check', array(
-        'label' => __('Show featured posts on Front Page', 'prism'),
-        'section' => 'prism_front_page_post_options',
+    $wp_customize->add_control('tress_front_featured_posts_check', array(
+        'label' => __('Show featured posts on Front Page', 'tress'),
+        'section' => 'tress_front_page_post_options',
         'priority' => 10,
         'type' => 'checkbox',
     ));
 
     // select number of posts for featured posts on front page
-    $wp_customize->add_setting('prism_front_featured_posts_count', array(
+    $wp_customize->add_setting('tress_front_featured_posts_count', array(
         'default' => 3,
         'sanitize_callback' => 'sanitize_text_field',
         'transport'=> 'postMessage',
     ));
-    $wp_customize->add_control('prism_front_featured_posts_count', array(
-        'label' => __('Number of posts to display', 'prism'),
-        'section' => 'prism_front_page_post_options',
-        'settings' => 'prism_front_featured_posts_count',
+    $wp_customize->add_control('tress_front_featured_posts_count', array(
+        'label' => __('Number of posts to display', 'tress'),
+        'section' => 'tress_front_page_post_options',
+        'settings' => 'tress_front_featured_posts_count',
         'priority' => 20,
     ));
        // select category for featured posts 
-    $wp_customize->add_setting('prism_front_featured_posts_cat', array('default' => 0,));
-    $wp_customize->add_control(new WP_Customize_Dropdown_Categories_Control($wp_customize, 'prism_front_featured_posts_cat', array(
-        'label' => __('Post Category', 'prism'),
-        'section' => 'prism_front_page_post_options',
+    $wp_customize->add_setting('tress_front_featured_posts_cat', array('default' => 0,));
+    $wp_customize->add_control(new WP_Customize_Dropdown_Categories_Control($wp_customize, 'tress_front_featured_posts_cat', array(
+        'label' => __('Post Category', 'tress'),
+        'section' => 'tress_front_page_post_options',
         'type' => 'dropdown-categories',
-        'settings' => 'prism_front_featured_posts_cat',
+        'settings' => 'tress_front_featured_posts_cat',
         'priority' => 30,
     )));
            
         
             // Add new section for Home CTA settings
     $wp_customize->add_section('home_cta_setting', array(
-        'title' => __('Home CTA', 'prism'),
+        'title' => __('Home CTA', 'tress'),
         'priority' => 60,
     ));
     
@@ -1176,7 +1176,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('cta_title', array(
-            'label' => __('Title', 'prism'),
+            'label' => __('Title', 'tress'),
             'section' => 'home_cta_setting',
             'settings' => 'cta_title',
             'priority' => 1,
@@ -1188,8 +1188,8 @@ function prism_customize_register($wp_customize) {
         'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'cta_text', array(
-            'label' => __('CTA Text', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'cta_text', array(
+            'label' => __('CTA Text', 'tress'),
             'section' => 'home_cta_setting',
             'settings' => 'cta_text',
             'priority' => 2,
@@ -1203,7 +1203,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('home_cta_link_text', array(
-            'label' => __('Link Text', 'prism'),
+            'label' => __('Link Text', 'tress'),
             'section' => 'home_cta_setting',
             'settings' => 'home_cta_link_text',
             'priority' => 3,
@@ -1211,13 +1211,13 @@ function prism_customize_register($wp_customize) {
         ));
         
         // link url
-        $wp_customize->add_setting('home_cta_link_url', array('default' => __('', 'prism'),
+        $wp_customize->add_setting('home_cta_link_url', array('default' => __('', 'tress'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
         $wp_customize->add_control('home_cta_link_url', array(
-            'label' => __('Link URL', 'prism'),
+            'label' => __('Link URL', 'tress'),
             'section' => 'home_cta_setting',
             'settings' => 'home_cta_link_url',
             'priority' => 4,
@@ -1226,7 +1226,7 @@ function prism_customize_register($wp_customize) {
         
             // Add new section for Home Contact Title settings
     $wp_customize->add_section('feedback_title_setting', array(
-        'title' => __('Testimonial Title', 'prism'),
+        'title' => __('Testimonial Title', 'tress'),
         'priority' => 62,
     ));
     
@@ -1237,7 +1237,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('feedback_title', array(
-            'label' => __('Section Title', 'prism'),
+            'label' => __('Section Title', 'tress'),
             'section' => 'feedback_title_setting',
             'settings' => 'feedback_title',
             'priority' => 1,
@@ -1251,7 +1251,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('feedback_menu_title', array(
-            'label' => __('Menu Title', 'prism'),
+            'label' => __('Menu Title', 'tress'),
             'section' => 'feedback_title_setting',
             'settings' => 'feedback_menu_title',
             'priority' => 2,
@@ -1261,7 +1261,7 @@ function prism_customize_register($wp_customize) {
         
         // Add new section for Testimonial slider settings
     $wp_customize->add_section('testimonial_slider_setting', array(
-        'title' => __('Testimonial Slider', 'prism'),
+        'title' => __('Testimonial Slider', 'tress'),
         'priority' => 63,
     ));
 
@@ -1286,8 +1286,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'tslider_one_description', array(
-            'label' => __('Description', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'tslider_one_description', array(
+            'label' => __('Description', 'tress'),
             'section' => 'testimonial_slider_setting',
             'settings' => 'tslider_one_description',
             'priority' => 2,
@@ -1314,8 +1314,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'tslider_two_description', array(
-            'label' => __('Description', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'tslider_two_description', array(
+            'label' => __('Description', 'tress'),
             'section' => 'testimonial_slider_setting',
             'settings' => 'tslider_two_description',
             'priority' => 4,
@@ -1341,8 +1341,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'tslider_three_description', array(
-            'label' => __('Description', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'tslider_three_description', array(
+            'label' => __('Description', 'tress'),
             'section' => 'testimonial_slider_setting',
             'settings' => 'tslider_three_description',
             'priority' => 6,
@@ -1352,7 +1352,7 @@ function prism_customize_register($wp_customize) {
         
             // Add new section for Contact settings
     $wp_customize->add_section('contact_setting', array(
-        'title' => __('Contact Details', 'prism'),
+        'title' => __('Contact Details', 'tress'),
         'priority' => 64,
     ));
     
@@ -1364,7 +1364,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('contact_title', array(
-            'label' => __('Title', 'prism'),
+            'label' => __('Title', 'tress'),
             'section' => 'contact_setting',
             'settings' => 'contact_title',
             'priority' => 1,
@@ -1377,7 +1377,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('contact_email', array(
-            'label' => __('Email', 'prism'),
+            'label' => __('Email', 'tress'),
             'section' => 'contact_setting',
             'settings' => 'contact_email',
             'priority' => 2,
@@ -1390,7 +1390,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('contact_phone', array(
-            'label' => __('Phone', 'prism'),
+            'label' => __('Phone', 'tress'),
             'section' => 'contact_setting',
             'settings' => 'contact_phone',
             'priority' => 3,
@@ -1402,8 +1402,8 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-    $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'address_detail', array(
-            'label' => __('Address', 'prism'),
+    $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'address_detail', array(
+            'label' => __('Address', 'tress'),
             'section' => 'contact_setting',
             'settings' => 'address_detail',
             'priority' => 4,
@@ -1411,7 +1411,7 @@ function prism_customize_register($wp_customize) {
         
         // Add new section for Home Contact Title settings
     $wp_customize->add_section('home_contact_title_setting', array(
-        'title' => __('Home Contact Title', 'prism'),
+        'title' => __('Home Contact Title', 'tress'),
         'priority' => 63,
     ));
     
@@ -1422,7 +1422,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('home_contact_title', array(
-            'label' => __('Section Title', 'prism'),
+            'label' => __('Section Title', 'tress'),
             'section' => 'home_contact_title_setting',
             'settings' => 'home_contact_title',
             'priority' => 1,
@@ -1436,7 +1436,7 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('home_menu_contact_title', array(
-            'label' => __('Menu Title', 'prism'),
+            'label' => __('Menu Title', 'tress'),
             'section' => 'home_contact_title_setting',
             'settings' => 'home_menu_contact_title',
             'priority' => 2,
@@ -1445,8 +1445,8 @@ function prism_customize_register($wp_customize) {
         
         
           // Add new section for Home Tagline settings
-    $wp_customize->add_section('prism_contact_form_setting', array(
-        'title' => __('Contact Form', 'prism'),
+    $wp_customize->add_section('tress_contact_form_setting', array(
+        'title' => __('Contact Form', 'tress'),
         'priority' => 64,
     ));    
        
@@ -1456,29 +1456,29 @@ function prism_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('contact_form_title', array(
-            'label' => __('Title', 'prism'),
-            'section' => 'prism_contact_form_setting',
+            'label' => __('Title', 'tress'),
+            'section' => 'tress_contact_form_setting',
             'settings' => 'contact_form_title',
             'priority' => 1,
            
         ));
         
-    $wp_customize->add_setting('prism_contact_form', array(
+    $wp_customize->add_setting('tress_contact_form', array(
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control('prism_contact_form', array(
-            'label' => __('Contact Form Short Code', 'prism'),
-            'section' => 'prism_contact_form_setting',
-            'settings' => 'prism_contact_form',
+        $wp_customize->add_control('tress_contact_form', array(
+            'label' => __('Contact Form Short Code', 'tress'),
+            'section' => 'tress_contact_form_setting',
+            'settings' => 'tress_contact_form',
             'priority' => 2,
            
         ));
     
         // Add new section for Home Tagline settings
     $wp_customize->add_section('video_setting', array(
-        'title' => __('Home Map', 'prism'),
+        'title' => __('Home Map', 'tress'),
         'priority' => 65,
     ));    
        
@@ -1488,57 +1488,57 @@ function prism_customize_register($wp_customize) {
             'transport'=> 'postMessage',
             ));
         
-        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'contact_map', array(
-            'label' => __('Map Code', 'prism'),
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'contact_map', array(
+            'label' => __('Map Code', 'tress'),
             'section' => 'video_setting',
             'settings' => 'contact_map',
             'priority' => 1,
         )));  
     
      // Add footer text section
-    $wp_customize->add_section('prism_footer', array(
+    $wp_customize->add_section('tress_footer', array(
         'title' => 'Footer Text', // The title of section
         'priority' => 75,
     ));
 
-    $wp_customize->add_setting('prism_footer_footer_text', array(
+    $wp_customize->add_setting('tress_footer_footer_text', array(
         'default' => null,
-        'sanitize_js_callback' => 'prism_sanitize_escaping',
+        'sanitize_js_callback' => 'tress_sanitize_escaping',
         'transport'=> 'postMessage',
         
     ));
-    $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'prism_footer_footer_text', array(
-        'section' => 'prism_footer', // id of section to which the setting belongs
-        'settings' => 'prism_footer_footer_text',
+    $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'tress_footer_footer_text', array(
+        'section' => 'tress_footer', // id of section to which the setting belongs
+        'settings' => 'tress_footer_footer_text',
     )));
 
     
     // Add custom CSS section
-    $wp_customize->add_section('prism_custom_css', array(
+    $wp_customize->add_section('tress_custom_css', array(
         'title' => 'Custom CSS', // The title of section
         'priority' => 80,
     ));
     
-    $wp_customize->add_setting('prism_custom_css', array(
+    $wp_customize->add_setting('tress_custom_css', array(
         'default' => '',
-        'sanitize_callback' => 'prism_sanitize_custom_css',
-        'sanitize_js_callback' => 'prism_sanitize_escaping',
+        'sanitize_callback' => 'tress_sanitize_custom_css',
+        'sanitize_js_callback' => 'tress_sanitize_escaping',
         'transport'=> 'postMessage',
     ));
     
-    $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'prism_custom_css', array(
-        'section' => 'prism_custom_css', // id of section to which the setting belongs
-        'settings' => 'prism_custom_css', 
+    $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'tress_custom_css', array(
+        'section' => 'tress_custom_css', // id of section to which the setting belongs
+        'settings' => 'tress_custom_css', 
     )));
     
    
     // Disable one page navigation on front page.
-    $wp_customize->add_setting('prism_one_page_nav_check', array(
+    $wp_customize->add_setting('tress_one_page_nav_check', array(
         'default' => 0, 
-        'sanitize_callback' => 'prism_sanitize_checkbox',
+        'sanitize_callback' => 'tress_sanitize_checkbox',
     ));
-    $wp_customize->add_control('prism_one_page_nav_check', array(
-        'label' => __('Disable one page navigation', 'prism'),
+    $wp_customize->add_control('tress_one_page_nav_check', array(
+        'label' => __('Disable one page navigation', 'tress'),
         'section' => 'nav',
         'priority' => 10,
         'type' => 'checkbox',
@@ -1554,16 +1554,16 @@ function prism_customize_register($wp_customize) {
     
 }
 
-add_action('customize_register', 'prism_customize_register');
+add_action('customize_register', 'tress_customize_register');
 
 
 
 /*
  * Sanitize numeric values 
  * 
- * @since Prism 1.0
+ * @since Tress 1.0
  */
-function prism_sanitize_integer( $input ) {
+function tress_sanitize_integer( $input ) {
     if( is_numeric( $input ) ) {
     return intval( $input );
     }
@@ -1572,9 +1572,9 @@ function prism_sanitize_integer( $input ) {
 /*
  * Escaping for input values
  * 
- * @since Prism 1.0
+ * @since Tress 1.0
  */
-function prism_sanitize_escaping( $input) {
+function tress_sanitize_escaping( $input) {
     $input = esc_attr( $input);
     return $input;
 }
@@ -1583,10 +1583,10 @@ function prism_sanitize_escaping( $input) {
 /* 
  * Sanitize Custom CSS 
  * 
- * @since Prism 1.0
+ * @since Tress 1.0
  */
 
-function prism_sanitize_custom_css( $input) {
+function tress_sanitize_custom_css( $input) {
     $input = wp_kses_stripslashes( $input);
     return $input;
 }	
@@ -1594,9 +1594,9 @@ function prism_sanitize_custom_css( $input) {
 /*
  * Sanitize Checkbox input values
  * 
- * @since Prism 1.0
+ * @since Tress 1.0
  */
-function prism_sanitize_checkbox( $input ) {
+function tress_sanitize_checkbox( $input ) {
     if ( $input ) {
             $output = '1';
     } else {
@@ -1608,9 +1608,9 @@ function prism_sanitize_checkbox( $input ) {
 /*
  * Sanitize color scheme options 
  * 
- * @since Prism 1.0
+ * @since Tress 1.0
  */
-function prism_sanitize_color_scheme_option($colorscheme_option){
+function tress_sanitize_color_scheme_option($colorscheme_option){
     if ( ! in_array( $colorscheme_option, array( 'blue','red','green','gray','purple','orange','brown','pink' ) ) ) {
 		$colorscheme_option = 'blue';
 	}
@@ -1622,9 +1622,9 @@ function prism_sanitize_color_scheme_option($colorscheme_option){
 /*
  * Sanitize background color scheme options 
  * 
- * @since Prism 1.0
+ * @since Tress 1.0
  */
-function prism_sanitize_bg_color_scheme_option($bg_colorscheme_option){
+function tress_sanitize_bg_color_scheme_option($bg_colorscheme_option){
     if ( ! in_array( $bg_colorscheme_option, array( 'light','dark') ) ) {
 		$bg_colorscheme_option = 'light';
 	}
@@ -1635,29 +1635,29 @@ function prism_sanitize_bg_color_scheme_option($bg_colorscheme_option){
 /**
  * Bind JS handlers to make Theme Customizer preview reload changes asynchronously.
  *
- * @since Prism 1.0
+ * @since Tress 1.0
  */
-function prism_customize_preview_js() {
-    wp_enqueue_script('prism_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array('customize-preview'), '20131205', true);
+function tress_customize_preview_js() {
+    wp_enqueue_script('tress_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array('customize-preview'), '20131205', true);
 }
 
-add_action('customize_preview_init', 'prism_customize_preview_js');
+add_action('customize_preview_init', 'tress_customize_preview_js');
 
 
-function prism_header_output() {
+function tress_header_output() {
     ?>
     <!--Customizer CSS--> 
     <style type="text/css">
-    <?php echo esc_attr(get_theme_mod('prism_custom_css')); ?>
+    <?php echo esc_attr(get_theme_mod('tress_custom_css')); ?>
     </style> 
     <!--/Customizer CSS-->
     <?php
 }
 
 // Output custom CSS to live site
-add_action('wp_head', 'prism_header_output');
+add_action('wp_head', 'tress_header_output');
 
-function prism_footer_tracking_code() {
+function tress_footer_tracking_code() {
     echo esc_attr(get_theme_mod('tracking_code'));
 }
-add_action('wp_footer','prism_footer_tracking_code'); 
+add_action('wp_footer','tress_footer_tracking_code'); 

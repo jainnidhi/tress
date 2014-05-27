@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Prism\n"
+"Project-Id-Version: Tress\n"
 "POT-Creation-Date: 2014-05-25 17:04+0530\n"
 "PO-Revision-Date: 2014-05-25 17:04+0530\n"
 "Last-Translator: \n"
@@ -119,7 +119,7 @@ msgid "Archives by Month"
 msgstr ""
 
 #: footer.php:54
-msgid "Prism WordPress theme by IdeaBox"
+msgid "Tress WordPress theme by IdeaBox"
 msgstr ""
 
 #: front-page.php:34 front-page.php:44 front-page.php:54
@@ -133,12 +133,12 @@ msgid ""
 msgstr ""
 
 #: front-page.php:164
-msgid "Build Restaurant Website With Prism Multipurpose Theme"
+msgid "Build Restaurant Website With Tress Multipurpose Theme"
 msgstr ""
 
 #: front-page.php:170
 msgid ""
-"Creating your Restaurant & Food based website with Prism is completely "
+"Creating your Restaurant & Food based website with Tress is completely "
 "easy.\n"
 "                              You just need to perform few tweaks in the "
 "theme option panel and your website will be ready to use.\n"

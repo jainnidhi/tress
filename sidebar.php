@@ -2,8 +2,8 @@
 /**
  * The Sidebar containing the main widget areas.
  *
- * @package Prism
- * @since Prism 1.0
+ * @package Tress
+ * @since Tress 1.0
  */
 ?>
 <?php if(is_active_sidebar('sidebar-main')) { ?>

@@ -2,8 +2,8 @@
 /**
  * The template for displaying an archive page for Categories.
  *
- * @package Prism
- * @since Prism 1.0
+ * @package Tress
+ * @since Tress 1.0
  */
 
 get_header(); ?>
@@ -19,7 +19,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<header class="archive-header">
-					<h1 class="archive-title"><?php printf( esc_html__( 'Category Archives: %s', 'prism' ), '<span class="cat-archive">' . single_cat_title( '', false ) . '</span>' ); ?></h1>
+					<h1 class="archive-title"><?php printf( esc_html__( 'Category Archives: %s', 'tress' ), '<span class="cat-archive">' . single_cat_title( '', false ) . '</span>' ); ?></h1>
 
 					<?php if ( category_description() ) { // Show an optional category description ?>
 						<div class="archive-meta"><?php echo category_description(); ?></div>
@@ -31,7 +31,7 @@ get_header(); ?>
 					<?php get_template_part( 'content', get_post_format() ); ?>
 				<?php endwhile; ?>
 
-				<?php prism_content_nav( 'nav-below' ); ?>
+				<?php tress_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
 

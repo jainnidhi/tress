@@ -1,7 +1,7 @@
 <?php
 
 
-class prism_SL_Theme_Updater {
+class tress_SL_Theme_Updater {
 
     private $remote_api_url;
     private $request_data;
@@ -92,7 +92,7 @@ class prism_SL_Theme_Updater {
                 return false;
 
             $api_params = array(
-                'prism_action' => 'get_version',
+                'tress_action' => 'get_version',
                 'license' => $this->license,
                 'name' => $this->item_name,
                 'slug' => $this->theme_slug,

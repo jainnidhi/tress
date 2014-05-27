@@ -6,8 +6,8 @@
  * There are also four footer widgets displayed. These will be displayed from
  * one to four columns, depending on how many widgets are active.
  *
- * @package Prism
- * @since Prism 1.0
+ * @package Tress
+ * @since Tress 1.0
  */
 ?>
 
@@ -47,37 +47,37 @@
 
     <div class="footer-wrap clearfix">
         <div class="footer-wrap-container">
-        <?php if (get_theme_mod('prism_footer_footer_text') == '') { ?>
+        <?php if (get_theme_mod('tress_footer_footer_text') == '') { ?>
             <div class="smallprint">
                 <p>
                     <a href="<?php $my_theme = wp_get_theme(); echo $my_theme->get( 'ThemeURI' ); ?>">
-                        <?php _e('Prism WordPress theme by IdeaBox', 'prism'); ?>
+                        <?php _e('Tress WordPress theme by IdeaBox', 'tress'); ?>
                     </a>
                 </p>
             </div>
         <?php } else { ?>   
-                    <div class="smallprint"><?php echo wpautop(esc_html(get_theme_mod('prism_footer_footer_text'))); ?></div>
+                    <div class="smallprint"><?php echo wpautop(esc_html(get_theme_mod('tress_footer_footer_text'))); ?></div>
         <?php } ?> 
                     <div class="footer-extras">
                          <div class="social-links">
                                 <ul>
                                     <?php if (get_theme_mod('facebook_link_url')) { ?>
-                                        <li class="prism-fb"><a href="<?php echo get_theme_mod('facebook_link_url'); ?>"></a></li>
+                                        <li class="tress-fb"><a href="<?php echo get_theme_mod('facebook_link_url'); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('twitter_link_url')) { ?>
-                                        <li class="prism-twitter"><a href="<?php echo  get_theme_mod('twitter_link_url'); ?>"></a></li>
+                                        <li class="tress-twitter"><a href="<?php echo  get_theme_mod('twitter_link_url'); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('googleplus_link_url')) { ?>
-                                        <li class="prism-gplus"><a href="<?php echo get_theme_mod('googleplus_link_url'); ?>"></a></li>
+                                        <li class="tress-gplus"><a href="<?php echo get_theme_mod('googleplus_link_url'); ?>"></a></li>
                                     <?php } ?>
                                     <?php if( get_theme_mod('pinterest_link_url')) { ?>
-                                        <li class="prism-pinterest"><a href="<?php echo get_theme_mod('pinterest_link_url'); ?>"></a></li>
+                                        <li class="tress-pinterest"><a href="<?php echo get_theme_mod('pinterest_link_url'); ?>"></a></li>
                                     <?php } ?>
                                     <?php if (get_theme_mod('github_link_url')) { ?>
-                                        <li class="prism-github"><a href="<?php echo get_theme_mod('github_link_url'); ?>"></a></li>
+                                        <li class="tress-github"><a href="<?php echo get_theme_mod('github_link_url'); ?>"></a></li>
                                     <?php } ?>
                                     <?php if(get_theme_mod('youtube_link_url')) { ?>
-                                        <li class="prism-youtube"><a href="<?php echo get_theme_mod('youtube_link_url'); ?>"></a></li>
+                                        <li class="tress-youtube"><a href="<?php echo get_theme_mod('youtube_link_url'); ?>"></a></li>
                                     <?php } ?>
                                 </ul>
                             </div>

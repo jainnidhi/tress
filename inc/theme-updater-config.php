@@ -4,20 +4,20 @@
  * Easy Digital Downloads.
  *
  * @package WordPress
- * @subpackage Prism Theme
+ * @subpackage Tress Theme
  */
 
-// This is the URL our updater / license checker pings. This should be the URL of the site with Prism installed
+// This is the URL our updater / license checker pings. This should be the URL of the site with Tress installed
 define('IDEABOX_STORE_URL', 'http://ideaboxthemes.com'); // add your own unique prefix to prevent conflicts
-// The name of your product. This should match the download name in Prism exactly
-define('IDEABOX_THEME_NAME', 'Prism One Page WordPress Theme'); // add your own unique prefix to prevent conflicts
+// The name of your product. This should match the download name in Tress exactly
+define('IDEABOX_THEME_NAME', 'Tress One Page WordPress Theme'); // add your own unique prefix to prevent conflicts
 
 function ideabox_theme_updater() {
 
     $test_license = trim(get_option('ideabox_theme_license_key'));
 
-    $prism_updater = new prism_SL_Theme_Updater(array(
-        'remote_api_url' => IDEABOX_STORE_URL, // Our store URL that is running Prism
+    $tress_updater = new tress_SL_Theme_Updater(array(
+        'remote_api_url' => IDEABOX_STORE_URL, // Our store URL that is running Tress
         'version' => '1.0', // The current theme version we are running
         'license' => $test_license, // The license key (used get_option above to retrieve from DB)
         'item_name' => IDEABOX_THEME_NAME, // The name of this theme
@@ -38,7 +38,7 @@ function ideabox_theme_license_page() {
     $status = get_option('ideabox_theme_license_key_status');
     ?>
     <div class="wrap">
-        <h2><?php _e('Theme License Options','prism'); ?></h2>
+        <h2><?php _e('Theme License Options','tress'); ?></h2>
         <form method="post" action="options.php">
 
     <?php settings_fields('ideabox_theme_license'); ?>
@@ -47,27 +47,27 @@ function ideabox_theme_license_page() {
                 <tbody>
                     <tr valign="top">
                         <th scope="row" valign="top">
-    <?php _e('License Key','prism'); ?>
+    <?php _e('License Key','tress'); ?>
                         </th>
                         <td>
                             <input id="ideabox_theme_license_key" name="ideabox_theme_license_key" type="text" class="regular-text" value="<?php esc_attr_e($license); ?>" />
-                            <label class="description" for="ideabox_theme_license_key"><?php _e('Enter your license key','prism'); ?></label>
+                            <label class="description" for="ideabox_theme_license_key"><?php _e('Enter your license key','tress'); ?></label>
                         </td>
                     </tr>
     <?php if (false !== $license) { ?>
                         <tr valign="top">
                             <th scope="row" valign="top">
-        <?php _e('Activate License','prism'); ?>
+        <?php _e('Activate License','tress'); ?>
                             </th>
                             <td>
         <?php if ($status !== false && $status == 'valid') { ?>
-                                    <span style="color:green;"><?php _e('active','prism'); ?></span>
-                                    <?php wp_nonce_field('prism_sample_nonce', 'prism_sample_nonce'); ?>
-                                    <input type="submit" class="button-secondary" name="prism_theme_license_deactivate" value="<?php _e('Deactivate License','prism'); ?>"/>
+                                    <span style="color:green;"><?php _e('active','tress'); ?></span>
+                                    <?php wp_nonce_field('tress_sample_nonce', 'tress_sample_nonce'); ?>
+                                    <input type="submit" class="button-secondary" name="tress_theme_license_deactivate" value="<?php _e('Deactivate License','tress'); ?>"/>
                                 <?php } else {
-                                    wp_nonce_field('prism_sample_nonce', 'prism_sample_nonce');
+                                    wp_nonce_field('tress_sample_nonce', 'tress_sample_nonce');
                                     ?>
-                                    <input type="submit" class="button-secondary" name="prism_theme_license_activate" value="<?php _e('Activate License','prism'); ?>"/>
+                                    <input type="submit" class="button-secondary" name="tress_theme_license_activate" value="<?php _e('Activate License','tress'); ?>"/>
                                 <?php } ?>
                             </td>
                         </tr>
@@ -82,7 +82,7 @@ function ideabox_theme_license_page() {
 
     function ideabox_theme_register_option() {
         // creates our settings in the options table
-        register_setting('ideabox_theme_license', 'ideabox_theme_license_key', 'prism_theme_sanitize_license');
+        register_setting('ideabox_theme_license', 'ideabox_theme_license_key', 'tress_theme_sanitize_license');
     }
 
     add_action('admin_init', 'ideabox_theme_register_option');
@@ -92,7 +92,7 @@ function ideabox_theme_license_page() {
      * ********************************************* */
 
     function ideabox_theme_license_menu() {
-        add_theme_page('Theme License', 'Theme License', 'manage_options', 'prism-license', 'ideabox_theme_license_page');
+        add_theme_page('Theme License', 'Theme License', 'manage_options', 'tress-license', 'ideabox_theme_license_page');
     }
 
     add_action('admin_menu', 'ideabox_theme_license_menu');
@@ -103,7 +103,7 @@ function ideabox_theme_license_page() {
      * when adding a new one
      * ********************************************* */
 
-    function prism_theme_sanitize_license($new) {
+    function tress_theme_sanitize_license($new) {
         $old = get_option('ideabox_theme_license_key');
         if ($old && $old != $new) {
             delete_option('ideabox_theme_license_key_status'); // new license has been entered, so must reactivate
@@ -117,8 +117,8 @@ function ideabox_theme_license_page() {
 
     function ideabox_theme_activate_license() {
 
-        if (isset($_POST['prism_theme_license_activate'])) {
-            if (!check_admin_referer('prism_sample_nonce', 'prism_sample_nonce'))
+        if (isset($_POST['tress_theme_license_activate'])) {
+            if (!check_admin_referer('tress_sample_nonce', 'tress_sample_nonce'))
                 return; // get out if we didn't click the Activate button
 
             global $wp_version;
@@ -154,10 +154,10 @@ function ideabox_theme_license_page() {
     function ideabox_theme_deactivate_license() {
 
         // listen for our activate button to be clicked
-        if (isset($_POST['prism_theme_license_deactivate'])) {
+        if (isset($_POST['tress_theme_license_deactivate'])) {
 
             // run a quick security check
-            if (!check_admin_referer('prism_sample_nonce', 'prism_sample_nonce'))
+            if (!check_admin_referer('tress_sample_nonce', 'tress_sample_nonce'))
                 return; // get out if we didn't click the Activate button
 
                 
@@ -169,7 +169,7 @@ function ideabox_theme_license_page() {
             $api_params = array(
                 'edd_action' => 'deactivate_license',
                 'license' => $license,
-                'item_name' => urlencode(IDEABOX_THEME_NAME) // the name of our product in Prism
+                'item_name' => urlencode(IDEABOX_THEME_NAME) // the name of our product in Tress
             );
 
             // Call the custom API.

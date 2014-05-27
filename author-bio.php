@@ -2,17 +2,17 @@
 /**
  * The template for displaying Author bios.
  *
- * @package Prism
- * @since Prism 1.2.5
+ * @package Tress
+ * @since Tress 1.2.5
  */
 ?>
 
 <div class="author-info">
 	<div class="author-avatar">
-		<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'prism_author_bio_avatar_size', 68 ) ); ?>
+		<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'tress_author_bio_avatar_size', 68 ) ); ?>
 	</div> <!-- /.author-avatar -->
 	<div class="author-description">
-		<h2><?php printf( esc_html__( 'About %s', 'prism' ), get_the_author() ); ?></h2>
+		<h2><?php printf( esc_html__( 'About %s', 'tress' ), get_the_author() ); ?></h2>
 		<p><?php the_author_meta( 'description' ); ?></p>
 		<p class="social-meta">
 			<?php if ( get_the_author_meta( 'url' ) ) { ?>
@@ -30,7 +30,7 @@
 		</p>
 		<div class="author-link">
 			<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-				<?php printf( wp_kses( __( 'View all posts by %s <span class="meta-nav">&rarr;</span>', 'prism' ), array( 
+				<?php printf( wp_kses( __( 'View all posts by %s <span class="meta-nav">&rarr;</span>', 'tress' ), array( 
 					'span' => array( 
 						'class' => array() ) 
 				) ), get_the_author() ); ?>

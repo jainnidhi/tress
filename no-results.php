@@ -4,32 +4,32 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package Prism
- * @since Prism 1.0
+ * @package Tress
+ * @since Tress 1.0
  */
 ?>
 
 <article id="post-0" class="post no-results not-found">
 	<header class="entry-header">
-		<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'prism' ); ?></h1>
+		<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'tress' ); ?></h1>
 	</header><!-- /.entry-header -->
 
 	<div class="entry-content">
 		<?php if ( is_home() && current_user_can( 'edit_posts' ) ) { ?>
 
-			<p><?php printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'prism' ), array( 
+			<p><?php printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'tress' ), array( 
 				'a' => array( 
 					'href' => array() )
 				) ), admin_url( 'post-new.php' ) ); ?></p>
 
 		<?php } elseif ( is_search() ) { ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'prism' ); ?></p>
+			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'tress' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php } else { ?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'prism' ); ?></p>
+			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'tress' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php } ?>

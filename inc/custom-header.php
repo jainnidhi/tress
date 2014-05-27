@@ -1,25 +1,25 @@
 <?php
 /**
- * Implement an optional custom header for Prism
+ * Implement an optional custom header for Tress
  *
  * See http://codex.wordpress.org/Custom_Headers
  *
  * @package WordPress
  * @subpackage Twenty_Twelve
- * @since Prism 1.0
+ * @since Tress 1.0
  */
 
 /**
  * Set up the WordPress core custom header arguments and settings.
  *
  * @uses add_theme_support() to register support for 3.4 and up.
- * @uses prism_header_style() to style front-end.
- * @uses prism_admin_header_style() to style wp-admin form.
- * @uses prism_admin_header_image() to add custom markup to wp-admin form.
+ * @uses tress_header_style() to style front-end.
+ * @uses tress_admin_header_style() to style wp-admin form.
+ * @uses tress_admin_header_image() to add custom markup to wp-admin form.
  *
- * @since Prism 1.0
+ * @since Tress 1.0
  */
-function prism_custom_header_setup() {
+function tress_custom_header_setup() {
 	$args = array(
 		// Text color and image (empty to use none).
 		'default-text-color'     => '000',
@@ -29,31 +29,31 @@ function prism_custom_header_setup() {
 		'height'                 => 100,
 		'width'                  => 360,
 
-		// Support Prismible height and width.
-		'prism-height'            => true,
-		'prism-width'             => true,
+		// Support Tressible height and width.
+		'tress-height'            => true,
+		'tress-width'             => true,
 
 		// Random image rotation off by default.
 		'random-default'         => false,
 
 		// Callbacks for styling the header and the admin preview.
-		'wp-head-callback'       => 'prism_header_style',
-		'admin-head-callback'    => 'prism_admin_header_style',
-		'admin-preview-callback' => 'prism_admin_header_image',
+		'wp-head-callback'       => 'tress_header_style',
+		'admin-head-callback'    => 'tress_admin_header_style',
+		'admin-preview-callback' => 'tress_admin_header_image',
 	);
 
 	add_theme_support( 'custom-header', $args );
 }
-add_action( 'after_setup_theme', 'prism_custom_header_setup' );
+add_action( 'after_setup_theme', 'tress_custom_header_setup' );
 
 /**
  * Style the header text displayed on the blog.
  *
  * get_header_textcolor() options: 515151 is default, hide text (returns 'blank'), or any hex value.
  *
- * @since Prism 1.0
+ * @since Tress 1.0
  */
-function prism_header_style() {
+function tress_header_style() {
 	$text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -89,9 +89,9 @@ function prism_header_style() {
 /**
  * Style the header image displayed on the Appearance > Header admin panel.
  *
- * @since Prism 1.0
+ * @since Tress 1.0
  */
-function prism_admin_header_style() {
+function tress_admin_header_style() {
 ?>
 	<style type="text/css" id="twentytwelve-admin-header-css">
 	.appearance_page_custom-header #headimg {
@@ -131,9 +131,9 @@ function prism_admin_header_style() {
  *
  * This callback overrides the default markup displayed there.
  *
- * @since Prism 1.0
+ * @since Tress 1.0
  */
-function prism_admin_header_image() {
+function tress_admin_header_image() {
 	?>
 	<div id="headimg">
 		<?php

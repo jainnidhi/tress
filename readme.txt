@@ -1,4 +1,4 @@
-=== Prism ===
+=== Tress ===
 Contributors: Puneet Sahalot, Nidhi Jain
 Author URI: http://ideaboxthemes.com
 Tags: black, gray, blue, orange, red, pink, purple, brown, green, dark, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
@@ -8,12 +8,12 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Prism is a beautiful, easy to use, mobile responsive, one page, multipurpose theme with WooCommerce support. You can either use it as a one page theme or a standard theme. It comes with unique one click installation and live cusotmization features which makes it easy to use and setup for all kind of users. Multiple color schemes and beautiful typography make it a perfect fit for all kind of websites. 
+Tress is a beautiful, easy to use, mobile responsive, one page, multipurpose theme with WooCommerce support. You can either use it as a one page theme or a standard theme. It comes with unique one click installation and live cusotmization features which makes it easy to use and setup for all kind of users. Multiple color schemes and beautiful typography make it a perfect fit for all kind of websites. 
 
 
 == Description ==
 
-Prism is a beautiful, easy to use, mobile responsive, one page, multipurpose theme. 
+Tress is a beautiful, easy to use, mobile responsive, one page, multipurpose theme. 
 You can either use it as a one page theme or a standard theme. 
 It comes with unique one click installation and live cusotmization features which makes it easy to use and setup for all kind of users. 
 Multiple color schemes and beautiful typography will make it a perfect fit for all kind of websites. 
@@ -31,7 +31,7 @@ your standard post.
 
 Widgets
 
-Widgets are a great way of adding extra content to your site and Prism has a whole assortment of them.
+Widgets are a great way of adding extra content to your site and Tress has a whole assortment of them.
 
 The Footer Widget areas are dynamic! You can use up to four of these and they'll magically space themselves out evenly. For example, if you only add 
 widgets into the Footer #1 Widget Area, then it will expand the full width of the page. However, if you add widgets to all four Footer Widget Areas, 
@@ -71,14 +71,14 @@ There are three ways to install your theme. It can be installed by manually uplo
 it can be installed by downloading from the WordPress Theme Directory within the Dashboard or it can be installed by uploading the theme zip
 file that you downloaded.
 
-Use the following instructions to install & activate Prism using your preferred method.
+Use the following instructions to install & activate Tress using your preferred method.
 
 Manual installation:
 
-1. Unzip the files from the Prism zip file that you downloaded
-2. Upload the Prism folder to your /wp-content/themes/ directory
+1. Unzip the files from the Tress zip file that you downloaded
+2. Upload the Tress folder to your /wp-content/themes/ directory
 3. Click on the Appearance > Themes menu option in the WordPress Dashboard
-4. Click the Activate link below the Prism preview thumbnail
+4. Click the Activate link below the Tress preview thumbnail
 
 Install by uploading the theme zip file:
 
@@ -98,7 +98,7 @@ You can add your content with live preview, make changes and much more.
 
 == License ==
 
-Prism is licensed under the [GNU General Public License version 2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+Tress is licensed under the [GNU General Public License version 2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the
 Free Software Foundation; either version 2 of the License, or (at your option) any later version.
@@ -106,7 +106,7 @@ Free Software Foundation; either version 2 of the License, or (at your option) a
 
 == Credits ==
 
-Prism utilises the following awesomeness:
+Tress utilises the following awesomeness:
 
 [Modernizr](http://modernizr.com), which is licensed under the MIT license
 [Normalize.css](https://github.com/necolas/normalize.css), which is licensed under the MIT license

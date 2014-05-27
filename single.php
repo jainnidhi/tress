@@ -2,8 +2,8 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package Prism
- * @since Prism 1.0
+ * @package Tress
+ * @since Tress 1.0
  */
 
 get_header(); ?>
@@ -27,7 +27,7 @@ get_header(); ?>
 					}
 					?>
 
-					<?php prism_content_nav( 'nav-below' ); ?>
+					<?php tress_content_nav( 'nav-below' ); ?>
 
 				<?php endwhile; // end of the loop. ?>
                                 

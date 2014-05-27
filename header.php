@@ -6,8 +6,8 @@ global $edd_options;
  *
  * Displays all of the <head> section and everything up till <div id="maincontentcontainer">
  *
- * @package Prism
- * @since Prism 1.0
+ * @package Tress
+ * @since Tress 1.0
  */
 ?>
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
@@ -49,13 +49,13 @@ global $edd_options;
                                 <?php if ( get_theme_mod('notification_text') !='' ) {  ?>
                                 <p><?php echo esc_html(get_theme_mod('notification_text')); ?></p>
                                <?php } else { ?>
-                              <p><?php esc_html_e('This is the notification text block.', 'prism') ?> </p>
+                              <p><?php esc_html_e('This is the notification text block.', 'tress') ?> </p>
                                  <?php } ?>
                         </div>
                         <div class="col grid_6_of_12 notification-link last">
                             <a class="read-more" href="<?php if ( get_theme_mod('notification_link_url') !='' ) { echo esc_url(get_theme_mod('notification_link_url')); } ?>">
                            <?php if ( get_theme_mod('notification_link_text') !='' ) {  ?><?php echo esc_html(get_theme_mod('notification_link_text')); ?>
-                             <?php } else {  ?> <?php esc_html_e('Read More', 'prism') ?>
+                             <?php } else {  ?> <?php esc_html_e('Read More', 'tress') ?>
                            <?php } ?></a>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ global $edd_options;
             
             <div id="wrapper" class="hfeed site">
 
-                <div class="visuallyhidden skip-link"><a href="#primary" title="<?php esc_attr_e('Skip to main content', 'prism'); ?>"><?php esc_html_e('Skip to main content', 'prism'); ?></a></div>
+                <div class="visuallyhidden skip-link"><a href="#primary" title="<?php esc_attr_e('Skip to main content', 'tress'); ?>"><?php esc_html_e('Skip to main content', 'tress'); ?></a></div>
          
                 <div class="social-wrapper">
                    
@@ -91,7 +91,7 @@ global $edd_options;
                                     <?php if (get_theme_mod('header_contact') != '') { ?>
                                         <p><?php echo esc_html(get_theme_mod('header_contact')); ?></p>
                                     <?php } else { ?>
-                                        <p><?php esc_html_e('Call us on  24x7: 800-555-0101', 'prism') ?> </p>
+                                        <p><?php esc_html_e('Call us on  24x7: 800-555-0101', 'tress') ?> </p>
                                     <?php } ?>
                                
                              </div><!-- /.header-extras -->
@@ -99,22 +99,22 @@ global $edd_options;
                             <div class="social-links">
                                 <ul id="header-social-links">
                                     <?php if (get_theme_mod('facebook_link_url')) { ?>
-                                        <li class="prism-fb"><a href="<?php echo esc_url(get_theme_mod('facebook_link_url')); ?>"></a></li>
+                                        <li class="tress-fb"><a href="<?php echo esc_url(get_theme_mod('facebook_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if (get_theme_mod('twitter_link_url')) { ?>
-                                        <li class="prism-twitter"><a href="<?php echo esc_url(get_theme_mod('twitter_link_url')); ?>"></a></li>
+                                        <li class="tress-twitter"><a href="<?php echo esc_url(get_theme_mod('twitter_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if (get_theme_mod('googleplus_link_url')) { ?>
-                                        <li class="prism-gplus"><a href="<?php echo esc_url(get_theme_mod('googleplus_link_url')); ?>"></a></li>
+                                        <li class="tress-gplus"><a href="<?php echo esc_url(get_theme_mod('googleplus_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if (get_theme_mod('pinterest_link_url')) { ?>
-                                        <li class="prism-pinterest"><a href="<?php echo esc_url(get_theme_mod('pinterest_link_url')); ?>"></a></li>
+                                        <li class="tress-pinterest"><a href="<?php echo esc_url(get_theme_mod('pinterest_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if (get_theme_mod('github_link_url')) { ?>
-                                        <li class="prism-github"><a href="<?php echo esc_url(get_theme_mod('github_link_url')); ?>"></a></li>
+                                        <li class="tress-github"><a href="<?php echo esc_url(get_theme_mod('github_link_url')); ?>"></a></li>
                                     <?php } ?>
                                     <?php if (get_theme_mod('youtube_link_url')) { ?>
-                                        <li class="prism-youtube"><a href="<?php echo esc_url(get_theme_mod('youtube_link_url')); ?>"></a></li>
+                                        <li class="tress-youtube"><a href="<?php echo esc_url(get_theme_mod('youtube_link_url')); ?>"></a></li>
                                     <?php } ?>
                                 </ul>
                             </div>
@@ -122,7 +122,7 @@ global $edd_options;
                     </header> <!-- /#masthead.site-header.row -->
                     <div class="nav-container">
                         <nav id="site-navigation" class="main-navigation clearfix" role="navigation">
-                                 <?php if(!is_front_page() || get_theme_mod('prism_one_page_nav_check')) {
+                                 <?php if(!is_front_page() || get_theme_mod('tress_one_page_nav_check')) {
                                   wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'primary-menu', 'container_class' => 'menu')); 
                                  }
                                  else { ?>
@@ -130,17 +130,17 @@ global $edd_options;
                                         <ul class="home-navigation">
                                             <li id="m1" class="page_item"><a class="scrollSmint" href="#main-slider" id="social-wrapper">Home</a></li>
                                             <li id="m2" class="page_item"><a class="scrollSmint" href="#featured-title" id="home-featured-title-area"><?php if ( get_theme_mod('home_menu_title') !='' ) {  ?><?php echo esc_html(get_theme_mod('home_menu_title')); ?>
-                                                                <?php } else {  ?> <?php esc_html_e('Theme Features', 'prism') ?>
+                                                                <?php } else {  ?> <?php esc_html_e('Theme Features', 'tress') ?>
                                                                                                     <?php } ?></a></li>
-                                            <li id="m3" class="page_item"><a class="scrollSmint" href="#post-title" id="home-post-title-area"><?php if ( get_theme_mod('prism_post_menu_title') !='' ) {  ?><?php echo esc_html(get_theme_mod('prism_post_menu_title')); ?>
-                                                                <?php } else {  ?> <?php esc_html_e('Recent Blogs', 'prism') ?>
+                                            <li id="m3" class="page_item"><a class="scrollSmint" href="#post-title" id="home-post-title-area"><?php if ( get_theme_mod('tress_post_menu_title') !='' ) {  ?><?php echo esc_html(get_theme_mod('tress_post_menu_title')); ?>
+                                                                <?php } else {  ?> <?php esc_html_e('Recent Blogs', 'tress') ?>
                                                                                                     <?php } ?></a></li>
                                             <li id="m4" class="page_item"><a class="scrollSmint" href="#feedback-title" id="client-feedback-area"><?php if ( get_theme_mod('feedback_menu_title') !='' ) {  ?><?php echo esc_html(get_theme_mod('feedback_menu_title')); ?>
-                                                                <?php } else {  ?> <?php esc_html_e('Client Feedbacks', 'prism') ?>
+                                                                <?php } else {  ?> <?php esc_html_e('Client Feedbacks', 'tress') ?>
                                                                                                     <?php } ?></a></li>
 
                                             <li id="m5" class="page_item"><a class="scrollSmint" href="#contact-title" id="home-contact-area"><?php if ( get_theme_mod('home_menu_contact_title') !='' ) {  ?><?php echo esc_html(get_theme_mod('home_menu_contact_title')); ?>
-                                                                <?php } else {  ?> <?php esc_html_e('Contact', 'prism') ?>
+                                                                <?php } else {  ?> <?php esc_html_e('Contact', 'tress') ?>
                                                                                                     <?php } ?></a></li>
                                         </ul>
                                     </div>

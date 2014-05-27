@@ -1,14 +1,14 @@
 /*
-Theme Name: Prism
-Theme URI: http://ideaboxthemes.com/themes/prism-wordpress-theme/
+Theme Name: Tress
+Theme URI: http://ideaboxthemes.com/themes/tress-wordpress-theme/
 Author: IdeaBox Themes
 Author URI: http://ideaboxthemes.com/
-Description: Prism is a beautiful, easy to use, mobile responsive, one page, multipurpose theme. You can either use it as a one page theme or a standard theme. It comes with unique one click installation and live cusotmization features which makes it easy to use and setup for all kind of users. Multiple color schemes and beautiful typography make it a perfect fit for all kind of websites. 
+Description: Tress is a beautiful, easy to use, mobile responsive, one page, multipurpose theme. You can either use it as a one page theme or a standard theme. It comes with unique one click installation and live cusotmization features which makes it easy to use and setup for all kind of users. Multiple color schemes and beautiful typography make it a perfect fit for all kind of websites. 
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, gray, dark, blue, red, pink, orange, green, brown, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
-Text Domain: Prism
+Text Domain: Tress
 */
 
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
@@ -572,6 +572,9 @@ select {
 
 .notification-bar{
     background:#42a2ce;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 
 .notification-wrap{
@@ -1056,7 +1059,7 @@ select {
 }
 
 
-.prism-front-page .site-content article {
+.tress-front-page .site-content article {
     margin-bottom: 0;
     margin-right: 0;
 }
@@ -2687,506 +2690,506 @@ img#wpstats {
 /* ==========================================================================
    Background Color Schemes
    ========================================================================== */
-.prism-bg-dark{
+.tress-bg-dark{
     background: url('assets/images/squares.png') transparent repeat;
 }
-.dark-prism-front-page,
-.dark-prism-front-page h1,
-.dark-prism-front-page h2,
-.dark-prism-front-page h3,
-.dark-prism-front-page h4,
-.dark-prism-front-page h5,
-.dark-prism-front-page h6 {
+.dark-tress-front-page,
+.dark-tress-front-page h1,
+.dark-tress-front-page h2,
+.dark-tress-front-page h3,
+.dark-tress-front-page h4,
+.dark-tress-front-page h5,
+.dark-tress-front-page h6 {
     color: #fff;
 }
 
-.prism-bg-light {
+.tress-bg-light {
     background: url('assets/images/cream_pixels.png') transparent repeat; 
 }
 
-.prism-bg-light .site-content {
+.tress-bg-light .site-content {
     border: solid 1px #eee; 
 }
 
 /* ==========================================================================
    Color Schemes
    ========================================================================== */
-/* ! Prism red	*/
-.prism-red .cta-button,
-.prism-red .feature-more-link,
-.prism-red #footercontainer,
-.prism-red .pagination .page-numbers:hover,
-.prism-red li span.current,
-.prism-red li a:hover.page-numbers,
-.prism-red button:hover,
-.prism-red input:hover[type="button"],
-.prism-red input:hover[type="reset"],
-.prism-red .entry-content .button:hover,
-.prism-red .main-navigation ul ul,
-.prism-red .page-links .page-numbers:hover,
-.prism-red .flex-caption .slider-button,
-.prism-red .home-featured .read-more,
-.prism-red .home-featured-title-area,
-.prism-red .client-feedback-area,
-.prism-red .home-contact-area,
-.prism-red .home-post-title-area
+/* ! Tress red	*/
+.tress-red .cta-button,
+.tress-red .feature-more-link,
+.tress-red #footercontainer,
+.tress-red .pagination .page-numbers:hover,
+.tress-red li span.current,
+.tress-red li a:hover.page-numbers,
+.tress-red button:hover,
+.tress-red input:hover[type="button"],
+.tress-red input:hover[type="reset"],
+.tress-red .entry-content .button:hover,
+.tress-red .main-navigation ul ul,
+.tress-red .page-links .page-numbers:hover,
+.tress-red .flex-caption .slider-button,
+.tress-red .home-featured .read-more,
+.tress-red .home-featured-title-area,
+.tress-red .client-feedback-area,
+.tress-red .home-contact-area,
+.tress-red .home-post-title-area
 {
     background: #e55252;
 }
 
-.prism-red ::selection
+.tress-red ::selection
 {
     background:#e55252 !important;
     color:#fff;
 }
 
-.prism-red .home-featured img{
+.tress-red .home-featured img{
     border:4px solid #e55252;
 }
 
-.prism-red #reviewslider .slides img{
+.tress-red #reviewslider .slides img{
     border:3px solid #e55252;
 }
 
-.prism-red .main-navigation ul ul a
+.tress-red .main-navigation ul ul a
 {
     color:#fff;
 }
-.prism-red .site-title a,
-.prism-red .home-featured-post-title,
-.prism-red .sidebar a,
-.prism-red .entry-header .entry-title a,
-.prism-red .entry-header .entry-title,
-.prism-red .entry-header h1 a:visited,
-.prism-red .more-link,
-.prism-red label .required,
-.prism-red span.required,
-.prism-red .header-meta .fa,
-.prism-red .header-meta a:hover,
-.prism-red .nav-previous a:hover,
-.prism-red .nav-next a:hover,
-.prism-red .contact-details .fa,
-.prism-red .contact-details #address:before,
-.prism-red .contact-details #phone:before,
-.prism-red .contact-details #email:before
+.tress-red .site-title a,
+.tress-red .home-featured-post-title,
+.tress-red .sidebar a,
+.tress-red .entry-header .entry-title a,
+.tress-red .entry-header .entry-title,
+.tress-red .entry-header h1 a:visited,
+.tress-red .more-link,
+.tress-red label .required,
+.tress-red span.required,
+.tress-red .header-meta .fa,
+.tress-red .header-meta a:hover,
+.tress-red .nav-previous a:hover,
+.tress-red .nav-next a:hover,
+.tress-red .contact-details .fa,
+.tress-red .contact-details #address:before,
+.tress-red .contact-details #phone:before,
+.tress-red .contact-details #email:before
 {
     color:#e55252;
 }
 
-.prism-red .entry-header h1 a:hover{
+.tress-red .entry-header h1 a:hover{
     color:#111;
 }
 
-/* ! Prism green	*/
-.prism-green .cta-button,
-.prism-green .feature-more-link,
-.prism-green #footercontainer,
-.prism-green .pagination .page-numbers:hover,
-.prism-green li span.current,
-.prism-green li a:hover.page-numbers,
-.prism-green button:hover,
-.prism-green input:hover[type="button"],
-.prism-green input:hover[type="reset"],
-.prism-green input:hover[type="submit"],
-.prism-green .entry-content .button:hover,
-.prism-green .main-navigation ul ul,
-.prism-green .page-links .page-numbers:hover,
-.prism-green .flex-caption .slider-button,
-.prism-green .home-featured .read-more,
-.prism-green .home-featured-title-area,
-.prism-green .client-feedback-area,
-.prism-green .home-contact-area,
-.prism-green .home-post-title-area
+/* ! Tress green	*/
+.tress-green .cta-button,
+.tress-green .feature-more-link,
+.tress-green #footercontainer,
+.tress-green .pagination .page-numbers:hover,
+.tress-green li span.current,
+.tress-green li a:hover.page-numbers,
+.tress-green button:hover,
+.tress-green input:hover[type="button"],
+.tress-green input:hover[type="reset"],
+.tress-green input:hover[type="submit"],
+.tress-green .entry-content .button:hover,
+.tress-green .main-navigation ul ul,
+.tress-green .page-links .page-numbers:hover,
+.tress-green .flex-caption .slider-button,
+.tress-green .home-featured .read-more,
+.tress-green .home-featured-title-area,
+.tress-green .client-feedback-area,
+.tress-green .home-contact-area,
+.tress-green .home-post-title-area
 {
     background: #3bb59c;
 }
 
-.prism-green .main-navigation ul ul a
+.tress-green .main-navigation ul ul a
 {
     color:#fff;
 }
 
-.prism-green ::selection
+.tress-green ::selection
 {
     background:#3bb59c;
     color:#fff;
 }
 
-.prism-green .home-featured img{
+.tress-green .home-featured img{
     border:4px solid #3bb59c;
 }
 
-.prism-green #reviewslider .slides img{
+.tress-green #reviewslider .slides img{
     border:3px solid #3bb59c;
 }
 
-.prism-green .site-title a,
-.prism-green .home-featured-post-title,
-.prism-green .sidebar a,
-.prism-green .entry-header .entry-title a,
-.prism-green .entry-header .entry-title,
-.prism-green .entry-header h1 a:visited,
-.prism-green .more-link,
-.prism-green label .required,
-.prism-green span.required,
-.prism-green .header-meta .fa,
-.prism-green .header-meta a:hover,
-.prism-green .nav-previous a:hover,
-.prism-green .nav-next a:hover,
-.prism-green .contact-details .fa,
-.prism-green .contact-details #address:before,
-.prism-green .contact-details #phone:before,
-.prism-green .contact-details #email:before
+.tress-green .site-title a,
+.tress-green .home-featured-post-title,
+.tress-green .sidebar a,
+.tress-green .entry-header .entry-title a,
+.tress-green .entry-header .entry-title,
+.tress-green .entry-header h1 a:visited,
+.tress-green .more-link,
+.tress-green label .required,
+.tress-green span.required,
+.tress-green .header-meta .fa,
+.tress-green .header-meta a:hover,
+.tress-green .nav-previous a:hover,
+.tress-green .nav-next a:hover,
+.tress-green .contact-details .fa,
+.tress-green .contact-details #address:before,
+.tress-green .contact-details #phone:before,
+.tress-green .contact-details #email:before
 {
     color:#3bb59c;
 }
 
-.prism-green .entry-header h1 a:hover{
+.tress-green .entry-header h1 a:hover{
     color:#111;
 }
 
-/* ! Prism pink	*/
-.prism-pink .cta-button,
-.prism-pink .feature-more-link,
-.prism-pink #footercontainer,
-.prism-pink .pagination .page-numbers:hover,
-.prism-pink li span.current,
-.prism-pink li a:hover.page-numbers,
-.prism-pink button:hover,
-.prism-pink input:hover[type="button"],
-.prism-pink input:hover[type="reset"],
-.prism-pink input:hover[type="submit"],
-.prism-pink .entry-content .button:hover,
-.prism-pink .main-navigation ul ul,
-.prism-pink .page-links .page-numbers:hover,
-.prism-pink .flex-caption .slider-button,
-.prism-pink .home-featured .read-more,
-.prism-pink .home-featured-title-area,
-.prism-pink .client-feedback-area,
-.prism-pink .home-contact-area,
-.prism-pink .home-post-title-area{
+/* ! Tress pink	*/
+.tress-pink .cta-button,
+.tress-pink .feature-more-link,
+.tress-pink #footercontainer,
+.tress-pink .pagination .page-numbers:hover,
+.tress-pink li span.current,
+.tress-pink li a:hover.page-numbers,
+.tress-pink button:hover,
+.tress-pink input:hover[type="button"],
+.tress-pink input:hover[type="reset"],
+.tress-pink input:hover[type="submit"],
+.tress-pink .entry-content .button:hover,
+.tress-pink .main-navigation ul ul,
+.tress-pink .page-links .page-numbers:hover,
+.tress-pink .flex-caption .slider-button,
+.tress-pink .home-featured .read-more,
+.tress-pink .home-featured-title-area,
+.tress-pink .client-feedback-area,
+.tress-pink .home-contact-area,
+.tress-pink .home-post-title-area{
     background: #ed409f;
 }
 
-.prism-pink .main-navigation ul ul a
+.tress-pink .main-navigation ul ul a
 {
     color:#fff;
 }
 
-.prism-pink ::selection
+.tress-pink ::selection
 {
     background:#ed409f;
     color:#fff;
 }
 
-.prism-pink .home-featured img{
+.tress-pink .home-featured img{
     border:4px solid #ed409f;
 }
 
-.prism-pink #reviewslider .slides img{
+.tress-pink #reviewslider .slides img{
     border:3px solid #ed409f;
 }
 
-.prism-pink .site-title a,
-.prism-pink .home-featured-post-title,
-.prism-pink .sidebar a,
-.prism-pink .entry-header .entry-title a,
-.prism-pink .entry-header .entry-title,
-.prism-pink .entry-header h1 a:visited,
-.prism-pink .more-link,
-.prism-pink label .required,
-.prism-pink span.required,
-.prism-pink .header-meta .fa,
-.prism-pink .header-meta a:hover,
-.prism-pink .nav-previous a:hover,
-.prism-pink .nav-next a:hover,
-.prism-pink .contact-details .fa,
-.prism-pink .contact-details #address:before,
-.prism-pink .contact-details #phone:before,
-.prism-pink .contact-details #email:before
+.tress-pink .site-title a,
+.tress-pink .home-featured-post-title,
+.tress-pink .sidebar a,
+.tress-pink .entry-header .entry-title a,
+.tress-pink .entry-header .entry-title,
+.tress-pink .entry-header h1 a:visited,
+.tress-pink .more-link,
+.tress-pink label .required,
+.tress-pink span.required,
+.tress-pink .header-meta .fa,
+.tress-pink .header-meta a:hover,
+.tress-pink .nav-previous a:hover,
+.tress-pink .nav-next a:hover,
+.tress-pink .contact-details .fa,
+.tress-pink .contact-details #address:before,
+.tress-pink .contact-details #phone:before,
+.tress-pink .contact-details #email:before
 {
     color:#ed409f;
 }
 
-.prism-pink .entry-header h1 a:hover{
+.tress-pink .entry-header h1 a:hover{
     color:#111;
 }
 
 
-/* ! Prism gray	*/
-.prism-gray .cta-button,
-.prism-gray .feature-more-link,
-.prism-gray #footercontainer,
-.prism-gray .pagination .page-numbers:hover,
-.prism-gray li span.current,
-.prism-gray li a:hover.page-numbers,
-.prism-gray button:hover,
-.prism-gray input:hover[type="button"],
-.prism-gray input:hover[type="reset"],
-.prism-gray input:hover[type="submit"],
-.prism-gray .entry-content .button:hover,
-.prism-gray .main-navigation ul ul,
-.prism-gray .page-links .page-numbers:hover,
-.prism-gray .flex-caption .slider-button,
-.prism-gray .home-featured .read-more,
-.prism-gray .home-featured-title-area,
-.prism-gray .client-feedback-area,
-.prism-gray .home-contact-area,
-.prism-gray .home-post-title-area
+/* ! Tress gray	*/
+.tress-gray .cta-button,
+.tress-gray .feature-more-link,
+.tress-gray #footercontainer,
+.tress-gray .pagination .page-numbers:hover,
+.tress-gray li span.current,
+.tress-gray li a:hover.page-numbers,
+.tress-gray button:hover,
+.tress-gray input:hover[type="button"],
+.tress-gray input:hover[type="reset"],
+.tress-gray input:hover[type="submit"],
+.tress-gray .entry-content .button:hover,
+.tress-gray .main-navigation ul ul,
+.tress-gray .page-links .page-numbers:hover,
+.tress-gray .flex-caption .slider-button,
+.tress-gray .home-featured .read-more,
+.tress-gray .home-featured-title-area,
+.tress-gray .client-feedback-area,
+.tress-gray .home-contact-area,
+.tress-gray .home-post-title-area
 {
     background: #8e8e8e;
 }
 
-.prism-gray .main-navigation ul ul a
+.tress-gray .main-navigation ul ul a
 {
     color:#fff;
 }
 
 
-.prism-gray ::selection
+.tress-gray ::selection
 {
     background:#8e8e8e;
     color:#fff;
 }
 
-.prism-gray .home-featured img{
+.tress-gray .home-featured img{
     border:4px solid #8e8e8e;
 }
 
-.prism-gray #reviewslider .slides img{
+.tress-gray #reviewslider .slides img{
     border:3px solid #8e8e8e;
 }
 
-.prism-gray .site-title a,
-.prism-gray .home-featured-post-title,
-.prism-gray .sidebar a,
-.prism-gray .entry-header .entry-title a,
-.prism-gray .entry-header .entry-title,
-.prism-gray .entry-header h1 a:visited,
-.prism-gray .more-link,
-.prism-gray label .required,
-.prism-gray span.required,
-.prism-gray .header-meta .fa,
-.prism-gray .header-meta a:hover,
-.prism-gray .nav-previous a:hover,
-.prism-gray .nav-next a:hover,
-.prism-gray .contact-details .fa,
-.prism-gray .contact-details #address:before,
-.prism-gray .contact-details #phone:before,
-.prism-gray .contact-details #email:before
+.tress-gray .site-title a,
+.tress-gray .home-featured-post-title,
+.tress-gray .sidebar a,
+.tress-gray .entry-header .entry-title a,
+.tress-gray .entry-header .entry-title,
+.tress-gray .entry-header h1 a:visited,
+.tress-gray .more-link,
+.tress-gray label .required,
+.tress-gray span.required,
+.tress-gray .header-meta .fa,
+.tress-gray .header-meta a:hover,
+.tress-gray .nav-previous a:hover,
+.tress-gray .nav-next a:hover,
+.tress-gray .contact-details .fa,
+.tress-gray .contact-details #address:before,
+.tress-gray .contact-details #phone:before,
+.tress-gray .contact-details #email:before
 {
     color:#8e8e8e;
 }
 
-.prism-gray .entry-header h1 a:hover{
+.tress-gray .entry-header h1 a:hover{
     color:#111;
 }
 
 
-/* ! Prism brown	*/
-.prism-brown .cta-button,
-.prism-brown .feature-more-link,
-.prism-brown #footercontainer,
-.prism-brown .pagination .page-numbers:hover,
-.prism-brown li span.current,
-.prism-brown li a:hover.page-numbers,
-.prism-brown button:hover,
-.prism-brown input:hover[type="button"],
-.prism-brown input:hover[type="reset"],
-.prism-brown input:hover[type="submit"],
-.prism-brown .entry-content .button:hover,
-.prism-brown .main-navigation ul ul,
-.prism-brown .page-links .page-numbers:hover,
-.prism-brown .flex-caption .slider-button,
-.prism-brown .home-featured .read-more,
-.prism-brown .home-featured-title-area,
-.prism-brown .client-feedback-area,
-.prism-brown .home-contact-area,
-.prism-brown .home-post-title-area
+/* ! Tress brown	*/
+.tress-brown .cta-button,
+.tress-brown .feature-more-link,
+.tress-brown #footercontainer,
+.tress-brown .pagination .page-numbers:hover,
+.tress-brown li span.current,
+.tress-brown li a:hover.page-numbers,
+.tress-brown button:hover,
+.tress-brown input:hover[type="button"],
+.tress-brown input:hover[type="reset"],
+.tress-brown input:hover[type="submit"],
+.tress-brown .entry-content .button:hover,
+.tress-brown .main-navigation ul ul,
+.tress-brown .page-links .page-numbers:hover,
+.tress-brown .flex-caption .slider-button,
+.tress-brown .home-featured .read-more,
+.tress-brown .home-featured-title-area,
+.tress-brown .client-feedback-area,
+.tress-brown .home-contact-area,
+.tress-brown .home-post-title-area
 {
     background: #875608;
 }
 
-.prism-brown .main-navigation ul ul a
+.tress-brown .main-navigation ul ul a
 {
     color:#fff;
 }
 
 
-.prism-brown ::selection
+.tress-brown ::selection
 {
     background:#875608;
     color:#fff;
 }
 
-.prism-brown .home-featured img{
+.tress-brown .home-featured img{
     border:4px solid #875608;
 }
 
-.prism-brown #reviewslider .slides img{
+.tress-brown #reviewslider .slides img{
     border:3px solid #875608;
 }
 
-.prism-brown .site-title a,
-.prism-brown .home-featured-post-title,
-.prism-brown .sidebar a,
-.prism-brown .entry-header .entry-title a,
-.prism-brown .entry-header .entry-title,
-.prism-brown .entry-header h1 a:visited,
-.prism-brown .more-link,
-.prism-brown label .required,
-.prism-brown span.required,
-.prism-brown .header-meta .fa,
-.prism-brown .header-meta a:hover,
-.prism-brown .nav-previous a:hover,
-.prism-brown .nav-next a:hover,
-.prism-brown .contact-details .fa,
-.prism-brown .contact-details #address:before,
-.prism-brown .contact-details #phone:before,
-.prism-brown .contact-details #email:before
+.tress-brown .site-title a,
+.tress-brown .home-featured-post-title,
+.tress-brown .sidebar a,
+.tress-brown .entry-header .entry-title a,
+.tress-brown .entry-header .entry-title,
+.tress-brown .entry-header h1 a:visited,
+.tress-brown .more-link,
+.tress-brown label .required,
+.tress-brown span.required,
+.tress-brown .header-meta .fa,
+.tress-brown .header-meta a:hover,
+.tress-brown .nav-previous a:hover,
+.tress-brown .nav-next a:hover,
+.tress-brown .contact-details .fa,
+.tress-brown .contact-details #address:before,
+.tress-brown .contact-details #phone:before,
+.tress-brown .contact-details #email:before
 {
     color:#875608;
 }
 
-.prism-brown .entry-header h1 a:hover{
+.tress-brown .entry-header h1 a:hover{
     color:#111;
 }
 
-/* ! Prism purple	*/
-.prism-purple .cta-button,
-.prism-purple .feature-more-link,
-.prism-purple #footercontainer,
-.prism-purple .pagination .page-numbers:hover,
-.prism-purple li span.current,
-.prism-purple li a:hover.page-numbers,
-.prism-purple button:hover,
-.prism-purple input:hover[type="button"],
-.prism-purple input:hover[type="reset"],
-.prism-purple input:hover[type="submit"],
-.prism-purple .entry-content .button:hover,
-.prism-purple .main-navigation ul ul,
-.prism-purple .page-links .page-numbers:hover,
-.prism-purple .flex-caption .slider-button,
-.prism-purple .home-featured .read-more,
-.prism-purple .home-featured-title-area,
-.prism-purple .client-feedback-area,
-.prism-purple .home-contact-area,
-.prism-purple .home-post-title-area
+/* ! Tress purple	*/
+.tress-purple .cta-button,
+.tress-purple .feature-more-link,
+.tress-purple #footercontainer,
+.tress-purple .pagination .page-numbers:hover,
+.tress-purple li span.current,
+.tress-purple li a:hover.page-numbers,
+.tress-purple button:hover,
+.tress-purple input:hover[type="button"],
+.tress-purple input:hover[type="reset"],
+.tress-purple input:hover[type="submit"],
+.tress-purple .entry-content .button:hover,
+.tress-purple .main-navigation ul ul,
+.tress-purple .page-links .page-numbers:hover,
+.tress-purple .flex-caption .slider-button,
+.tress-purple .home-featured .read-more,
+.tress-purple .home-featured-title-area,
+.tress-purple .client-feedback-area,
+.tress-purple .home-contact-area,
+.tress-purple .home-post-title-area
 {
     background: #a678d3;
 }
 
 
-.prism-purple .main-navigation ul ul a
+.tress-purple .main-navigation ul ul a
 {
     color:#fff;
 }
 
-.prism-purple ::selection
+.tress-purple ::selection
 {
     background:#a678d3;
     color:#fff;
 }
 
-.prism-purple .home-featured img{
+.tress-purple .home-featured img{
     border:4px solid #a678d3;
 }
 
-.prism-purple #reviewslider .slides img{
+.tress-purple #reviewslider .slides img{
     border:3px solid #a678d3;
 }
 
-.prism-purple .site-title a,
-.prism-purple .home-featured-post-title,
-.prism-purple .sidebar a,
-.prism-purple .entry-header .entry-title a,
-.prism-purple .entry-header .entry-title,
-.prism-purple .entry-header h1 a:visited,
-.prism-purple .more-link,
-.prism-purple label .required,
-.prism-purple span.required,
-.prism-purple .header-meta .fa,
-.prism-purple .header-meta a:hover,
-.prism-purple .nav-previous a:hover,
-.prism-purple .nav-next a:hover,
-.prism-purple .contact-details .fa,
-.prism-purple .contact-details #address:before,
-.prism-purple .contact-details #phone:before,
-.prism-purple .contact-details #email:before
+.tress-purple .site-title a,
+.tress-purple .home-featured-post-title,
+.tress-purple .sidebar a,
+.tress-purple .entry-header .entry-title a,
+.tress-purple .entry-header .entry-title,
+.tress-purple .entry-header h1 a:visited,
+.tress-purple .more-link,
+.tress-purple label .required,
+.tress-purple span.required,
+.tress-purple .header-meta .fa,
+.tress-purple .header-meta a:hover,
+.tress-purple .nav-previous a:hover,
+.tress-purple .nav-next a:hover,
+.tress-purple .contact-details .fa,
+.tress-purple .contact-details #address:before,
+.tress-purple .contact-details #phone:before,
+.tress-purple .contact-details #email:before
 {
     color:#a678d3;
 }
 
-.prism-purple .entry-header h1 a:hover{
+.tress-purple .entry-header h1 a:hover{
     color:#111;
 }
 
-/* ! Prism Orange */
-.prism-orange .cta-button,
-.prism-orange .feature-more-link,
-.prism-orange #footercontainer,
-.prism-orange .pagination .page-numbers:hover,
-.prism-orange li span.current,
-.prism-orange li a:hover.page-numbers,
-.prism-orange button:hover,
-.prism-orange input:hover[type="button"],
-.prism-orange input:hover[type="reset"],
-.prism-orange input:hover[type="submit"],
-.prism-orange .entry-content .button:hover,
-.prism-orange .main-navigation ul ul,
-.prism-orange .page-links .page-numbers:hover,
-.prism-orange .flex-caption .slider-button,
-.prism-orange .home-featured .read-more,
-.prism-orange .home-featured-title-area,
-.prism-orange .client-feedback-area,
-.prism-orange .home-contact-area,
-.prism-orange .home-post-title-area
+/* ! Tress Orange */
+.tress-orange .cta-button,
+.tress-orange .feature-more-link,
+.tress-orange #footercontainer,
+.tress-orange .pagination .page-numbers:hover,
+.tress-orange li span.current,
+.tress-orange li a:hover.page-numbers,
+.tress-orange button:hover,
+.tress-orange input:hover[type="button"],
+.tress-orange input:hover[type="reset"],
+.tress-orange input:hover[type="submit"],
+.tress-orange .entry-content .button:hover,
+.tress-orange .main-navigation ul ul,
+.tress-orange .page-links .page-numbers:hover,
+.tress-orange .flex-caption .slider-button,
+.tress-orange .home-featured .read-more,
+.tress-orange .home-featured-title-area,
+.tress-orange .client-feedback-area,
+.tress-orange .home-contact-area,
+.tress-orange .home-post-title-area
 {
     background: #fa7f53;
 }
 
-.prism-orange .main-navigation ul ul a
+.tress-orange .main-navigation ul ul a
 {
     color:#fff;
 }
 
-.prism-orange ::selection
+.tress-orange ::selection
 {
     background:#fa7f53;
     color:#fff;
 }
 
-.prism-orange .home-featured img{
+.tress-orange .home-featured img{
     border:4px solid #fa7f53;
 }
 
-.prism-orange #reviewslider .slides img{
+.tress-orange #reviewslider .slides img{
     border:3px solid #fa7f53;
 }
 
-.prism-orange .site-title a,
-.prism-orange .home-featured-post-title,
-.prism-orange .sidebar a,
-.prism-orange .entry-header .entry-title a,
-.prism-orange .entry-header .entry-title,
-.prism-orange .entry-header h1 a:visited,
-.prism-orange .more-link,
-.prism-orange label .required,
-.prism-orange span.required,
-.prism-orange .header-meta .fa,
-.prism-orange .header-meta a:hover,
-.prism-orange .nav-previous a:hover,
-.prism-orange .nav-next a:hover,
-.prism-orange .contact-details .fa,
-.prism-orange .contact-details #address:before,
-.prism-orange .contact-details #phone:before,
-.prism-orange .contact-details #email:before
+.tress-orange .site-title a,
+.tress-orange .home-featured-post-title,
+.tress-orange .sidebar a,
+.tress-orange .entry-header .entry-title a,
+.tress-orange .entry-header .entry-title,
+.tress-orange .entry-header h1 a:visited,
+.tress-orange .more-link,
+.tress-orange label .required,
+.tress-orange span.required,
+.tress-orange .header-meta .fa,
+.tress-orange .header-meta a:hover,
+.tress-orange .nav-previous a:hover,
+.tress-orange .nav-next a:hover,
+.tress-orange .contact-details .fa,
+.tress-orange .contact-details #address:before,
+.tress-orange .contact-details #phone:before,
+.tress-orange .contact-details #email:before
 
 {
     color:#fa7f53;
 }
 
-.prism-orange .entry-header h1 a:hover{
+.tress-orange .entry-header h1 a:hover{
     color:#111;
 }
 

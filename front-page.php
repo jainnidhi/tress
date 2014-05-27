@@ -12,8 +12,8 @@
  * The front page template also displays EDD featured products and featured posts 
  * depending on the settings from Theme Customizer 
  *
- * @package Prism
- * @since Prism 1.0
+ * @package Tress
+ * @since Tress 1.0
  */
 get_header();
 ?>
@@ -31,10 +31,10 @@ get_header();
                 <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slider1.jpg" alt=""/>
                 <div class="flex-caption">
                     <div class="slider-text-container">
-                     <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'prism') ?></a></h2>
-                          <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'prism') ?> </p>
+                     <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'tress') ?></a></h2>
+                          <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
                           <a class="slider-button" href="<?php if ( get_theme_mod('slider_one_link_url') !='' ) { echo esc_url(get_theme_mod('slider_one_link_url')); } ?>">
-                            <?php esc_html_e('Start Building Your Website Now', 'prism') ?>
+                            <?php esc_html_e('Start Building Your Website Now', 'tress') ?>
                         </a>
                     </div>
                 </div>
@@ -44,10 +44,10 @@ get_header();
                 <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slider2.jpg" alt=""/>
                 <div class="flex-caption">
                     <div class="slider-text-container">
-                     <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'prism') ?></a></h2>
-                          <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'prism') ?> </p>
+                     <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'tress') ?></a></h2>
+                          <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
                           <a class="slider-button" href="<?php if ( get_theme_mod('slider_two_link_url') !='' ) { echo esc_url(get_theme_mod('slider_two_link_url')); } ?>">
-                            <?php esc_html_e('Start Building Your Website Now', 'prism') ?>
+                            <?php esc_html_e('Start Building Your Website Now', 'tress') ?>
                         </a>
                     </div>
                  </div>
@@ -57,10 +57,10 @@ get_header();
                 <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slider2.jpg" alt=""/>
                 <div class="flex-caption">
                     <div class="slider-text-container">
-                     <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'prism') ?></a></h2>
-                          <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'prism') ?> </p>
+                     <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'tress') ?></a></h2>
+                          <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
                           <a class="slider-button" href="<?php if ( get_theme_mod('slider_three_link_url') !='' ) { echo esc_url(get_theme_mod('slider_three_link_url')); } ?>">
-                              <?php esc_html_e('Start Building Your Website Now', 'prism') ?>
+                              <?php esc_html_e('Start Building Your Website Now', 'tress') ?>
                         </a>
                     </div>
                  </div>
@@ -199,15 +199,15 @@ get_header();
             <div class="business-tagline">
                 <?php if ( get_theme_mod('tagline_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('tagline_title')); ?></h3>
 
-                  <?php } else {  ?> <h3><?php esc_html_e('Build Restaurant Website With Prism Multipurpose Theme', 'prism') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Build Restaurant Website With Tress Multipurpose Theme', 'tress') ?></h3>
                            <?php } ?>
 
                   <?php if ( get_theme_mod('tagline_description') !='' ) {  ?>
                   <p><?php echo esc_html(get_theme_mod('tagline_description')); ?></p>
                            <?php } else { ?>
-                          <p><?php esc_html_e('Creating your Restaurant & Food based website with Prism is completely easy.
+                          <p><?php esc_html_e('Creating your Restaurant & Food based website with Tress is completely easy.
                               You just need to perform few tweaks in the theme option panel and your website will be ready to use.
-                              Showcase all important features of your website on homepage.', 'prism') ?> </p>
+                              Showcase all important features of your website on homepage.', 'tress') ?> </p>
                                            <?php } ?>
             </div>
         </div><!-- end business tagline area -->
@@ -216,7 +216,7 @@ get_header();
         <div class="home-featured-title-area" id="featured-title">
             <div class="home-featured-title">
                  <?php if ( get_theme_mod('home_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_title')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Theme Features', 'prism') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Theme Features', 'tress') ?></h3>
                            <?php } ?>
             </div>
         </div>
@@ -231,19 +231,19 @@ get_header();
 
 
                            <?php if ( get_theme_mod('home_title_one') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_title_one')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Our Products', 'prism') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Our Products', 'tress') ?></h3>
                            <?php } ?>
 
                   <?php if ( get_theme_mod('home_description_one') !='' ) {  ?>
                   <p><?php echo esc_html(get_theme_mod('home_description_one')); ?></p>
                            <?php } else { ?>
-                          <p><?php esc_html_e('Showcase your best quality products on home page to grab visitor&rsquo;s attention.', 'prism') ?> </p>
+                          <p><?php esc_html_e('Showcase your best quality products on home page to grab visitor&rsquo;s attention.', 'tress') ?> </p>
                                            <?php } ?>
 
                       <a class="read-more" href="<?php if ( get_theme_mod('home_one_link_url') !='' ) { echo esc_url(get_theme_mod('home_one_link_url')); } ?>">
                            <?php if ( get_theme_mod('home_one_link_text') !='' ) {  ?><?php echo esc_html(get_theme_mod('home_one_link_text')); ?>
 
-                  <?php } else {  ?> <?php esc_html_e('Read More', 'prism') ?>
+                  <?php } else {  ?> <?php esc_html_e('Read More', 'tress') ?>
                            <?php } ?></a>
                 </div>
 
@@ -256,19 +256,19 @@ get_header();
 
 
                            <?php if ( get_theme_mod('home_title_two') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_title_two')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Our Services', 'prism') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Our Services', 'tress') ?></h3>
                            <?php } ?>
 
                   <?php if ( get_theme_mod('home_description_two') !='' ) {  ?>
                   <p><?php echo esc_html(get_theme_mod('home_description_two')); ?></p>
                            <?php } else { ?>
-                          <p><?php esc_html_e('Show your multiple services that will explore your website among the audience.', 'prism') ?> </p>
+                          <p><?php esc_html_e('Show your multiple services that will explore your website among the audience.', 'tress') ?> </p>
                                            <?php } ?>
 
                       <a class="read-more" href="<?php if ( get_theme_mod('home_two_link_url') !='' ) { echo esc_url(get_theme_mod('home_two_link_url')); } ?>">
                            <?php if ( get_theme_mod('home_two_link_text') !='' ) {  ?><?php echo esc_html(get_theme_mod('home_two_link_text')); ?>
 
-                  <?php } else {  ?> <?php esc_html_e('Read More', 'prism') ?>
+                  <?php } else {  ?> <?php esc_html_e('Read More', 'tress') ?>
                            <?php } ?></a>
                 </div>
 
@@ -282,19 +282,19 @@ get_header();
 
 
                            <?php if ( get_theme_mod('home_title_three') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_title_three')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Our Clients', 'prism') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Our Clients', 'tress') ?></h3>
                            <?php } ?>
 
                   <?php if ( get_theme_mod('home_description_three') !='' ) {  ?>
                   <p><?php echo esc_html(get_theme_mod('home_description_three')); ?></p>
                            <?php } else { ?>
-                          <p><?php esc_html_e('Show testimonials of your clients that will build the trust among the audience.', 'prism') ?> </p>
+                          <p><?php esc_html_e('Show testimonials of your clients that will build the trust among the audience.', 'tress') ?> </p>
                                            <?php } ?>
 
                       <a class="read-more" href="<?php if ( get_theme_mod('home_three_link_url') !='' ) { echo esc_url(get_theme_mod('home_three_link_url')); } ?>">
                            <?php if ( get_theme_mod('home_three_link_text') !='' ) {  ?><?php echo esc_html(get_theme_mod('home_three_link_text')); ?>
 
-                    <?php } else {  ?> <?php esc_html_e('Read More', 'prism') ?>
+                    <?php } else {  ?> <?php esc_html_e('Read More', 'tress') ?>
                            <?php } ?></a>
                 </div>
                 
@@ -307,19 +307,19 @@ get_header();
 
 
                            <?php if ( get_theme_mod('home_title_four') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_title_four')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Our Services', 'prism') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Our Services', 'tress') ?></h3>
                            <?php } ?>
 
                   <?php if ( get_theme_mod('home_description_four') !='' ) {  ?>
                   <p><?php echo esc_html(get_theme_mod('home_description_four')); ?></p>
                            <?php } else { ?>
-                          <p><?php esc_html_e('Show testimonials of your clients that will build the trust among the audience.', 'prism') ?> </p>
+                          <p><?php esc_html_e('Show testimonials of your clients that will build the trust among the audience.', 'tress') ?> </p>
                                            <?php } ?>
 
                       <a class="read-more" href="<?php if ( get_theme_mod('home_four_link_url') !='' ) { echo esc_url(get_theme_mod('home_four_link_url')); } ?>">
                            <?php if ( get_theme_mod('home_four_link_text') !='' ) {  ?><?php echo esc_html(get_theme_mod('home_four_link_text')); ?>
 
-                    <?php } else {  ?> <?php esc_html_e('Read More', 'prism') ?>
+                    <?php } else {  ?> <?php esc_html_e('Read More', 'tress') ?>
                            <?php } ?></a>
                 </div>
             </div>
@@ -328,7 +328,7 @@ get_header();
         <div class="client-feedback-area" id="feedback-title">
             <div class="client-feedback-title">
                  <?php if ( get_theme_mod('feedback_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('feedback_title')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Our Clients Feedback', 'prism') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Our Clients Feedback', 'tress') ?></h3>
                            <?php } ?>
             </div>
         </div>
@@ -340,21 +340,21 @@ get_header();
                         <li id="tslider1">
                         <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img1.jpg" alt=""/>
                         <div class="flex-caption">
-                          <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'prism') ?> </p>
+                          <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
                        </div>
                     </li>
                     
                     <li id="tslider2">
                         <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img2.jpg" alt=""/>
                         <div class="flex-caption">
-                               <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'prism') ?> </p>                  
+                               <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>                  
                          </div>
                     </li>
                     
                      <li id="tslider3">
                         <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img4.jpg" alt=""/>
                         <div class="flex-caption">
-                           <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'prism') ?> </p>
+                           <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
                          </div>
                     </li>
                     <?php } ?>
@@ -399,20 +399,20 @@ get_header();
         <div class="home-cta-area">
                 <div class="home-cta">
                      <?php if ( get_theme_mod('cta_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('cta_title')); ?></h3>
-                          <?php } else {  ?> <h3><?php esc_html_e('CTA Title', 'prism') ?></h3>
+                          <?php } else {  ?> <h3><?php esc_html_e('CTA Title', 'tress') ?></h3>
                                <?php } ?>
                     <div class="home-cta-one">
                         <?php if ( get_theme_mod('cta_text') !='' ) {  ?>
                         <p><?php echo esc_html(get_theme_mod('cta_text')); ?></p>
                            <?php } else { ?>
-                          <p><?php esc_html_e('We have really amazing products that you would be amazed to see.', 'prism') ?> </p>
+                          <p><?php esc_html_e('We have really amazing products that you would be amazed to see.', 'tress') ?> </p>
                                            <?php } ?>
                     </div>
                     <div class="home-cta-two">
                         <a class="cta-button" href="<?php if ( get_theme_mod('home_cta_link_url') !='' ) { echo esc_url(get_theme_mod('home_cta_link_url')); } ?>">
                            <?php if ( get_theme_mod('home_cta_link_text') !='' ) {  ?><?php echo esc_html(get_theme_mod('home_cta_link_text')); ?>
 
-                    <?php } else {  ?> <?php esc_html_e('Read More', 'prism') ?>
+                    <?php } else {  ?> <?php esc_html_e('Read More', 'tress') ?>
                            <?php } ?></a>
                     </div>
                 
@@ -427,7 +427,7 @@ get_header();
         <div class="home-contact-area" id="contact-title">
             <div class="home-contact-title">
                  <?php if ( get_theme_mod('home_contact_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_contact_title')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Contact', 'prism') ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Contact', 'tress') ?></h3>
                            <?php } ?>
             </div>
         </div>
@@ -439,13 +439,13 @@ get_header();
                     
                     <?php if ( get_theme_mod('contact_form_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('contact_form_title')); ?></h3>
 
-                            <?php } else {  ?> <h3><?php esc_html_e('Contact', 'prism') ?></h3>
+                            <?php } else {  ?> <h3><?php esc_html_e('Contact', 'tress') ?></h3>
                                      <?php } ?>
-                   <?php if ( get_theme_mod('prism_contact_form') !='' ) {  ?> 
-                    <?php echo do_shortcode(get_theme_mod('prism_contact_form')); ?>
+                   <?php if ( get_theme_mod('tress_contact_form') !='' ) {  ?> 
+                    <?php echo do_shortcode(get_theme_mod('tress_contact_form')); ?>
                    <?php } else { ?>
                    <?php 
-                   echo esc_html_e('You can add a contact form here using your favorite plugin. Simply add the shortcode for the form from Theme Customizer and it will be displayed here.', 'prism'); ?> 
+                   echo esc_html_e('You can add a contact form here using your favorite plugin. Simply add the shortcode for the form from Theme Customizer and it will be displayed here.', 'tress'); ?> 
                      <?php } ?>
                 </div>
                   
@@ -454,7 +454,7 @@ get_header();
                     <div class="contact-details">
                          <?php if ( get_theme_mod('contact_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('contact_title')); ?></h3>
 
-                            <?php } else {  ?> <h3><?php esc_html_e('Contact', 'prism') ?></h3>
+                            <?php } else {  ?> <h3><?php esc_html_e('Contact', 'tress') ?></h3>
                                      <?php } ?>
 
                             <?php if ( get_theme_mod('address_detail') !='' ) {  ?>
@@ -462,17 +462,17 @@ get_header();
                                      <?php } else { ?>
                                     <p id="address"><?php esc_html_e('205, Gitanjali Mansion,
                                                           Above ICICI Bank, Sector 11
-                                                          Udaipur, Rajasthan, India.', 'prism') ?> </p>
+                                                          Udaipur, Rajasthan, India.', 'tress') ?> </p>
                                             <?php } ?>
 
                                <?php if ( get_theme_mod('contact_email') !='' ) {  ?><p id="email"><?php echo esc_html(get_theme_mod('contact_email')); ?>
 
-                            <?php } else {  ?> <p id="email"><?php esc_html_e('hello@ideaboxcreations.com', 'prism') ?></p>
+                            <?php } else {  ?> <p id="email"><?php esc_html_e('hello@ideaboxcreations.com', 'tress') ?></p>
                                      <?php } ?>
 
                             <?php if ( get_theme_mod('contact_phone') !='' ) {  ?><p id="phone"><?php echo esc_html(get_theme_mod('contact_phone')); ?>
 
-                            <?php } else {  ?> <p id="phone"><?php esc_html_e('0294-678456', 'prism') ?></p>
+                            <?php } else {  ?> <p id="phone"><?php esc_html_e('0294-678456', 'tress') ?></p>
                                      <?php } ?>
                           
                     </div>

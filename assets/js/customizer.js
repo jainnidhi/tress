@@ -32,32 +32,32 @@
 	} );
         wp.customize( 'facebook_link_url', function( value ) {
 		value.bind( function( to ) {
-			$( '.prism-fb a' ).attr('href', to );
+			$( '.tress-fb a' ).attr('href', to );
 		} );
 	} );
        wp.customize( 'twitter_link_url', function( value ) {
 		value.bind( function( to ) {
-			$( '.social-links .prism-twitter a' ).attr('href', to );
+			$( '.social-links .tress-twitter a' ).attr('href', to );
 		} );
 	} );
         wp.customize( 'googleplus_link_url', function( value ) {
 		value.bind( function( to ) {
-			$( '.social-links .prism-gplus a' ).attr('href', to );
+			$( '.social-links .tress-gplus a' ).attr('href', to );
 		} );
 	} );
         wp.customize( 'pinterest_link_url', function( value ) {
 		value.bind( function( to ) {
-			$( '.social-links .prism-pinterest a' ).attr('href', to );
+			$( '.social-links .tress-pinterest a' ).attr('href', to );
 		} );
 	} );
         wp.customize( 'github_link_url', function( value ) {
 		value.bind( function( to ) {
-			$( '.social-links .prism-github a' ).attr('href', to );
+			$( '.social-links .tress-github a' ).attr('href', to );
 		} );
 	} );
         wp.customize( 'youtube_link_url', function( value ) {
 		value.bind( function( to ) {
-			$( '.social-links .prism-youtube a' ).attr('href', to );
+			$( '.social-links .tress-youtube a' ).attr('href', to );
 		} );
 	} );
         wp.customize( 'header_contact', function( value ) {
@@ -352,12 +352,12 @@
 		} );
 	} );
         
-         wp.customize( 'prism_post_title', function( value ) {
+         wp.customize( 'tress_post_title', function( value ) {
 		value.bind( function( to ) {
 			$( '.home-post-title h3' ).text( to );
 		} );
 	} );
-         wp.customize( 'prism_post_menu_title', function( value ) {
+         wp.customize( 'tress_post_menu_title', function( value ) {
 		value.bind( function( to ) {
 			$( '.home-navigation #m3 a' ).text( to );
 		} );
@@ -439,7 +439,7 @@
 			$( '.home-contact-form h3' ).text( to );
 		} );
 	} );  
-         wp.customize( 'prism_contact_form', function( value ) {
+         wp.customize( 'tress_contact_form', function( value ) {
 		value.bind( function( to ) {
 			$( '.home-contact-form' ).text( to );
 		} );
@@ -475,7 +475,7 @@
 		} );
 	} );
         
-         wp.customize( 'prism_footer_footer_text', function( value ) {
+         wp.customize( 'tress_footer_footer_text', function( value ) {
 		value.bind( function( to ) {
 			$( '.smallprint p' ).text( to );
 		} );

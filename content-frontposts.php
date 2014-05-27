@@ -2,17 +2,17 @@
 /**
  * The template for displaying featured posts on Front Page 
  *
- * @package Prism
- * @since Prism 1.0
+ * @package Tress
+ * @since Tress 1.0
  */
 ?>
 
 <?php
 // Start a new query for displaying featured posts on Front Page
 
-if (get_theme_mod('prism_front_featured_posts_check')) {
-    $featured_count = intval(get_theme_mod('prism_front_featured_posts_count'));
-    $var = get_theme_mod('prism_front_featured_posts_cat');
+if (get_theme_mod('tress_front_featured_posts_check')) {
+    $featured_count = intval(get_theme_mod('tress_front_featured_posts_count'));
+    $var = get_theme_mod('tress_front_featured_posts_cat');
 
     // if no category is selected then return 0 
     $featured_cat_id = max((int) $var, 0);
@@ -28,8 +28,8 @@ if (get_theme_mod('prism_front_featured_posts_check')) {
 
     <div class="home-post-title-area" id="post-title">
             <div class="home-post-title">
-                 <?php if ( get_theme_mod('prism_post_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('prism_post_title')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Recent Blogs', 'prism') ?></h3>
+                 <?php if ( get_theme_mod('tress_post_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('tress_post_title')); ?></h3>
+                  <?php } else {  ?> <h3><?php esc_html_e('Recent Blogs', 'tress') ?></h3>
                            <?php } ?>
             </div>
         </div>
@@ -60,7 +60,7 @@ if (get_theme_mod('prism_front_featured_posts_check')) {
                                 <h3 class="home-featured-post-title"><?php the_title(); ?></h3>
 
                             </a>
-                            <span class="post-meta"><small><?php the_time(esc_html('F jS, Y','prism')); ?> <!-- by <?php the_author() ?> --></small></span>
+                            <span class="post-meta"><small><?php the_time(esc_html('F jS, Y','tress')); ?> <!-- by <?php the_author() ?> --></small></span>
                             <?php the_excerpt(); ?>
 
                         </div><!--end .home-featured-post-->
@@ -71,8 +71,8 @@ if (get_theme_mod('prism_front_featured_posts_check')) {
 
                 <?php else : ?>
 
-                    <h2 class="center"><?php esc_html_e('Not Found', 'prism'); ?></h2>
-                    <p class="center"><?php esc_html_e('Sorry, but you are looking for something that is not here', 'prism'); ?></p>
+                    <h2 class="center"><?php esc_html_e('Not Found', 'tress'); ?></h2>
+                    <p class="center"><?php esc_html_e('Sorry, but you are looking for something that is not here', 'tress'); ?></p>
                     <?php get_search_form(); ?>
                 <?php endif; ?>
 

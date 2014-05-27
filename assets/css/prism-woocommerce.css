@@ -1648,218 +1648,218 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 /* ==========================================================================
    Color Schemes
    ========================================================================== */
-/* ! Prism red	*/
-.prism-red .woocommerce-page #respond input#submit:hover,
-.prism-red .woocommerce button.button.alt:hover,
-.prism-red .woocommerce ul.products li.product a,
-.prism-red .woocommerce-page a.button:hover,
-.prism-red .woocommerce input.button.alt:hover,
-.prism-red .woocommerce ul.products li.product .onsale,
-.prism-red .woocommerce #review_form #respond .form-submit input:hover,
-.prism-red .onsale,
-.prism-red ins,
-.prism-red input:hover[type="submit"],
-.prism-red .button:hover{
+/* ! Tress red	*/
+.tress-red .woocommerce-page #respond input#submit:hover,
+.tress-red .woocommerce button.button.alt:hover,
+.tress-red .woocommerce ul.products li.product a,
+.tress-red .woocommerce-page a.button:hover,
+.tress-red .woocommerce input.button.alt:hover,
+.tress-red .woocommerce ul.products li.product .onsale,
+.tress-red .woocommerce #review_form #respond .form-submit input:hover,
+.tress-red .onsale,
+.tress-red ins,
+.tress-red input:hover[type="submit"],
+.tress-red .button:hover{
     background:#e55252 !important;
 }
 
-.prism-red .woocommerce-message,
-.prism-red .woocommerce-info{
+.tress-red .woocommerce-message,
+.tress-red .woocommerce-info{
         border-top: 3px solid #e55252 !important;
 }
 
-.prism-red .star-rating span:before,
-.prism-red .woocommerce-message:before,
-.prism-red .woocommerce-info:before,
-.prism-red .site-header .cart-contents:after,
-.prism-red .fa-shopping-cart:before
+.tress-red .star-rating span:before,
+.tress-red .woocommerce-message:before,
+.tress-red .woocommerce-info:before,
+.tress-red .site-header .cart-contents:after,
+.tress-red .fa-shopping-cart:before
 {
 	color:#e55252;
 }
 
-/* ! Prism green */
+/* ! Tress green */
 
-.prism-green .woocommerce-page #respond input#submit:hover,
-.prism-green .woocommerce button.button.alt:hover,
-.prism-green .woocommerce ul.products li.product a,
-.prism-green .woocommerce-page a.button:hover,
-.prism-green .woocommerce input.button.alt:hover,
-.prism-green .woocommerce ul.products li.product .onsale,
-.prism-green .woocommerce #review_form #respond .form-submit input:hover,
-.prism-green .onsale,
-.prism-green ins,
-.prism-green input:hover[type="submit"],
-.prism-green .button:hover
+.tress-green .woocommerce-page #respond input#submit:hover,
+.tress-green .woocommerce button.button.alt:hover,
+.tress-green .woocommerce ul.products li.product a,
+.tress-green .woocommerce-page a.button:hover,
+.tress-green .woocommerce input.button.alt:hover,
+.tress-green .woocommerce ul.products li.product .onsale,
+.tress-green .woocommerce #review_form #respond .form-submit input:hover,
+.tress-green .onsale,
+.tress-green ins,
+.tress-green input:hover[type="submit"],
+.tress-green .button:hover
 	{
 	background: #3bb59c !important;
 	}
         
-.prism-green .woocommerce-message,
-.prism-green .woocommerce-info{
+.tress-green .woocommerce-message,
+.tress-green .woocommerce-info{
         border-top: 3px solid #3bb59c;
 }
 
-.prism-green .star-rating span:before,
-.prism-green .woocommerce-message:before,
-.prism-green .woocommerce-info:before,
-.prism-green .site-header .cart-contents:after,
-.prism-green .fa-shopping-cart:before
+.tress-green .star-rating span:before,
+.tress-green .woocommerce-message:before,
+.tress-green .woocommerce-info:before,
+.tress-green .site-header .cart-contents:after,
+.tress-green .fa-shopping-cart:before
 {
 	color:#3bb59c;
 }
 
-/* ! Prism pink	*/
+/* ! Tress pink	*/
 
-.prism-pink .woocommerce-page #respond input#submit:hover,
-.prism-pink .woocommerce button.button.alt:hover,
-.prism-pink .woocommerce ul.products li.product a,
-.prism-pink .woocommerce-page a.button:hover,
-.prism-pink .woocommerce input.button.alt:hover,
-.prism-pink .woocommerce ul.products li.product .onsale,
-.prism-pink .woocommerce #review_form #respond .form-submit input:hover,
-.prism-pink .onsale,
-.prism-pink ins,
-.prism-pink input:hover[type="submit"],
-.prism-pink .button:hover
+.tress-pink .woocommerce-page #respond input#submit:hover,
+.tress-pink .woocommerce button.button.alt:hover,
+.tress-pink .woocommerce ul.products li.product a,
+.tress-pink .woocommerce-page a.button:hover,
+.tress-pink .woocommerce input.button.alt:hover,
+.tress-pink .woocommerce ul.products li.product .onsale,
+.tress-pink .woocommerce #review_form #respond .form-submit input:hover,
+.tress-pink .onsale,
+.tress-pink ins,
+.tress-pink input:hover[type="submit"],
+.tress-pink .button:hover
 	{
 	background: #ed409f !important;
 	}
         
-.prism-pink  .woocommerce-message,
-.prism-pink  .woocommerce-info{
+.tress-pink  .woocommerce-message,
+.tress-pink  .woocommerce-info{
         border-top: 3px solid #ed409f;
 }
 
-.prism-pink .star-rating span:before,
-.prism-pink .woocommerce-message:before,
-.prism-pink .woocommerce-info:before,
-.prism-pink .site-header .cart-contents:after,
-.prism-pink .fa-shopping-cart:before
+.tress-pink .star-rating span:before,
+.tress-pink .woocommerce-message:before,
+.tress-pink .woocommerce-info:before,
+.tress-pink .site-header .cart-contents:after,
+.tress-pink .fa-shopping-cart:before
 {
 	color:#ed409f;
 }
 
-/* ! Prism gray	*/
+/* ! Tress gray	*/
 
-.prism-gray .woocommerce-page #respond input#submit:hover,
-.prism-gray .woocommerce button.button.alt:hover,
-.prism-gray .woocommerce ul.products li.product a,
-.prism-gray .woocommerce-page a.button:hover,
-.prism-gray .woocommerce input.button.alt:hover,
-.prism-gray .woocommerce ul.products li.product .onsale,
-.prism-gray .woocommerce #review_form #respond .form-submit input:hover,
-.prism-gray .onsale,
-.prism-gray ins,
-.prism-gray input:hover[type="submit"],
-.prism-gray .button:hover
+.tress-gray .woocommerce-page #respond input#submit:hover,
+.tress-gray .woocommerce button.button.alt:hover,
+.tress-gray .woocommerce ul.products li.product a,
+.tress-gray .woocommerce-page a.button:hover,
+.tress-gray .woocommerce input.button.alt:hover,
+.tress-gray .woocommerce ul.products li.product .onsale,
+.tress-gray .woocommerce #review_form #respond .form-submit input:hover,
+.tress-gray .onsale,
+.tress-gray ins,
+.tress-gray input:hover[type="submit"],
+.tress-gray .button:hover
 	{
 	background: #8e8e8e !important;
 	}
         
-.prism-gray .woocommerce-message,
-.prism-gray .woocommerce-info{
+.tress-gray .woocommerce-message,
+.tress-gray .woocommerce-info{
         border-top: 3px solid #8e8e8e !important;
 }
 
-.prism-gray .star-rating span:before,
-.prism-gray .woocommerce-message:before,
-.prism-gray .woocommerce-info:before,
-.prism-gray .site-header .cart-contents:after,
-.prism-gray .fa-shopping-cart:before
+.tress-gray .star-rating span:before,
+.tress-gray .woocommerce-message:before,
+.tress-gray .woocommerce-info:before,
+.tress-gray .site-header .cart-contents:after,
+.tress-gray .fa-shopping-cart:before
 {
 	color:#8e8e8e;
 }
 
-/* ! Prism brown */
+/* ! Tress brown */
 
-.prism-brown .woocommerce-page #respond input#submit:hover,
-.prism-brown .woocommerce button.button.alt:hover,
-.prism-brown .woocommerce ul.products li.product a,
-.prism-brown .woocommerce-page a.button:hover,
-.prism-brown .woocommerce input.button.alt:hover,
-.prism-brown .woocommerce ul.products li.product .onsale,
-.prism-brown .woocommerce #review_form #respond .form-submit input:hover,
-.prism-brown .onsale,
-.prism-brown ins,
-.prism-brown input:hover[type="submit"],
-.prism-brown .button:hover
+.tress-brown .woocommerce-page #respond input#submit:hover,
+.tress-brown .woocommerce button.button.alt:hover,
+.tress-brown .woocommerce ul.products li.product a,
+.tress-brown .woocommerce-page a.button:hover,
+.tress-brown .woocommerce input.button.alt:hover,
+.tress-brown .woocommerce ul.products li.product .onsale,
+.tress-brown .woocommerce #review_form #respond .form-submit input:hover,
+.tress-brown .onsale,
+.tress-brown ins,
+.tress-brown input:hover[type="submit"],
+.tress-brown .button:hover
 	{
 	background: #875608 !important;
 	}
         
-.prism-brown .woocommerce-message,
-.prism-brown .woocommerce-info{
+.tress-brown .woocommerce-message,
+.tress-brown .woocommerce-info{
         border-top: 3px solid #875608 !important;
 }
 
-.prism-brown .star-rating span:before,
-.prism-brown .woocommerce-message:before,
-.prism-brown .woocommerce-info:before,
-.prism-brown .site-header .cart-contents:after,
-.prism-brown .fa-shopping-cart:before
+.tress-brown .star-rating span:before,
+.tress-brown .woocommerce-message:before,
+.tress-brown .woocommerce-info:before,
+.tress-brown .site-header .cart-contents:after,
+.tress-brown .fa-shopping-cart:before
 {
 	color:#875608;
 }
 
-/* ! Prism purple */
+/* ! Tress purple */
 
-.prism-purple .woocommerce-page #respond input#submit:hover,
-.prism-purple .woocommerce button.button.alt:hover,
-.prism-purple .woocommerce ul.products li.product a,
-.prism-purple .woocommerce-page a.button:hover,
-.prism-purple .woocommerce input.button.alt:hover,
-.prism-purple .woocommerce ul.products li.product .onsale,
-.prism-purple .woocommerce #review_form #respond .form-submit input:hover,
-.prism-purple .onsale,
-.prism-purple ins,
-.prism-purple input:hover[type="submit"],
-.prism-purple .button:hover
+.tress-purple .woocommerce-page #respond input#submit:hover,
+.tress-purple .woocommerce button.button.alt:hover,
+.tress-purple .woocommerce ul.products li.product a,
+.tress-purple .woocommerce-page a.button:hover,
+.tress-purple .woocommerce input.button.alt:hover,
+.tress-purple .woocommerce ul.products li.product .onsale,
+.tress-purple .woocommerce #review_form #respond .form-submit input:hover,
+.tress-purple .onsale,
+.tress-purple ins,
+.tress-purple input:hover[type="submit"],
+.tress-purple .button:hover
 	{
 	background: #a678d3 !important;
 	}
 
-.prism-purple .woocommerce-message,
-.prism-purple .woocommerce-info{
+.tress-purple .woocommerce-message,
+.tress-purple .woocommerce-info{
         border-top: 3px solid #a678d3 !important;
 }
 
-.prism-purple .star-rating span:before,
-.prism-purple .woocommerce-message:before,
-.prism-purple .woocommerce-info:before,
-.prism-purple .site-header .cart-contents:after,
-.prism-purple .fa-shopping-cart:before
+.tress-purple .star-rating span:before,
+.tress-purple .woocommerce-message:before,
+.tress-purple .woocommerce-info:before,
+.tress-purple .site-header .cart-contents:after,
+.tress-purple .fa-shopping-cart:before
 {
 	color:#a678d3;
 }
 
-/* ! Prism orange */
+/* ! Tress orange */
 
-.prism-orange .woocommerce-page #respond input#submit:hover,
-.prism-orange .woocommerce button.button.alt:hover,
-.prism-orange .woocommerce ul.products li.product a,
-.prism-orange .woocommerce-page a.button:hover,
-.prism-orange .woocommerce input.button.alt:hover,
-.prism-orange .woocommerce ul.products li.product .onsale,
-.prism-orange .woocommerce #review_form #respond .form-submit input:hover,
-.prism-orange .onsale,
-.prism-orange ins,
-.prism-orange input:hover[type="submit"],
-.prism-orange .button:hover
+.tress-orange .woocommerce-page #respond input#submit:hover,
+.tress-orange .woocommerce button.button.alt:hover,
+.tress-orange .woocommerce ul.products li.product a,
+.tress-orange .woocommerce-page a.button:hover,
+.tress-orange .woocommerce input.button.alt:hover,
+.tress-orange .woocommerce ul.products li.product .onsale,
+.tress-orange .woocommerce #review_form #respond .form-submit input:hover,
+.tress-orange .onsale,
+.tress-orange ins,
+.tress-orange input:hover[type="submit"],
+.tress-orange .button:hover
 
 	{
 	background: #fa7f53 !important;
 	}
         
-.prism-orange .woocommerce-message,
-.prism-orange .woocommerce-info{
+.tress-orange .woocommerce-message,
+.tress-orange .woocommerce-info{
         border-top: 3px solid #fa7f53 !important;
 }
 
-.prism-orange .star-rating span:before,
-.prism-orange .woocommerce-message:before,
-.prism-orange .woocommerce-info:before,
-.prism-orange .site-header .cart-contents:after,
-.prism-orange .fa-shopping-cart:before
+.tress-orange .star-rating span:before,
+.tress-orange .woocommerce-message:before,
+.tress-orange .woocommerce-info:before,
+.tress-orange .site-header .cart-contents:after,
+.tress-orange .fa-shopping-cart:before
 {
 	color:#fa7f53;
 }
