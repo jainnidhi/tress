@@ -982,6 +982,7 @@ select {
 
 .flex-control-nav{
     z-index:2000;
+    bottom:30px;
 }
 .flexslider .slides > li{
     position:relative;

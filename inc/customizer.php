@@ -384,7 +384,7 @@ function prism_customize_register($wp_customize) {
     ));
 
     // link url
-    $wp_customize->add_setting('slider_one_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('slider_one_link_url', array('default' => __('', 'prism'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
@@ -465,7 +465,7 @@ function prism_customize_register($wp_customize) {
     ));
 
     // link url
-    $wp_customize->add_setting('slider_two_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('slider_two_link_url', array('default' => __('', 'prism'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
@@ -546,7 +546,7 @@ function prism_customize_register($wp_customize) {
     ));
 
     // link url
-    $wp_customize->add_setting('slider_three_link_url', array('default' => __('', 'flex'),
+    $wp_customize->add_setting('slider_three_link_url', array('default' => __('', 'prism'),
         'sanitize_callback' => 'sanitize_text_field',
         'transport' => 'postMessage',
     ));
@@ -627,7 +627,7 @@ function prism_customize_register($wp_customize) {
         ));
 
         // link url
-        $wp_customize->add_setting('slider_four_link_url', array('default' => __('', 'flex'),
+        $wp_customize->add_setting('slider_four_link_url', array('default' => __('', 'prism'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport' => 'postMessage',
         ));
@@ -707,7 +707,7 @@ function prism_customize_register($wp_customize) {
         ));
 
         // link url
-        $wp_customize->add_setting('slider_five_link_url', array('default' => __('', 'flex'),
+        $wp_customize->add_setting('slider_five_link_url', array('default' => __('', 'prism'),
             'sanitize_callback' => 'sanitize_text_field',
             'transport' => 'postMessage',
         ));
