@@ -1170,6 +1170,19 @@ function prism_customize_register($wp_customize) {
         'priority' => 60,
     ));
     
+    $wp_customize->add_setting('cta_title', array(
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport'=> 'postMessage',
+            ));
+        
+        $wp_customize->add_control('cta_title', array(
+            'label' => __('Title', 'prism'),
+            'section' => 'home_cta_setting',
+            'settings' => 'cta_title',
+            'priority' => 1,
+           
+        ));
+    
     $wp_customize->add_setting('cta_text', array('default' => '',
             'sanitize_callback' => 'sanitize_text_field',
         'transport'=> 'postMessage',
@@ -1179,7 +1192,7 @@ function prism_customize_register($wp_customize) {
             'label' => __('CTA Text', 'prism'),
             'section' => 'home_cta_setting',
             'settings' => 'cta_text',
-            'priority' => 1,
+            'priority' => 2,
         )));
         
         
@@ -1193,7 +1206,7 @@ function prism_customize_register($wp_customize) {
             'label' => __('Link Text', 'prism'),
             'section' => 'home_cta_setting',
             'settings' => 'home_cta_link_text',
-            'priority' => 2,
+            'priority' => 3,
             
         ));
         
@@ -1207,7 +1220,7 @@ function prism_customize_register($wp_customize) {
             'label' => __('Link URL', 'prism'),
             'section' => 'home_cta_setting',
             'settings' => 'home_cta_link_url',
-            'priority' => 3,
+            'priority' => 4,
             
         ));
         

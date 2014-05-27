@@ -306,31 +306,6 @@ get_header();
             </div>
         </div><!-- end home featured area -->
         
-        <?php  // Display featured posts on front page
-            get_template_part('content', 'frontposts'); ?>
-       
-        
-        <div class="home-cta-area">
-                <div class="home-cta">
-                    <div class="cta-wrapper">
-                    <div class="home-cta-one grid_8_of_12 col">
-                        <?php if ( get_theme_mod('cta_text') !='' ) {  ?>
-                        <p><?php echo esc_html(get_theme_mod('cta_text')); ?></p>
-                           <?php } else { ?>
-                          <p><?php esc_html_e('We have really amazing products that you would be amazed to see.', 'prism') ?> </p>
-                                           <?php } ?>
-                    </div>
-                    <div class="home-cta-two grid_4_of_12 col">
-                        <a class="cta-button" href="<?php if ( get_theme_mod('home_cta_link_url') !='' ) { echo esc_url(get_theme_mod('home_cta_link_url')); } ?>">
-                           <?php if ( get_theme_mod('home_cta_link_text') !='' ) {  ?><?php echo esc_html(get_theme_mod('home_cta_link_text')); ?>
-
-                    <?php } else {  ?> <?php esc_html_e('Read More', 'prism') ?>
-                           <?php } ?></a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        
         <div class="client-feedback-area" id="feedback-title">
             <div class="client-feedback-title">
                  <?php if ( get_theme_mod('feedback_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('feedback_title')); ?></h3>
@@ -401,7 +376,34 @@ get_header();
                </ul>
             </div>
         </div>
+        
+        <div class="home-cta-area">
+                <div class="home-cta">
+                     <?php if ( get_theme_mod('cta_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('cta_title')); ?></h3>
+                          <?php } else {  ?> <h3><?php esc_html_e('CTA Title', 'prism') ?></h3>
+                               <?php } ?>
+                    <div class="home-cta-one">
+                        <?php if ( get_theme_mod('cta_text') !='' ) {  ?>
+                        <p><?php echo esc_html(get_theme_mod('cta_text')); ?></p>
+                           <?php } else { ?>
+                          <p><?php esc_html_e('We have really amazing products that you would be amazed to see.', 'prism') ?> </p>
+                                           <?php } ?>
+                    </div>
+                    <div class="home-cta-two">
+                        <a class="cta-button" href="<?php if ( get_theme_mod('home_cta_link_url') !='' ) { echo esc_url(get_theme_mod('home_cta_link_url')); } ?>">
+                           <?php if ( get_theme_mod('home_cta_link_text') !='' ) {  ?><?php echo esc_html(get_theme_mod('home_cta_link_text')); ?>
 
+                    <?php } else {  ?> <?php esc_html_e('Read More', 'prism') ?>
+                           <?php } ?></a>
+                    </div>
+                
+                </div>
+         </div>
+        
+        <?php  // Display featured posts on front page
+            get_template_part('content', 'frontposts'); ?>
+       
+        
        
         <div class="home-contact-area" id="contact-title">
             <div class="home-contact-title">
