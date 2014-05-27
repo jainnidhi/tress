@@ -604,27 +604,15 @@ select {
 .social-wrapper{
     background:#333;
 }
-.header-contact{
-    max-width: 1140px;
-    margin: 0 auto;
-    color:#fff;
-    padding:5px 0;
-    width:90%;
-}
+
 
 .header-contact .fa-phone{
     margin-right:5px;
 }
 .header-contact p{
     font-size: 14px; 
-    margin:10px 0;
+    margin:20px 0;
 }
-
-.header-contact .social-links{
-    float:right;
-    margin-top:5px;
-}
-
 
 #headercontainer {
     width: 100%;
@@ -682,7 +670,6 @@ select {
 }
 
 .header-extras .social-links{
-    margin-top:20px;
     float:right;
 }
 

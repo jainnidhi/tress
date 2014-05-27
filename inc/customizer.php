@@ -370,6 +370,32 @@ function prism_customize_register($wp_customize) {
             'priority' => 4,
         )));
         
+        // link text
+    $wp_customize->add_setting('slider_one_link_text', array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+    ));
+
+    $wp_customize->add_control('slider_one_link_text', array(
+        'label' => __('Slider One Link Text', 'prism'),
+        'section' => 'home_slider_setting',
+        'settings' => 'slider_one_link_text',
+        'priority' => 5,
+    ));
+
+    // link url
+    $wp_customize->add_setting('slider_one_link_url', array('default' => __('', 'flex'),
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+    ));
+
+    $wp_customize->add_control('slider_one_link_url', array(
+        'label' => __('Slider One Link URL', 'prism'),
+        'section' => 'home_slider_setting',
+        'settings' => 'slider_one_link_url',
+        'priority' => 6,
+    ));
+        
 
    $wp_customize->add_setting('slider_two', array(
        'transport'=> 'postMessage',
@@ -381,7 +407,7 @@ function prism_customize_register($wp_customize) {
         'label' => 'Slider 2',
         'section' => 'home_slider_setting',
         'settings' => 'slider_two',
-                 'priority' => 5,
+                 'priority' => 7,
             )
             )
     );
@@ -396,7 +422,7 @@ function prism_customize_register($wp_customize) {
             'label' => __('Slider Two Title', 'prism'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_title_two',
-             'priority' => 6,
+             'priority' => 8,
             
         ));
         
@@ -409,7 +435,7 @@ function prism_customize_register($wp_customize) {
             'label' => __('Slider Two URL', 'prism'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_two_url',
-             'priority' => 7,
+             'priority' => 9,
            
         ));
         
@@ -422,9 +448,34 @@ function prism_customize_register($wp_customize) {
             'label' => __('Description', 'prism'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_two_description',
-            'priority' => 8,
+            'priority' => 10,
         )));
+        
+        // link text
+    $wp_customize->add_setting('slider_two_link_text', array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+    ));
 
+    $wp_customize->add_control('slider_two_link_text', array(
+        'label' => __('Slider Two Link Text', 'prism'),
+        'section' => 'home_slider_setting',
+        'settings' => 'slider_two_link_text',
+        'priority' => 11,
+    ));
+
+    // link url
+    $wp_customize->add_setting('slider_two_link_url', array('default' => __('', 'flex'),
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+    ));
+
+    $wp_customize->add_control('slider_two_link_url', array(
+        'label' => __('Slider Two Link URL', 'prism'),
+        'section' => 'home_slider_setting',
+        'settings' => 'slider_two_link_url',
+        'priority' => 12,
+    ));
 
     $wp_customize->add_setting('slider_three', array(
         'transport'=> 'postMessage',
@@ -436,7 +487,7 @@ function prism_customize_register($wp_customize) {
         'label' => 'Slider 3',
         'section' => 'home_slider_setting',
         'settings' => 'slider_three',
-                 'priority' => 9,
+                 'priority' => 13,
             )
             )
     );
@@ -452,7 +503,7 @@ function prism_customize_register($wp_customize) {
             'label' => __('Slider Three Title', 'prism'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_title_three',
-             'priority' => 10,
+             'priority' => 14,
             
         ));
         
@@ -465,7 +516,7 @@ function prism_customize_register($wp_customize) {
             'label' => __('Slider Three URL', 'prism'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_three_url',
-             'priority' => 11,
+             'priority' => 15,
            
         ));
         
@@ -478,8 +529,34 @@ function prism_customize_register($wp_customize) {
             'label' => __('Description', 'prism'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_three_description',
-            'priority' => 12,
+            'priority' => 16,
         )));
+        
+        // link text
+    $wp_customize->add_setting('slider_three_link_text', array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+    ));
+
+    $wp_customize->add_control('slider_three_link_text', array(
+        'label' => __('Slider Three Link Text', 'prism'),
+        'section' => 'home_slider_setting',
+        'settings' => 'slider_three_link_text',
+        'priority' => 17,
+    ));
+
+    // link url
+    $wp_customize->add_setting('slider_three_link_url', array('default' => __('', 'flex'),
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport' => 'postMessage',
+    ));
+
+    $wp_customize->add_control('slider_three_link_url', array(
+        'label' => __('Slider Three Link URL', 'prism'),
+        'section' => 'home_slider_setting',
+        'settings' => 'slider_three_link_url',
+        'priority' => 18,
+    ));
     
     $wp_customize->add_setting('slider_four', array(
         'transport'=> 'postMessage',
@@ -491,7 +568,7 @@ function prism_customize_register($wp_customize) {
         'label' => 'Slider 4',
         'section' => 'home_slider_setting',
         'settings' => 'slider_four',
-                 'priority' => 13,
+                 'priority' => 19,
             )
             )
     );
@@ -506,7 +583,7 @@ function prism_customize_register($wp_customize) {
             'label' => __('Slider Four Title', 'prism'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_title_four',
-             'priority' => 14,
+             'priority' => 20,
             
         ));
         
@@ -519,7 +596,7 @@ function prism_customize_register($wp_customize) {
             'label' => __('Slider Four URL', 'prism'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_four_url',
-             'priority' => 15,
+             'priority' => 21,
            
         ));
         
@@ -532,25 +609,52 @@ function prism_customize_register($wp_customize) {
             'label' => __('Description', 'prism'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_four_description',
-            'priority' => 16,
+            'priority' => 22,
         )));
         
-    $wp_customize->add_setting('slider_five', array(
-        'transport'=> 'postMessage',
-    ));
+        
+        // link text
+        $wp_customize->add_setting('slider_four_link_text', array(
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport' => 'postMessage',
+        ));
 
-    $wp_customize->add_control(
-            new WP_Customize_Image_Control(
-            $wp_customize, 'slider_five', array(
-        'label' => 'Slider 5',
-        'section' => 'home_slider_setting',
-        'settings' => 'slider_five',
-                 'priority' => 17,
-            )
-            )
-    );
+        $wp_customize->add_control('slider_four_link_text', array(
+            'label' => __('Slider Four Link Text', 'prism'),
+            'section' => 'home_slider_setting',
+            'settings' => 'slider_four_link_text',
+            'priority' => 23,
+        ));
+
+        // link url
+        $wp_customize->add_setting('slider_four_link_url', array('default' => __('', 'flex'),
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport' => 'postMessage',
+        ));
+
+        $wp_customize->add_control('slider_four_link_url', array(
+            'label' => __('Slider Four Link URL', 'prism'),
+            'section' => 'home_slider_setting',
+            'settings' => 'slider_four_link_url',
+            'priority' => 24,
+        ));
+
+        $wp_customize->add_setting('slider_five', array(
+            'transport'=> 'postMessage',
+        ));
+
+        $wp_customize->add_control(
+                new WP_Customize_Image_Control(
+                $wp_customize, 'slider_five', array(
+            'label' => 'Slider 5',
+            'section' => 'home_slider_setting',
+            'settings' => 'slider_five',
+                     'priority' => 25,
+                )
+                )
+        );
     
-    // slider Title
+        // slider Title
         $wp_customize->add_setting('slider_title_five', array(
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
@@ -560,7 +664,7 @@ function prism_customize_register($wp_customize) {
             'label' => __('Slider Five Title', 'prism'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_title_five',
-             'priority' => 18,
+             'priority' => 26,
             
         ));
         
@@ -573,7 +677,7 @@ function prism_customize_register($wp_customize) {
             'label' => __('Slider Five URL', 'prism'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_five_url',
-             'priority' => 19,
+             'priority' => 27,
            
         ));
         
@@ -586,9 +690,34 @@ function prism_customize_register($wp_customize) {
             'label' => __('Description', 'prism'),
             'section' => 'home_slider_setting',
             'settings' => 'slider_five_description',
-            'priority' => 20,
+            'priority' => 28,
         )));
         
+        // link text
+        $wp_customize->add_setting('slider_five_link_text', array(
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport' => 'postMessage',
+        ));
+
+        $wp_customize->add_control('slider_five_link_text', array(
+            'label' => __('Slider Five Link Text', 'prism'),
+            'section' => 'home_slider_setting',
+            'settings' => 'slider_five_link_text',
+            'priority' => 29,
+        ));
+
+        // link url
+        $wp_customize->add_setting('slider_five_link_url', array('default' => __('', 'flex'),
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport' => 'postMessage',
+        ));
+
+        $wp_customize->add_control('slider_five_link_url', array(
+            'label' => __('Slider Five Link URL', 'prism'),
+            'section' => 'home_slider_setting',
+            'settings' => 'slider_five_link_url',
+            'priority' => 30,
+        ));
         
            // Add new section for Home Tagline settings
     $wp_customize->add_section('tagline_setting', array(

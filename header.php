@@ -66,17 +66,38 @@ global $edd_options;
                 <div class="visuallyhidden skip-link"><a href="#primary" title="<?php esc_attr_e('Skip to main content', 'prism'); ?>"><?php esc_html_e('Skip to main content', 'prism'); ?></a></div>
          
                 <div class="social-wrapper">
-                    <div class="header-contact clearfix">
-                        <div class="col grid_6_of_12">
-                            <?php if (get_theme_mod('header_contact') != '') { ?>
-                                <p><i class="fa fa-phone"></i><?php echo esc_html(get_theme_mod('header_contact')); ?></p>
-                            <?php } else { ?>
-                                <p><i class="fa fa-phone"></i><?php esc_html_e('Call us on  24x7: 800-555-0101', 'prism') ?> </p>
-                            <?php } ?>
-                        </div>
-                        <div class="col grid_6_of_12 social-icons-container last"> 
-                            <div class="social-links clearfix">
-                                <ul id="header-social-links" class="clearfix">
+                   
+                </div>
+                <div id="headercontainer" class="fxd">
+
+                    <header id="masthead" class="site-header row" role="banner">
+                        <div class="col grid_4_of_12 header-title">
+                            <h1 class="site-title">
+                                <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>" rel="home">
+                                    <?php echo get_bloginfo('name'); ?>	
+                                </a>
+                            </h1>
+                            <p class="site-description"> 
+                                <?php echo get_bloginfo('description'); ?>
+                            </p>
+
+                            <?php if (get_header_image()) : ?>
+                                <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
+                            <?php endif; ?>
+                        </div> <!-- /.col.grid_6_of_12 -->
+
+                        <div class="col grid_8_of_12 header-extras last">
+                             <div class="header-contact">
+                                    <?php if (get_theme_mod('header_contact') != '') { ?>
+                                        <p><i class="fa fa-phone"></i><?php echo esc_html(get_theme_mod('header_contact')); ?></p>
+                                    <?php } else { ?>
+                                        <p><i class="fa fa-phone"></i><?php esc_html_e('Call us on  24x7: 800-555-0101', 'prism') ?> </p>
+                                    <?php } ?>
+                               
+                             </div><!-- /.header-extras -->
+                 
+                            <div class="social-links">
+                                <ul id="header-social-links">
                                     <?php if (get_theme_mod('facebook_link_url')) { ?>
                                         <li class="prism-fb"><a href="<?php echo esc_url(get_theme_mod('facebook_link_url')); ?>"></a></li>
                                     <?php } ?>
@@ -97,29 +118,6 @@ global $edd_options;
                                     <?php } ?>
                                 </ul>
                             </div>
-                        </div><!-- /.header-extras -->
-                    </div>
-                </div>
-                <div id="headercontainer" class="fxd">
-
-                    <header id="masthead" class="site-header row" role="banner">
-                        <div class="col grid_4_of_12 header-title">
-                            <h1 class="site-title">
-                                <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>" rel="home">
-                                    <?php echo get_bloginfo('name'); ?>	
-                                </a>
-                            </h1>
-                            <p class="site-description"> 
-                                <?php echo get_bloginfo('description'); ?>
-                            </p>
-
-                            <?php if (get_header_image()) : ?>
-                                <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
-                            <?php endif; ?>
-                        </div> <!-- /.col.grid_6_of_12 -->
-
-                        <div class="col grid_8_of_12 header-extras last"> 
-                            
                         </div><!-- /.header-extras -->
                     </header> <!-- /#masthead.site-header.row -->
                     <div class="nav-container">
