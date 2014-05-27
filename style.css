@@ -570,6 +570,28 @@ select {
     background:#fff;
 }
 
+.notification-bar{
+    background:#42a2ce;
+}
+
+.notification-wrap{
+    max-width:1140px;
+    margin: 0 auto;
+    padding:10px 0;
+    color:#fff;
+}
+
+.notification-wrap .read-more{
+    background: #fff;
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+.notification-wrap p{
+    margin:0;
+    text-align:right;
+}
+
 #wrapper {
     width: 100%;
     position: relative;
@@ -3286,7 +3308,7 @@ img#wpstats {
 }
 
 @media only screen and (max-width: 800px) {
-    
+
     .header-title,
     .header-extras{
         width:100%;
@@ -3369,7 +3391,7 @@ img#wpstats {
     .main-navigation li ul li a {
         width: 100%;
     }
-    
+
     .home-featured-post{
         width:49%;
     }
@@ -3380,7 +3402,7 @@ img#wpstats {
     .home-featured-post:nth-of-type(3n+1){
         margin-left:1.6%;
     }
-    
+
     .home-featured .home-featured-one, 
     .home-featured .home-featured-two, 
     .home-featured .home-featured-three, 
@@ -3566,7 +3588,7 @@ img#wpstats {
     #reviewslider .flex-caption:after{
         display:none;
     }
-    
+
     .home-featured .home-featured-one, 
     .home-featured .home-featured-two, 
     .home-featured .home-featured-three, 

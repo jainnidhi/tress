@@ -64,8 +64,51 @@ function prism_customize_register($wp_customize) {
         }
 
     }
-
-
+    // Add new section for theme layout and color schemes
+    $wp_customize->add_section('prism_notification_bar_settings', array(
+        'title' => __('Notification Bar', 'prism'),
+        'priority' => 29,
+    ));
+    
+    $wp_customize->add_setting('notification_text', array('default' => '',
+            'sanitize_js_callback' => 'prism_sanitize_escaping', 
+            ));
+        
+        $wp_customize->add_control(new prism_customize_textarea_control($wp_customize, 'notification_text', array(
+            'label' => __('Text/HTML', 'prism'),
+            'section' => 'prism_notification_bar_settings',
+            'settings' => 'notification_text',
+            'priority' => 2,
+        )));
+        
+         // link text
+        $wp_customize->add_setting('notification_link_text', array(
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport'=> 'postMessage',
+            ));
+        
+        $wp_customize->add_control('notification_link_text', array(
+            'label' => __('Link Text', 'prism'),
+            'section' => 'prism_notification_bar_settings',
+            'settings' => 'notification_link_text',
+            'priority' => 4,
+            
+        ));
+        
+        // link url
+        $wp_customize->add_setting('notification_link_url', array('default' => __('', 'prism'),
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport'=> 'postMessage',
+            ));
+        
+        $wp_customize->add_control('notification_link_url', array(
+            'label' => __('Link URL', 'prism'),
+            'section' => 'prism_notification_bar_settings',
+            'settings' => 'notification_link_url',
+            'priority' => 5,
+            
+        ));
+    
     // Add new section for theme layout and color schemes
     $wp_customize->add_section('prism_theme_layout_settings', array(
         'title' => __('Color Scheme', 'prism'),
@@ -75,7 +118,7 @@ function prism_customize_register($wp_customize) {
     // Add color scheme options
    
     $wp_customize->add_setting('prism_bg_color_scheme', array(
-        'default' => 'ligt',
+        'default' => 'light',
         'sanitize_callback' => 'prism_sanitize_bg_color_scheme_option',
     ));
 

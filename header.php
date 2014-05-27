@@ -42,10 +42,29 @@ global $edd_options;
         </head>
 
         <body <?php body_class(); ?>>
-
+            
+             <div class="notification-bar">
+                    <div class="notification-wrap clearfix">
+                        <div class="col grid_6_of_12 notification-text">
+                                <?php if ( get_theme_mod('home_description_two') !='' ) {  ?>
+                                <p><?php echo esc_html(get_theme_mod('home_description_two')); ?></p>
+                               <?php } else { ?>
+                              <p><?php esc_html_e('This is the notification text block.', 'prism') ?> </p>
+                                 <?php } ?>
+                        </div>
+                        <div class="col grid_6_of_12 notification-link last">
+                            <a class="read-more" href="<?php if ( get_theme_mod('notification_link_url') !='' ) { echo esc_url(get_theme_mod('notification_link_url')); } ?>">
+                           <?php if ( get_theme_mod('notification_link_text') !='' ) {  ?><?php echo esc_html(get_theme_mod('notification_link_text')); ?>
+                             <?php } else {  ?> <?php esc_html_e('Read More', 'prism') ?>
+                           <?php } ?></a>
+                        </div>
+                    </div>
+                </div>
+            
             <div id="wrapper" class="hfeed site">
 
                 <div class="visuallyhidden skip-link"><a href="#primary" title="<?php esc_attr_e('Skip to main content', 'prism'); ?>"><?php esc_html_e('Skip to main content', 'prism'); ?></a></div>
+         
                 <div class="social-wrapper">
                     <div class="header-contact clearfix">
                         <div class="col grid_6_of_12">
