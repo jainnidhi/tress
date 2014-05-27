@@ -119,7 +119,11 @@ global $edd_options;
                         </div> <!-- /.col.grid_6_of_12 -->
 
                         <div class="col grid_8_of_12 header-extras last"> 
-                            <nav id="site-navigation" class="main-navigation" role="navigation">
+                            
+                        </div><!-- /.header-extras -->
+                    </header> <!-- /#masthead.site-header.row -->
+                    <div class="nav-container">
+                        <nav id="site-navigation" class="main-navigation clearfix" role="navigation">
                                  <?php if(!is_front_page() || get_theme_mod('prism_one_page_nav_check')) {
                                   wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'primary-menu', 'container_class' => 'menu')); 
                                  }
@@ -146,8 +150,6 @@ global $edd_options;
                                 
                                 <div id="mobile-menu"></div>
                             </nav> <!-- /.site-navigation.main-navigation -->
-                        </div><!-- /.header-extras -->
-                    </header> <!-- /#masthead.site-header.row -->
-
+                    </div>
 
                 </div> <!-- /#headercontainer -->

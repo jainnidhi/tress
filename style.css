@@ -2191,17 +2191,13 @@ li span.dots {
 /* ==========================================================================
    Main Navigation
    ========================================================================== */
-.menu,
-.home-menu{
-    float:right;
-}
+
 .nav-container{
     background: #239ACD;
 }
 
 .main-navigation {
     text-align: left; 
-    margin-top: 20px;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -khtml-transition: all 0.3s ease;
@@ -2276,6 +2272,7 @@ li span.dots {
 .main-navigation a {
     display: block;
     text-decoration: none;
+    color:#fff;
 }
 
 .main-small-navigation a
