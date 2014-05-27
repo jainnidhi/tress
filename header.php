@@ -46,8 +46,8 @@ global $edd_options;
              <div class="notification-bar">
                     <div class="notification-wrap clearfix">
                         <div class="col grid_6_of_12 notification-text">
-                                <?php if ( get_theme_mod('home_description_two') !='' ) {  ?>
-                                <p><?php echo esc_html(get_theme_mod('home_description_two')); ?></p>
+                                <?php if ( get_theme_mod('notification_text') !='' ) {  ?>
+                                <p><?php echo esc_html(get_theme_mod('notification_text')); ?></p>
                                <?php } else { ?>
                               <p><?php esc_html_e('This is the notification text block.', 'prism') ?> </p>
                                  <?php } ?>
@@ -89,9 +89,9 @@ global $edd_options;
                         <div class="col grid_8_of_12 header-extras last">
                              <div class="header-contact">
                                     <?php if (get_theme_mod('header_contact') != '') { ?>
-                                        <p><i class="fa fa-phone"></i><?php echo esc_html(get_theme_mod('header_contact')); ?></p>
+                                        <p><?php echo esc_html(get_theme_mod('header_contact')); ?></p>
                                     <?php } else { ?>
-                                        <p><i class="fa fa-phone"></i><?php esc_html_e('Call us on  24x7: 800-555-0101', 'prism') ?> </p>
+                                        <p><?php esc_html_e('Call us on  24x7: 800-555-0101', 'prism') ?> </p>
                                     <?php } ?>
                                
                              </div><!-- /.header-extras -->

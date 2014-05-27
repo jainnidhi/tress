@@ -15,6 +15,21 @@
 			$( '.site-description' ).text( to );
 		} );
 	} );
+        wp.customize( 'notification_text', function( value ) {
+		value.bind( function( to ) {
+			$( '.notification-wrap p' ).text( to );
+		} );
+	} );
+        wp.customize( 'notification_link_text', function( value ) {
+		value.bind( function( to ) {
+			$( '.notification-wrap .read-more' ).text( to );
+		} );
+	} );
+         wp.customize( 'notification_link_url', function( value ) {
+		value.bind( function( to ) {
+			$( '.notification-wrap .read-more' ).attr('href', to );
+		} );
+	} );
         wp.customize( 'facebook_link_url', function( value ) {
 		value.bind( function( to ) {
 			$( '.prism-fb a' ).attr('href', to );
@@ -70,6 +85,16 @@
 			$( '#slider1 .flex-caption p' ).text( to );
 		} );
 	} );
+        wp.customize( 'slider_one_link_url', function( value ) {
+		value.bind( function( to ) {
+			$( '#slider1 .flex-caption .slider-button' ).attr('href', to );
+		} );
+	} );
+         wp.customize( 'slider_one_link_text', function( value ) {
+		value.bind( function( to ) {
+			$( '#slider1 .flex-caption .slider-button' ).text( to );
+		} );
+	} );
          wp.customize( 'slider_two', function( value ) {
 		value.bind( function( to ) {
 			$( '#slider2 img' ).attr('src', to );
@@ -88,6 +113,16 @@
          wp.customize( 'slider_two_description', function( value ) {
 		value.bind( function( to ) {
 			$( '#slider2 .flex-caption p' ).text( to );
+		} );
+	} );
+        wp.customize( 'slider_two_link_url', function( value ) {
+		value.bind( function( to ) {
+			$( '#slider2 .flex-caption .slider-button' ).attr('href', to );
+		} );
+	} );
+         wp.customize( 'slider_two_link_text', function( value ) {
+		value.bind( function( to ) {
+			$( '#slider2 .flex-caption .slider-button' ).text( to );
 		} );
 	} );
          wp.customize( 'slider_three', function( value ) {
@@ -110,6 +145,16 @@
 			$( '#slider4 .flex-caption p' ).text( to );
 		} );
 	} );
+        wp.customize( 'slider_three_link_url', function( value ) {
+		value.bind( function( to ) {
+			$( '#slider3 .flex-caption .slider-button' ).attr('href', to );
+		} );
+	} );
+         wp.customize( 'slider_three_link_text', function( value ) {
+		value.bind( function( to ) {
+			$( '#slider3 .flex-caption .slider-button' ).text( to );
+		} );
+	} );
          wp.customize( 'slider_four', function( value ) {
 		value.bind( function( to ) {
 			$( '#slider1 img' ).attr('src', to );
@@ -130,6 +175,16 @@
 			$( '#slider4 .flex-caption p' ).text( to );
 		} );
 	} );
+         wp.customize( 'slider_four_link_url', function( value ) {
+		value.bind( function( to ) {
+			$( '#slider4 .flex-caption .slider-button' ).attr('href', to );
+		} );
+	} );
+         wp.customize( 'slider_four_link_text', function( value ) {
+		value.bind( function( to ) {
+			$( '#slider4 .flex-caption .slider-button' ).text( to );
+		} );
+	} );
          wp.customize( 'slider_five', function( value ) {
 		value.bind( function( to ) {
 			$( '#slider5 img' ).attr('src', to );
@@ -145,9 +200,19 @@
 			$( '#slider5 .flex-caption h2 a' ).attr('href', to );
 		} );
 	} );
-         wp.customize( 'slider_one_description', function( value ) {
+         wp.customize( 'slider_five_description', function( value ) {
 		value.bind( function( to ) {
 			$( '#slider5 .flex-caption p' ).text( to );
+		} );
+	} );
+        wp.customize( 'slider_five_link_url', function( value ) {
+		value.bind( function( to ) {
+			$( '#slider5 .flex-caption .slider-button' ).attr('href', to );
+		} );
+	} );
+         wp.customize( 'slider_five_link_text', function( value ) {
+		value.bind( function( to ) {
+			$( '#slider5 .flex-caption .slider-button' ).text( to );
 		} );
 	} );
         wp.customize( 'tagline_title', function( value ) {
@@ -297,7 +362,11 @@
 			$( '.home-navigation #m3 a' ).text( to );
 		} );
 	} );
-        
+        wp.customize( 'cta_title', function( value ) {
+		value.bind( function( to ) {
+			$( '.home-cta h3' ).text( to );
+		} );
+	} );
         wp.customize( 'cta_text', function( value ) {
 		value.bind( function( to ) {
 			$( '.home-cta p' ).text( to );

@@ -614,6 +614,13 @@ select {
     margin:20px 0;
 }
 
+.header-contact p:before {
+    font-family: "FontAwesome";
+    content: "\f095";
+    margin-right: 10px;
+    color: #42a2ce;
+}
+
 #headercontainer {
     width: 100%;
     background: #fff;
@@ -719,6 +726,9 @@ select {
     padding-bottom: 20px;
 }
 
+.home-featured .col:first-child{
+    margin-left:0 !important;
+}
 .home-featured h3{
     font-size:26px;
     margin:10px 0;

@@ -129,6 +129,12 @@ get_header();
                                   <?php } ?>
                                 <?php if ( get_theme_mod('slider_three_description') !='' ) {  ?>
                                 <p><?php echo esc_html(get_theme_mod('slider_three_description')); ?></p>
+                                
+                                <?php if ( get_theme_mod('slider_three_link_url') !='' && get_theme_mod('slider_three_link_text') !=''  ) {  ?>
+                               <a class="slider-button" href="<?php echo esc_url(get_theme_mod('slider_three_link_url')); ?>">
+                                 <?php  echo esc_html(get_theme_mod('slider_three_link_text')); ?>
+                                 <?php } ?> 
+                                </a>
                             </div>
                          </div>
                     </li>
@@ -147,6 +153,13 @@ get_header();
                                   <?php } ?>
                                      <?php if ( get_theme_mod('slider_four_description') !='' ) {  ?>
                                      <p><?php echo esc_html(get_theme_mod('slider_four_description')); ?></p>
+                                     
+                                     <?php if ( get_theme_mod('slider_four_link_url') !='' && get_theme_mod('slider_four_link_text') !=''  ) {  ?>
+                                  <a class="slider-button" href="<?php echo esc_url(get_theme_mod('slider_four_link_url')); ?>">
+                                    <?php  echo esc_html(get_theme_mod('slider_four_link_text')); ?>
+                                    <?php } ?> 
+                                   </a>
+                                  </a>
                             </div>
                         </div>
                     </li>
@@ -166,6 +179,12 @@ get_header();
 
                                    <?php if ( get_theme_mod('slider_five_description') !='' ) {  ?>
                                      <p><?php echo esc_html(get_theme_mod('slider_five_description')); ?></p>
+                                     
+                                     <?php if ( get_theme_mod('slider_five_link_url') !='' && get_theme_mod('slider_five_link_text') !=''  ) {  ?>
+                                  <a class="slider-button" href="<?php echo esc_url(get_theme_mod('slider_five_link_url')); ?>">
+                                    <?php  echo esc_html(get_theme_mod('slider_five_link_text')); ?>
+                                    <?php } ?> 
+                                  </a>
                             </div>
                          </div>
                     </li>
