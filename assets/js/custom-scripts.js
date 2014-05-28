@@ -38,9 +38,9 @@ jQuery(document).ready(function() {
 });
 
 /* Trigger one page navigation powered by smint.js */
-jQuery(document).ready(function() {
-    jQuery('#headercontainer').smint();
-});
+//jQuery(document).ready(function() {
+//    jQuery('#headercontainer').smint();
+//});
 
 /* Trigger mobile responsive navigation powered by slicknav.js */
 jQuery(document).ready(function($) {
