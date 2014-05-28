@@ -1225,21 +1225,21 @@ select {
 
 }
 #featured-portfolio.flexslider .flex-prev{
-    left:30px;
+    left:32px;
     opacity:1;
 }
 #featured-portfolio.flexslider .flex-next{
-    right:30px;
+    right:35px;
     opacity:1;
     font-size:30px;
 }
 #featured-portfolio.flexslider:hover .flex-prev{
     opacity: 1;
-    left: 30px;
+    left: 32px;
 }
 
 #featured-portfolio.flexslider:hover .flex-next{
-    right:30px;
+    right:35px;
     opacity:1;
 }
 
@@ -1249,6 +1249,7 @@ select {
     border: 1px solid #ccc;
     width: 30px;
     height: 45px;
+    padding:0 6px;
 }
 
 #featured-portfolio .flex-direction-nav a.flex-prev:before {
