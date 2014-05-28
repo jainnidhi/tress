@@ -771,20 +771,7 @@ function tress_customize_register($wp_customize) {
             'priority' => 1,
            
         ));
-        
-        // home Title
-        $wp_customize->add_setting('home_menu_title', array(
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('home_menu_title', array(
-            'label' => __('Menu Title', 'tress'),
-            'section' => 'home_featured_title_setting',
-            'settings' => 'home_menu_title',
-            'priority' => 2,
-           
-        ));
+       
         
      // Add new section for Home Featured One settings
     $wp_customize->add_section('home_featured_one_setting', array(
@@ -1096,7 +1083,7 @@ function tress_customize_register($wp_customize) {
         
             // Add new section for displaying Featured Portfolio on Front Page
     $wp_customize->add_section('tress_front_page_portfolio_options', array(
-        'title' => __('Featured Portfolio', 'tress'),
+        'title' => __('Portfolio Settings', 'tress'),
         'description' => __('Settings for displaying featured portfolio on Front Page', 'tress'),
         'priority' => 52,
     ));
@@ -1113,21 +1100,8 @@ function tress_customize_register($wp_customize) {
             'priority' => 1,
            
         ));
-        
-        // post Title
-        $wp_customize->add_setting('tress_portfolio_menu_title', array(
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('tress_portfolio_menu_title', array(
-            'label' => __('Menu Title', 'tress'),
-            'section' => 'tress_front_page_portfolio_options',
-            'settings' => 'tress_portfolio_menu_title',
-            'priority' => 2,
-           
-        ));
-    // enable featured posts on front page?
+       
+    // enable featured portfolio on front page?
     $wp_customize->add_setting('tress_front_featured_portfolio_check', array(
         'default' => 1, 
         'sanitize_callback' => 'tress_sanitize_checkbox',
@@ -1194,64 +1168,52 @@ function tress_customize_register($wp_customize) {
            
         ));
         
-        // post Title
-        $wp_customize->add_setting('tress_post_menu_title', array(
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('tress_post_menu_title', array(
-            'label' => __('Menu Title', 'tress'),
-            'section' => 'tress_front_page_post_options',
-            'settings' => 'tress_post_menu_title',
-            'priority' => 2,
-           
+       
+        // enable featured posts on front page?
+        $wp_customize->add_setting('tress_front_featured_posts_check', array(
+            'default' => 1, 
+            'sanitize_callback' => 'tress_sanitize_checkbox',
         ));
-    // enable featured posts on front page?
-    $wp_customize->add_setting('tress_front_featured_posts_check', array(
-        'default' => 1, 
-        'sanitize_callback' => 'tress_sanitize_checkbox',
-    ));
-    $wp_customize->add_control('tress_front_featured_posts_check', array(
-        'label' => __('Show featured posts on Front Page', 'tress'),
-        'section' => 'tress_front_page_post_options',
-        'priority' => 10,
-        'type' => 'checkbox',
-    ));
+        $wp_customize->add_control('tress_front_featured_posts_check', array(
+            'label' => __('Show featured posts on Front Page', 'tress'),
+            'section' => 'tress_front_page_post_options',
+            'priority' => 10,
+            'type' => 'checkbox',
+        ));
 
-    // select number of posts for featured posts on front page
-    $wp_customize->add_setting('tress_front_featured_posts_count', array(
-        'default' => 3,
-        'sanitize_callback' => 'sanitize_text_field',
-        'transport'=> 'postMessage',
-    ));
-    $wp_customize->add_control('tress_front_featured_posts_count', array(
-        'label' => __('Number of posts to display', 'tress'),
-        'section' => 'tress_front_page_post_options',
-        'settings' => 'tress_front_featured_posts_count',
-        'priority' => 20,
-    ));
-       // select category for featured posts 
-    $wp_customize->add_setting('tress_front_featured_posts_cat', array('default' => 0,));
-    $wp_customize->add_control(new WP_Customize_Dropdown_Categories_Control($wp_customize, 'tress_front_featured_posts_cat', array(
-        'label' => __('Post Category', 'tress'),
-        'section' => 'tress_front_page_post_options',
-        'type' => 'dropdown-categories',
-        'settings' => 'tress_front_featured_posts_cat',
-        'priority' => 30,
-    )));
-           
-        
-            // Add new section for Home CTA settings
-    $wp_customize->add_section('home_cta_setting', array(
-        'title' => __('Home CTA', 'tress'),
-        'priority' => 60,
-    ));
-    
-    $wp_customize->add_setting('cta_title', array(
+        // select number of posts for featured posts on front page
+        $wp_customize->add_setting('tress_front_featured_posts_count', array(
+            'default' => 3,
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
-            ));
+        ));
+        $wp_customize->add_control('tress_front_featured_posts_count', array(
+            'label' => __('Number of posts to display', 'tress'),
+            'section' => 'tress_front_page_post_options',
+            'settings' => 'tress_front_featured_posts_count',
+            'priority' => 20,
+        ));
+           // select category for featured posts 
+        $wp_customize->add_setting('tress_front_featured_posts_cat', array('default' => 0,));
+        $wp_customize->add_control(new WP_Customize_Dropdown_Categories_Control($wp_customize, 'tress_front_featured_posts_cat', array(
+            'label' => __('Post Category', 'tress'),
+            'section' => 'tress_front_page_post_options',
+            'type' => 'dropdown-categories',
+            'settings' => 'tress_front_featured_posts_cat',
+            'priority' => 30,
+        )));
+
+
+                // Add new section for Home CTA settings
+        $wp_customize->add_section('home_cta_setting', array(
+            'title' => __('Home CTA', 'tress'),
+            'priority' => 60,
+        ));
+
+        $wp_customize->add_setting('cta_title', array(
+                'sanitize_callback' => 'sanitize_text_field',
+                'transport'=> 'postMessage',
+                ));
         
         $wp_customize->add_control('cta_title', array(
             'label' => __('Title', 'tress'),
@@ -1261,7 +1223,7 @@ function tress_customize_register($wp_customize) {
            
         ));
     
-    $wp_customize->add_setting('cta_text', array('default' => '',
+         $wp_customize->add_setting('cta_text', array('default' => '',
             'sanitize_callback' => 'sanitize_text_field',
         'transport'=> 'postMessage',
             ));
@@ -1319,20 +1281,6 @@ function tress_customize_register($wp_customize) {
             'section' => 'feedback_title_setting',
             'settings' => 'feedback_title',
             'priority' => 1,
-           
-        ));
-        
-        // home Title
-        $wp_customize->add_setting('feedback_menu_title', array(
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('feedback_menu_title', array(
-            'label' => __('Menu Title', 'tress'),
-            'section' => 'feedback_title_setting',
-            'settings' => 'feedback_menu_title',
-            'priority' => 2,
            
         ));
         
@@ -1507,20 +1455,7 @@ function tress_customize_register($wp_customize) {
            
         ));
         
-        // menu Title
-        $wp_customize->add_setting('home_menu_contact_title', array(
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('home_menu_contact_title', array(
-            'label' => __('Menu Title', 'tress'),
-            'section' => 'home_contact_title_setting',
-            'settings' => 'home_menu_contact_title',
-            'priority' => 2,
-           
-        ));
-        
+       
         
           // Add new section for Home Tagline settings
     $wp_customize->add_section('tress_contact_form_setting', array(
