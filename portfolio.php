@@ -17,7 +17,7 @@ get_header(); ?>
     <div class="content clearfix">
         <?php
         $current_page = get_query_var('paged');
-        $per_page = intval(9);
+        $per_page = intval(get_theme_mod('tress_portfolio_front_count'));
         $offset = $current_page > 0 ? $per_page * ($current_page - 1) : 0;
         $portfolio_args = array(
             'post_type' => 'portfolio',

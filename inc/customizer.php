@@ -1161,6 +1161,17 @@ function tress_customize_register($wp_customize) {
         'priority' => 30,
     )));
     
+    $wp_customize->add_setting('tress_portfolio_front_count', array(
+            'default' => 9,
+            'sanitize_callback' => 'tress_sanitize_integer',
+        ));
+        $wp_customize->add_control('tress_portfolio_front_count', array(
+            'label' => __('Portfolio Item Count', 'tress'),
+            'section' => 'tress_front_page_portfolio_options',
+            'settings' => 'tress_portfolio_front_count',
+            'priority' => 40,
+        ));
+    
     
         
         // Add new section for displaying Featured Posts on Front Page

@@ -469,8 +469,7 @@ textarea {
     color: #222;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
-    padding: 16px;
-    width: 100%;
+    padding: 10px;
 }
 
 input[type="checkbox"],
@@ -952,12 +951,12 @@ select {
 /* Home CTA Area */
 
 .home-cta-area{
-    background:#42a2ce;
+    background:#cecece;
 }
 .home-cta{
     padding: 30px;
     max-width: 1140px;
-    margin: 0 auto 20px;
+    margin: 0 auto;
     text-align:center;
 }
 
@@ -972,15 +971,15 @@ select {
 }
 
 .home-cta .cta-button{
-    background: #fff;
-    border-radius: 3px;
-    padding: 10px 15px;
-    color: #111;
+    background: #111;
+    padding: 12px 30px;
+    color: #fff;
     margin:10px 0;
 }
 
 .home-cta .cta-button:hover{
-    color:#333;
+    color:#111;
+    background:#fff;
 }
 
 .slider-wrapper .flexslider{
@@ -1031,7 +1030,7 @@ select {
 
 .flex-caption .slider-button{
     background:#42a2ce;
-    padding:20px 40px;
+    padding:15px 40px;
     border-radius:3px;
     color:#fff;
     font-size:16px;
@@ -1204,7 +1203,7 @@ select {
     color: #fff;
 }
 
-.home-featured-portfolio:hover{
+.home-featured-portfolio img:hover{
     opacity:0.5;
 
 }
@@ -1222,7 +1221,7 @@ select {
     color:#111;
 }
 .home-featured-portfolio:hover span{
-    display: block !important;
+    display: block;
 
 }
 #featured-portfolio.flexslider .flex-prev{
@@ -1232,6 +1231,7 @@ select {
 #featured-portfolio.flexslider .flex-next{
     right:30px;
     opacity:1;
+    font-size:30px;
 }
 #featured-portfolio.flexslider:hover .flex-prev{
     opacity: 1;
@@ -1246,11 +1246,14 @@ select {
 #featured-portfolio .flex-direction-nav a{
     top:40%;
     color:#111;
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 45px;
 }
 
 #featured-portfolio .flex-direction-nav a.flex-prev:before {
     font-family: "FontAwesome";
-    font-size: 40px;
+    font-size: 30px;
     display: inline-block;
     content: '\f053';
 }
@@ -1258,6 +1261,7 @@ select {
 #featured-portfolio .flex-direction-nav a.flex-next:before {
     font-family: "FontAwesome";
     content: '\f054';
+    font-size:30px;
 }
 
 .portfolio{
@@ -1288,7 +1292,7 @@ select {
 }
 
 .portfolio-buttons a:hover{
-    background:#111;
+    background:#111 !important;
 }
 /* ==========================================================================
    Main Content
@@ -1723,6 +1727,7 @@ article.sticky {
 .pagination
 {
     padding: 20px 30px 20px 40px;
+    clear:both;
 }
 .pagination .page-numbers{
     padding: 5px 20px;
@@ -2843,7 +2848,6 @@ img#wpstats {
    Color Schemes
    ========================================================================== */
 /* ! Tress red	*/
-.tress-red .cta-button,
 .tress-red .feature-more-link,
 .tress-red #footercontainer,
 .tress-red .pagination .page-numbers:hover,
@@ -2860,7 +2864,11 @@ img#wpstats {
 .tress-red .home-featured-title-area,
 .tress-red .client-feedback-area,
 .tress-red .home-contact-area,
-.tress-red .home-post-title-area
+.tress-red .home-post-title-area,
+.tress-red .notification-bar,
+.tress-red .nav-container,
+.tress-red .home-portfolio-title-area,
+.tress-red .portfolio-buttons a
 {
     background: #e55252;
 }
@@ -2899,7 +2907,8 @@ img#wpstats {
 .tress-red .contact-details .fa,
 .tress-red .contact-details #address:before,
 .tress-red .contact-details #phone:before,
-.tress-red .contact-details #email:before
+.tress-red .contact-details #email:before,
+.tress-red .header-contact p:before
 {
     color:#e55252;
 }
@@ -2909,7 +2918,6 @@ img#wpstats {
 }
 
 /* ! Tress green	*/
-.tress-green .cta-button,
 .tress-green .feature-more-link,
 .tress-green #footercontainer,
 .tress-green .pagination .page-numbers:hover,
@@ -2927,7 +2935,11 @@ img#wpstats {
 .tress-green .home-featured-title-area,
 .tress-green .client-feedback-area,
 .tress-green .home-contact-area,
-.tress-green .home-post-title-area
+.tress-green .home-post-title-area,
+.tress-green .notification-bar,
+.tress-green .nav-container,
+.tress-green .home-portfolio-title-area,
+.tress-green .portfolio-buttons a
 {
     background: #3bb59c;
 }
@@ -2967,7 +2979,8 @@ img#wpstats {
 .tress-green .contact-details .fa,
 .tress-green .contact-details #address:before,
 .tress-green .contact-details #phone:before,
-.tress-green .contact-details #email:before
+.tress-green .contact-details #email:before,
+.tress-green .header-contact p:before
 {
     color:#3bb59c;
 }
@@ -2977,7 +2990,6 @@ img#wpstats {
 }
 
 /* ! Tress pink	*/
-.tress-pink .cta-button,
 .tress-pink .feature-more-link,
 .tress-pink #footercontainer,
 .tress-pink .pagination .page-numbers:hover,
@@ -2995,7 +3007,11 @@ img#wpstats {
 .tress-pink .home-featured-title-area,
 .tress-pink .client-feedback-area,
 .tress-pink .home-contact-area,
-.tress-pink .home-post-title-area{
+.tress-pink .home-post-title-area,
+.tress-pink .notification-bar,
+.tress-pink .nav-container,
+.tress-pink .home-portfolio-title-area,
+.tress-pink .portfolio-buttons a{
     background: #ed409f;
 }
 
@@ -3034,7 +3050,8 @@ img#wpstats {
 .tress-pink .contact-details .fa,
 .tress-pink .contact-details #address:before,
 .tress-pink .contact-details #phone:before,
-.tress-pink .contact-details #email:before
+.tress-pink .contact-details #email:before,
+.tress-pink .header-contact p:before
 {
     color:#ed409f;
 }
@@ -3045,7 +3062,6 @@ img#wpstats {
 
 
 /* ! Tress gray	*/
-.tress-gray .cta-button,
 .tress-gray .feature-more-link,
 .tress-gray #footercontainer,
 .tress-gray .pagination .page-numbers:hover,
@@ -3063,7 +3079,11 @@ img#wpstats {
 .tress-gray .home-featured-title-area,
 .tress-gray .client-feedback-area,
 .tress-gray .home-contact-area,
-.tress-gray .home-post-title-area
+.tress-gray .home-post-title-area,
+.tress-gray .notification-bar,
+.tress-gray .nav-container,
+.tress-gray .home-portfolio-title-area,
+.tress-gray .portfolio-buttons a
 {
     background: #8e8e8e;
 }
@@ -3104,7 +3124,8 @@ img#wpstats {
 .tress-gray .contact-details .fa,
 .tress-gray .contact-details #address:before,
 .tress-gray .contact-details #phone:before,
-.tress-gray .contact-details #email:before
+.tress-gray .contact-details #email:before,
+.tress-gray .header-contact p:before
 {
     color:#8e8e8e;
 }
@@ -3115,7 +3136,6 @@ img#wpstats {
 
 
 /* ! Tress brown	*/
-.tress-brown .cta-button,
 .tress-brown .feature-more-link,
 .tress-brown #footercontainer,
 .tress-brown .pagination .page-numbers:hover,
@@ -3133,7 +3153,11 @@ img#wpstats {
 .tress-brown .home-featured-title-area,
 .tress-brown .client-feedback-area,
 .tress-brown .home-contact-area,
-.tress-brown .home-post-title-area
+.tress-brown .home-post-title-area,
+.tress-brown .notification-bar,
+.tress-brown .nav-container,
+.tress-brown .home-portfolio-title-area,
+.tress-brown .portfolio-buttons a
 {
     background: #875608;
 }
@@ -3174,7 +3198,8 @@ img#wpstats {
 .tress-brown .contact-details .fa,
 .tress-brown .contact-details #address:before,
 .tress-brown .contact-details #phone:before,
-.tress-brown .contact-details #email:before
+.tress-brown .contact-details #email:before,
+.tress-brown .header-contact p:before
 {
     color:#875608;
 }
@@ -3184,7 +3209,6 @@ img#wpstats {
 }
 
 /* ! Tress purple	*/
-.tress-purple .cta-button,
 .tress-purple .feature-more-link,
 .tress-purple #footercontainer,
 .tress-purple .pagination .page-numbers:hover,
@@ -3202,7 +3226,11 @@ img#wpstats {
 .tress-purple .home-featured-title-area,
 .tress-purple .client-feedback-area,
 .tress-purple .home-contact-area,
-.tress-purple .home-post-title-area
+.tress-purple .home-post-title-area,
+.tress-purple .notification-bar,
+.tress-purple .nav-container,
+.tress-purple .home-portfolio-title-area,
+.tress-purple .portfolio-buttons a
 {
     background: #a678d3;
 }
@@ -3243,7 +3271,8 @@ img#wpstats {
 .tress-purple .contact-details .fa,
 .tress-purple .contact-details #address:before,
 .tress-purple .contact-details #phone:before,
-.tress-purple .contact-details #email:before
+.tress-purple .contact-details #email:before,
+.tress-purple .header-contact p:before
 {
     color:#a678d3;
 }
@@ -3253,7 +3282,6 @@ img#wpstats {
 }
 
 /* ! Tress Orange */
-.tress-orange .cta-button,
 .tress-orange .feature-more-link,
 .tress-orange #footercontainer,
 .tress-orange .pagination .page-numbers:hover,
@@ -3271,7 +3299,11 @@ img#wpstats {
 .tress-orange .home-featured-title-area,
 .tress-orange .client-feedback-area,
 .tress-orange .home-contact-area,
-.tress-orange .home-post-title-area
+.tress-orange .home-post-title-area,
+.tress-orange .notification-bar,
+.tress-orange .nav-container,
+.tress-orange .home-portfolio-title-area,
+.tress-orange .portfolio-buttons a
 {
     background: #fa7f53;
 }
@@ -3311,7 +3343,8 @@ img#wpstats {
 .tress-orange .contact-details .fa,
 .tress-orange .contact-details #address:before,
 .tress-orange .contact-details #phone:before,
-.tress-orange .contact-details #email:before
+.tress-orange .contact-details #email:before,
+.tress-orange .header-contact p:before
 
 {
     color:#fa7f53;
@@ -3332,11 +3365,7 @@ img#wpstats {
 
 /*  Breakpoints are set based on the design, not based on device sizes */
 @media only screen and (max-width: 1100px) {
-    .site-title a {
-        font-size: 52px;
-    }
-
-
+   
     .home-featured,
     #featured-posts-container,
     #reviewslider,
@@ -3532,6 +3561,15 @@ img#wpstats {
     .home-featured .home-featured-three{
         margin-left:0;
     }
+    
+    .header-contact{
+        text-align:center;
+    }
+    
+    .header-extras .social-links{
+        float:none;
+        margin-bottom:20px;
+    }
 }
 
 /*  Go full Width at less than 650px */
@@ -3715,6 +3753,16 @@ img#wpstats {
         margin: 0 auto;
         width: 100%;
         margin-bottom: 20px;
+    }
+    
+    .portfolio{
+        margin-bottom:20px;
+    }
+    
+    .notification-text p,
+    .notification-link{
+        text-align:center;
+        margin-bottom:10px;
     }
 
 }
