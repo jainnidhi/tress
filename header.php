@@ -65,9 +65,6 @@ global $edd_options;
 
                 <div class="visuallyhidden skip-link"><a href="#primary" title="<?php esc_attr_e('Skip to main content', 'tress'); ?>"><?php esc_html_e('Skip to main content', 'tress'); ?></a></div>
          
-                <div class="social-wrapper">
-                   
-                </div>
                 <div id="headercontainer" class="fxd">
 
                     <header id="masthead" class="site-header row" role="banner">
@@ -122,30 +119,9 @@ global $edd_options;
                     </header> <!-- /#masthead.site-header.row -->
                     <div class="nav-container">
                         <nav id="site-navigation" class="main-navigation clearfix" role="navigation">
-                                 <?php if(!is_front_page() || get_theme_mod('tress_one_page_nav_check')) {
-                                  wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'primary-menu', 'container_class' => 'menu')); 
-                                 }
-                                 else { ?>
-                                <div id="home-top-nav" class="home-menu">
-                                        <ul class="home-navigation">
-                                            <li id="m1" class="page_item"><a class="scrollSmint" href="#main-slider" id="social-wrapper">Home</a></li>
-                                            <li id="m2" class="page_item"><a class="scrollSmint" href="#featured-title" id="home-featured-title-area"><?php if ( get_theme_mod('home_menu_title') !='' ) {  ?><?php echo esc_html(get_theme_mod('home_menu_title')); ?>
-                                                                <?php } else {  ?> <?php esc_html_e('Theme Features', 'tress') ?>
-                                                                                                    <?php } ?></a></li>
-                                            <li id="m3" class="page_item"><a class="scrollSmint" href="#post-title" id="home-post-title-area"><?php if ( get_theme_mod('tress_post_menu_title') !='' ) {  ?><?php echo esc_html(get_theme_mod('tress_post_menu_title')); ?>
-                                                                <?php } else {  ?> <?php esc_html_e('Recent Blogs', 'tress') ?>
-                                                                                                    <?php } ?></a></li>
-                                            <li id="m4" class="page_item"><a class="scrollSmint" href="#feedback-title" id="client-feedback-area"><?php if ( get_theme_mod('feedback_menu_title') !='' ) {  ?><?php echo esc_html(get_theme_mod('feedback_menu_title')); ?>
-                                                                <?php } else {  ?> <?php esc_html_e('Client Feedbacks', 'tress') ?>
-                                                                                                    <?php } ?></a></li>
-
-                                            <li id="m5" class="page_item"><a class="scrollSmint" href="#contact-title" id="home-contact-area"><?php if ( get_theme_mod('home_menu_contact_title') !='' ) {  ?><?php echo esc_html(get_theme_mod('home_menu_contact_title')); ?>
-                                                                <?php } else {  ?> <?php esc_html_e('Contact', 'tress') ?>
-                                                                                                    <?php } ?></a></li>
-                                        </ul>
-                                    </div>
-                                <?php } ?>
                                 
+                               <?php  wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'primary-menu', 'container_class' => 'menu')); ?>
+                             
                                 <div id="mobile-menu"></div>
                             </nav> <!-- /.site-navigation.main-navigation -->
                     </div>

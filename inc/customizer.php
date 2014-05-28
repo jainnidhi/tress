@@ -1093,6 +1093,73 @@ function tress_customize_register($wp_customize) {
             
         ));
         
+        
+            // Add new section for displaying Featured Portfolio on Front Page
+    $wp_customize->add_section('tress_front_page_portfolio_options', array(
+        'title' => __('Featured Portfolio', 'tress'),
+        'description' => __('Settings for displaying featured portfolio on Front Page', 'tress'),
+        'priority' => 52,
+    ));
+    // post Title
+        $wp_customize->add_setting('tress_portfolio_title', array(
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport'=> 'postMessage',
+            ));
+        
+        $wp_customize->add_control('tress_portfolio_title', array(
+            'label' => __('Section Title', 'tress'),
+            'section' => 'tress_front_page_portfolio_options',
+            'settings' => 'tress_portfolio_title',
+            'priority' => 1,
+           
+        ));
+        
+        // post Title
+        $wp_customize->add_setting('tress_portfolio_menu_title', array(
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport'=> 'postMessage',
+            ));
+        
+        $wp_customize->add_control('tress_portfolio_menu_title', array(
+            'label' => __('Menu Title', 'tress'),
+            'section' => 'tress_front_page_portfolio_options',
+            'settings' => 'tress_portfolio_menu_title',
+            'priority' => 2,
+           
+        ));
+    // enable featured posts on front page?
+    $wp_customize->add_setting('tress_front_featured_portfolio_check', array(
+        'default' => 1, 
+        'sanitize_callback' => 'tress_sanitize_checkbox',
+    ));
+    $wp_customize->add_control('tress_front_featured_portfolio_check', array(
+        'label' => __('Show featured portfolio on Front Page', 'tress'),
+        'section' => 'tress_front_page_portfolio_options',
+        'priority' => 10,
+        'type' => 'checkbox',
+    ));
+
+    // select number of posts for featured posts on front page
+    $wp_customize->add_setting('tress_front_featured_portfolio_count', array(
+        'default' => 3,
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport'=> 'postMessage',
+    ));
+    $wp_customize->add_control('tress_front_featured_portfolio_count', array(
+        'label' => __('Number of portfolio to display', 'tress'),
+        'section' => 'tress_front_page_portfolio_options',
+        'settings' => 'tress_front_featured_portfolio_count',
+        'priority' => 20,
+    ));
+       // select category for featured posts 
+    $wp_customize->add_setting('tress_front_featured_portfolio_cat', array('default' => 0,));
+    $wp_customize->add_control(new WP_Customize_Dropdown_Categories_Control($wp_customize, 'tress_front_featured_portfolio_cat', array(
+        'label' => __('Portfolio Category', 'tress'),
+        'section' => 'tress_front_page_portfolio_options',
+        'type' => 'dropdown-categories',
+        'settings' => 'tress_front_featured_portfolio_cat',
+        'priority' => 30,
+    )));
     
     
         

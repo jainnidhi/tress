@@ -325,6 +325,9 @@ get_header();
             </div>
         </div><!-- end home featured area -->
         
+         <?php  // Display featured posts on front page
+            get_template_part('content', 'frontportfolio'); ?>
+        
         <div class="client-feedback-area" id="feedback-title">
             <div class="client-feedback-title">
                  <?php if ( get_theme_mod('feedback_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('feedback_title')); ?></h3>

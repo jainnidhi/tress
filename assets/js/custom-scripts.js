@@ -14,6 +14,13 @@ jQuery(window).load(function() {
     jQuery('#reviewslider').flexslider({
         animation: "slide"
     });
+
+    jQuery('#featured-portfolio').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 355,
+        itemMargin: 5
+    });
 });
 
 
