@@ -561,7 +561,6 @@ select {
 }
 .site-content {
     clear: both;
-    width: 90%;
     max-width: 1140px;
     margin: 0 auto;
     padding: 20px;
@@ -1168,6 +1167,7 @@ select {
     border:1px solid #eee;
     margin-left:20px;
     display:table;
+    text-align:center;
 }
 
 
@@ -1258,6 +1258,37 @@ select {
 #featured-portfolio .flex-direction-nav a.flex-next:before {
     font-family: "FontAwesome";
     content: '\f054';
+}
+
+.portfolio{
+    margin-bottom:20px;
+}
+
+.portfolio h2{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.portfolio:nth-of-type(3n+1){
+    margin-left:0;
+}
+
+.portfolio-buttons{
+    margin:10px 0;
+    text-align:center;
+}
+
+.portfolio-buttons a{
+    background: #42a2ce;
+    color: #fff;
+    padding: 7px 10px;
+}
+
+.portfolio-buttons a:hover{
+    background:#111;
 }
 /* ==========================================================================
    Main Content

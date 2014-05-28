@@ -32,7 +32,7 @@ if (get_theme_mod('tress_front_featured_portfolio_check')) {
                   <?php } else {  ?> <h3><?php esc_html_e('Recent Portfolio', 'tress') ?></h3>
                            <?php } ?>
             </div>
-        </div>
+    </div>
    
 
             <div id="featured-portfolio" class="flexslider">
@@ -57,7 +57,7 @@ if (get_theme_mod('tress_front_featured_portfolio_check')) {
 
                             <a href="<?php the_permalink(); ?>">
 
-                                <h3 class="home-featured-portfolio-title"><?php the_title(); ?></h3>
+                                <h4 class="home-featured-portfolio-title"><?php the_title(); ?></h4>
 
                             </a>
                            
