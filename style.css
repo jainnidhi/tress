@@ -1245,11 +1245,12 @@ select {
 
 #featured-portfolio .flex-direction-nav a{
     top:40%;
-    color:#111;
-    border: 1px solid #ccc;
-    width: 30px;
+    color:#fff;
+    width: 45px;
     height: 45px;
     padding:0 6px;
+    background:#111;
+    text-align:center;
 }
 
 #featured-portfolio .flex-direction-nav a.flex-prev:before {
@@ -1263,6 +1264,11 @@ select {
     font-family: "FontAwesome";
     content: '\f054';
     font-size:30px;
+    display:block;
+}
+
+#featured-portfolio .flex-control-nav{
+    display:none;
 }
 
 .portfolio{
