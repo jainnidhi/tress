@@ -963,10 +963,11 @@ select {
 
 .home-cta h3{
     color:#fff;
+    font-size:48px;
 }
 
 .home-cta p{
-    font-size: 18px; 
+    font-size: 24px; 
     color: #fff; 
     margin:20px 0;
 }

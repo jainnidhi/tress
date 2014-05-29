@@ -399,6 +399,11 @@ get_header();
             </div>
         </div>
         
+        
+        
+        <?php  // Display featured posts on front page
+            get_template_part('content', 'frontposts'); ?>
+        
         <div class="home-cta-area">
                 <div class="home-cta">
                      <?php if ( get_theme_mod('cta_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('cta_title')); ?></h3>
@@ -421,9 +426,6 @@ get_header();
                 
                 </div>
          </div>
-        
-        <?php  // Display featured posts on front page
-            get_template_part('content', 'frontposts'); ?>
        
          <span class="top"><a class="back-to-top"><i class="fa fa-arrow-up"></i></a></span>
             
