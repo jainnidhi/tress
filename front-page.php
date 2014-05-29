@@ -33,7 +33,7 @@ get_header();
                     <div class="slider-text-container">
                      <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'tress') ?></a></h2>
                           <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
-                          <a class="slider-button" href="<?php if ( get_theme_mod('slider_one_link_url') !='' ) { echo esc_url(get_theme_mod('slider_one_link_url')); } ?>">
+                          <a class="slider-button" href="#">
                             <?php esc_html_e('Start Building Your Website Now', 'tress') ?>
                         </a>
                     </div>
@@ -46,7 +46,7 @@ get_header();
                     <div class="slider-text-container">
                      <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'tress') ?></a></h2>
                           <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
-                          <a class="slider-button" href="<?php if ( get_theme_mod('slider_two_link_url') !='' ) { echo esc_url(get_theme_mod('slider_two_link_url')); } ?>">
+                          <a class="slider-button" href="#">
                             <?php esc_html_e('Start Building Your Website Now', 'tress') ?>
                         </a>
                     </div>
@@ -59,7 +59,7 @@ get_header();
                     <div class="slider-text-container">
                      <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'tress') ?></a></h2>
                           <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
-                          <a class="slider-button" href="<?php if ( get_theme_mod('slider_three_link_url') !='' ) { echo esc_url(get_theme_mod('slider_three_link_url')); } ?>">
+                          <a class="slider-button" href="#">
                               <?php esc_html_e('Start Building Your Website Now', 'tress') ?>
                         </a>
                     </div>

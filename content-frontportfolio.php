@@ -52,7 +52,7 @@ if (get_theme_mod('tress_front_featured_portfolio_check')) {
                                     <?php the_post_thumbnail('post_feature_thumb'); ?>
                                     <span><i class="fa fa-link"></i></span>
                                 </a>
-                                
+                               
                             </div> <!--end .featured-post-content -->
 
                             <a href="<?php the_permalink(); ?>">

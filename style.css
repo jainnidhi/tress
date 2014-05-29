@@ -555,9 +555,7 @@ select {
 /* ==========================================================================
    Site specific styles
    ========================================================================== */
-#maincontentcontainer{
-    padding:30px 0;
-}
+
 .site-content {
     clear: both;
     max-width: 1140px;
@@ -1205,25 +1203,42 @@ select {
     color: #fff;
 }
 
-.home-featured-portfolio img:hover{
+.home-featured-portfolio a:hover,
+.portfolio a:hover{
     opacity:0.5;
 
 }
 
-.home-featured-portfolio span{
-    display:none;
+.home-featured-portfolio span,
+.portfolio span{
+    display:block;
     position:absolute;
     text-align: center;
     color: #fff;
     background: #eee;
     border-radius: 100px;
-    top: 100px;
-    left: 170px;
+    top: 90px;
+    left: 140px;
     padding: 10px;
     color:#111;
+    opacity: 0;
 }
-.home-featured-portfolio img:hover span{
-    display: block !important;
+
+.portfolio span{
+    top:100px;
+    left:165px;
+}
+
+.featured-portfolio-content{
+    position:relative;
+}
+.featured-portfolio-content a:hover span,
+.portfolio-image a:hover span{
+    opacity: 1; 
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -khtml-transition: all 0.3s ease;
+    -moz-transitiokn: all 0.3s ease;
 
 }
 #featured-portfolio.flexslider .flex-prev{
@@ -1275,8 +1290,17 @@ select {
 
 .portfolio{
     margin-bottom:20px;
+    display:table;
 }
 
+.portfolio .portfolio-image >*{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.portfolio-image{
+    position:relative;
+}
 .portfolio h2{
     font-size: 22px;
     font-weight: 300;
@@ -1302,6 +1326,7 @@ select {
 
 .portfolio-buttons a:hover{
     background:#111 !important;
+    opacity:1;
 }
 /* ==========================================================================
    Main Content

@@ -38,8 +38,9 @@ get_header(); ?>
                     <div class="portfolio-image">
                         <a href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail('post_feature_thumb'); ?>
+                             <span><i class="fa fa-link"></i></span>
                         </a>
-                           
+                          
                     </div>
                       
                         <div class="portfolio-buttons">
