@@ -1221,8 +1221,8 @@ select {
     padding: 10px;
     color:#111;
 }
-.home-featured-portfolio:hover span{
-    display: block;
+.home-featured-portfolio img:hover span{
+    display: block !important;
 
 }
 #featured-portfolio.flexslider .flex-prev{
