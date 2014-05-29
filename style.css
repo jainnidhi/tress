@@ -630,9 +630,7 @@ select {
     background: #fff;
     top: 0px; 
     margin: 0 auto; 
-    z-index: 9999; 
-    border-bottom: solid 1px #ddd;
-    box-shadow: 0 0 3px #888;
+    z-index: 9999;
 }
 
 #headercontainer:after{
