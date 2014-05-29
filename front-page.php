@@ -343,22 +343,43 @@ get_header();
                         <li id="tslider1">
                         <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img1.jpg" alt=""/>
                         <div class="flex-caption">
-                          <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
+                            <div class="client-testimonial">
+                                <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
+                            </div>
+                            <div class="client-name">
+                                 <a class="client" href="#">
+                                    <?php esc_html_e('-John', 'tress') ?>
+                                </a>
+                            </div>
                        </div>
                     </li>
                     
                     <li id="tslider2">
                         <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img2.jpg" alt=""/>
                         <div class="flex-caption">
+                            <div class="client-testimonial">
                                <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>                  
-                         </div>
+                            </div>
+                            <div class="client-name">
+                                 <a class="client" href="#">
+                                    <?php esc_html_e('-John', 'tress') ?>
+                                </a>
+                            </div>
+                        </div>
                     </li>
                     
                      <li id="tslider3">
                         <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img4.jpg" alt=""/>
                         <div class="flex-caption">
-                           <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
-                         </div>
+                            <div class="client-testimonial">
+                                <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
+                            </div>
+                            <div class="client-name">
+                                 <a class="client" href="#">
+                                    <?php esc_html_e('-John', 'tress') ?>
+                                </a>
+                            </div>
+                        </div>
                     </li>
                     <?php } ?>
                     
@@ -366,21 +387,35 @@ get_header();
                     <li id="tslider1">
                         <img  src="<?php echo get_theme_mod('tslider_one'); ?>" alt=""/>
                         <div class="flex-caption">
-                             <?php if ( get_theme_mod('tslider_one_description') !='' ) {  ?>
+                            <div class="client-testimonial">
+                                <?php if ( get_theme_mod('tslider_one_description') !='' ) {  ?>
                                 <?php echo wpautop(esc_html(get_theme_mod('tslider_one_description'))); ?>
                                  <?php } ?>
+                            </div>
+                            <div class="client-name">
+                                 <a href="<?php if ( get_theme_mod('client_name_url_one') !='' ) { echo esc_url(get_theme_mod('client_name_url_one')); } ?>">
+                                     <?php if ( get_theme_mod('client_name_one') !='' ) { echo esc_html(get_theme_mod('client_name_one')); } ?>
+                                 </a>
+                            </div>
                          </div>
                     </li>
                     
                     <?php if ( get_theme_mod('tslider_two') !='' ) {  ?>
                     <li id="tslider2">
                         <img  src="<?php echo get_theme_mod('tslider_two'); ?>" alt=""/>
-                      <?php } ?>
+                        <?php } ?>
                         <div class="flex-caption">
-                             <?php if ( get_theme_mod('tslider_two_description') !='' ) {  ?>
+                            <div class="client-testimonial">
+                                <?php if ( get_theme_mod('tslider_two_description') !='' ) {  ?>
                                 <?php echo wpautop(esc_html(get_theme_mod('tslider_two_description'))); ?>
                                 <?php } ?>
-                         </div>
+                            </div>
+                            <div class="client-name">
+                                 <a href="<?php if ( get_theme_mod('client_name_url_two') !='' ) { echo esc_url(get_theme_mod('client_name_url_two')); } ?>">
+                                     <?php if ( get_theme_mod('client_name_two') !='' ) { echo esc_html(get_theme_mod('client_name_two')); } ?>
+                                 </a>
+                            </div>
+                        </div>
                     </li>
                     
                      <?php if ( get_theme_mod('tslider_three') !='' ) {  ?>
@@ -388,9 +423,16 @@ get_header();
                         <img  src="<?php echo get_theme_mod('tslider_three'); ?>" alt=""/>
                         <?php } ?>
                         <div class="flex-caption">
-                             <?php if ( get_theme_mod('tslider_three_description') !='' ) {  ?>
+                            <div class="client-testimonial">
+                                <?php if ( get_theme_mod('tslider_three_description') !='' ) {  ?>
                                 <?php echo wpautop(esc_html(get_theme_mod('tslider_three_description'))); ?>
                                 <?php } ?>
+                            </div>
+                            <div class="client-name">
+                                 <a href="<?php if ( get_theme_mod('client_name_url_three') !='' ) { echo esc_url(get_theme_mod('client_name_url_three')); } ?>">
+                                     <?php if ( get_theme_mod('client_name_three') !='' ) { echo esc_html(get_theme_mod('client_name_three')); } ?>
+                                 </a>
+                            </div>
                          </div>
                     </li>
                      <?php } ?>
