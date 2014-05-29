@@ -404,6 +404,18 @@
 			$( '#reviewslider #tslider1 .flex-caption p' ).text( to );
 		} );
 	} );
+        
+         wp.customize( 'client_name_one', function( value ) {
+		value.bind( function( to ) {
+			$( '#tslider1 .client-name a' ).text( to );
+		} );
+	} );
+         wp.customize( 'client_name_url_one', function( value ) {
+		value.bind( function( to ) {
+			$( '#tslider1 .client-name a' ).attr('href', to );
+		} );
+            } );
+        
          wp.customize( 'tslider_two', function( value ) {
 		value.bind( function( to ) {
 			$( '#tslider2 img' ).attr('src', to );
@@ -414,6 +426,16 @@
 			$( '#reviewslider #tslider2 .flex-caption p' ).text( to );
 		} );
 	} );
+        wp.customize( 'client_name_two', function( value ) {
+		value.bind( function( to ) {
+			$( '#tslider2 .client-name a' ).text( to );
+		} );
+	} );
+         wp.customize( 'client_name_url_two', function( value ) {
+		value.bind( function( to ) {
+			$( '#tslider2 .client-name a' ).attr('href', to );
+		} );
+            } );
          wp.customize( 'tslider_three', function( value ) {
 		value.bind( function( to ) {
 			$( '#tslider3 img' ).attr('src', to );
@@ -424,57 +446,62 @@
 			$( '#reviewslider #tslider3 .flex-caption p' ).text( to );
 		} );
 	} );
-         wp.customize( 'home_menu_contact_title', function( value ) {
+        wp.customize( 'client_name_three', function( value ) {
 		value.bind( function( to ) {
-			$( '.home-navigation #m5 a' ).text( to );
+			$( '#tslider3 .client-name a' ).text( to );
 		} );
 	} );
-         wp.customize( 'home_contact_title', function( value ) {
+         wp.customize( 'client_name_url_three', function( value ) {
 		value.bind( function( to ) {
-			$( '.home-contact-title h3' ).text( to );
+			$( '#tslider3 .client-name a' ).attr('href', to );
 		} );
             } );
-        wp.customize( 'contact_form_title', function( value ) {
+        wp.customize( 'tslider_four', function( value ) {
 		value.bind( function( to ) {
-			$( '.home-contact-form h3' ).text( to );
-		} );
-	} );  
-         wp.customize( 'tress_contact_form', function( value ) {
-		value.bind( function( to ) {
-			$( '.home-contact-form' ).text( to );
+			$( '#tslider4 img' ).attr('src', to );
 		} );
 	} );
-        
-        wp.customize( 'contact_title', function( value ) {
+         wp.customize( 'tslider_four_description', function( value ) {
 		value.bind( function( to ) {
-			$( '.contact-detail-wrap .contact-details h3' ).text( to );
+			$( '#reviewslider #tslider4 .flex-caption p' ).text( to );
 		} );
 	} );
-        
-        wp.customize( 'address_detail', function( value ) {
+        wp.customize( 'client_name_four', function( value ) {
 		value.bind( function( to ) {
-			$( '.contact-details #address' ).text( to );
+			$( '#tslider4 .client-name a' ).text( to );
 		} );
 	} );
-        
-        wp.customize( 'contact_email', function( value ) {
+         wp.customize( 'client_name_url_four', function( value ) {
 		value.bind( function( to ) {
-			$( '.contact-details #email' ).text( to );
+			$( '#tslider4 .client-name a' ).attr('href', to );
+		} );
+            } );
+            
+         wp.customize( 'tress_portfolio_title', function( value ) {
+		value.bind( function( to ) {
+			$( '.home-portfolio-title h3' ).text( to );
 		} );
 	} );
-        
-         wp.customize( 'contact_phone', function( value ) {
+        wp.customize( 'tslider_five', function( value ) {
 		value.bind( function( to ) {
-			$( '.contact-details #phone' ).text( to );
+			$( '#tslider5 img' ).attr('src', to );
 		} );
 	} );
-        
-         wp.customize( 'contact_map', function( value ) {
+         wp.customize( 'tslider_five_description', function( value ) {
 		value.bind( function( to ) {
-			$( '.contact-map' ).text( to );
+			$( '#reviewslider #tslider5 .flex-caption p' ).text( to );
 		} );
 	} );
-        
+        wp.customize( 'client_name_five', function( value ) {
+		value.bind( function( to ) {
+			$( '#tslider5 .client-name a' ).text( to );
+		} );
+	} );
+         wp.customize( 'client_name_url_five', function( value ) {
+		value.bind( function( to ) {
+			$( '#tslider5 .client-name a' ).attr('href', to );
+		} );
+            } );
          wp.customize( 'tress_footer_footer_text', function( value ) {
 		value.bind( function( to ) {
 			$( '.smallprint p' ).text( to );
