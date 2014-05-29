@@ -825,7 +825,7 @@ select {
     margin: 0 auto 20px;
 }
 
-#reviewslider .client-testimonial{
+#reviewslider .flex-caption{
     width: 100%;
     margin: 10px 0;
     background: #eee;
@@ -833,10 +833,9 @@ select {
     position: relative;
     padding: 20px;
     min-height: 130px;
-    text-align:center;
 }
 
-#reviewslider .client-testimonial:after {
+#reviewslider .flex-caption:after {
     content: "";
     display: block;
     border: solid 10px transparent;
@@ -2943,7 +2942,8 @@ img#wpstats {
 .tress-red .contact-details #address:before,
 .tress-red .contact-details #phone:before,
 .tress-red .contact-details #email:before,
-.tress-red .header-contact p:before
+.tress-red .header-contact p:before,
+.tress-red .client-name a
 {
     color:#e55252;
 }
@@ -3015,7 +3015,8 @@ img#wpstats {
 .tress-green .contact-details #address:before,
 .tress-green .contact-details #phone:before,
 .tress-green .contact-details #email:before,
-.tress-green .header-contact p:before
+.tress-green .header-contact p:before,
+.tress-green .client-name a
 {
     color:#3bb59c;
 }
@@ -3086,7 +3087,8 @@ img#wpstats {
 .tress-pink .contact-details #address:before,
 .tress-pink .contact-details #phone:before,
 .tress-pink .contact-details #email:before,
-.tress-pink .header-contact p:before
+.tress-pink .header-contact p:before,
+.tress-pink .client-name a
 {
     color:#ed409f;
 }
@@ -3160,7 +3162,8 @@ img#wpstats {
 .tress-gray .contact-details #address:before,
 .tress-gray .contact-details #phone:before,
 .tress-gray .contact-details #email:before,
-.tress-gray .header-contact p:before
+.tress-gray .header-contact p:before,
+.tress-gray .client-name a
 {
     color:#8e8e8e;
 }
@@ -3234,7 +3237,8 @@ img#wpstats {
 .tress-brown .contact-details #address:before,
 .tress-brown .contact-details #phone:before,
 .tress-brown .contact-details #email:before,
-.tress-brown .header-contact p:before
+.tress-brown .header-contact p:before,
+.tress-brown .client-name a
 {
     color:#875608;
 }
@@ -3307,7 +3311,8 @@ img#wpstats {
 .tress-purple .contact-details #address:before,
 .tress-purple .contact-details #phone:before,
 .tress-purple .contact-details #email:before,
-.tress-purple .header-contact p:before
+.tress-purple .header-contact p:before,
+.tress-purple .client-name a
 {
     color:#a678d3;
 }
@@ -3379,7 +3384,8 @@ img#wpstats {
 .tress-orange .contact-details #address:before,
 .tress-orange .contact-details #phone:before,
 .tress-orange .contact-details #email:before,
-.tress-orange .header-contact p:before
+.tress-orange .header-contact p:before,
+.tress-orange .client-name a
 
 {
     color:#fa7f53;

@@ -1442,7 +1442,113 @@ function tress_customize_register($wp_customize) {
             'priority' => 12,
             
         ));
+        
+        $wp_customize->add_setting('tslider_four', array(
+             'transport'=> 'postMessage',
+         ));
+        
+        $wp_customize->add_control(
+            new WP_Customize_Image_Control(
+            $wp_customize, 'tslider_four', array(
+        'label' => 'Slider 4',
+        'section' => 'testimonial_slider_setting',
+        'settings' => 'tslider_four',
+                 'priority' => 13,
+     
+                )
+            )
+    );
+    
+        $wp_customize->add_setting('tslider_four_description', array('default' => '',
+            'transport'=> 'postMessage',
+            ));
+        
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'tslider_four_description', array(
+            'label' => __('Description', 'tress'),
+            'section' => 'testimonial_slider_setting',
+            'settings' => 'tslider_four_description',
+            'priority' => 14,
+        )));
+        
+        $wp_customize->add_setting('client_name_four', array(
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport'=> 'postMessage',
+            ));
+        
+        $wp_customize->add_control('client_name_four', array(
+            'label' => __('Client Name', 'tress'),
+            'section' => 'testimonial_slider_setting',
+            'settings' => 'client_name_four',
+            'priority' => 15,
+           
+        ));
+        
+        $wp_customize->add_setting('client_name_url_four', array('default' => __('', 'tress'),
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport'=> 'postMessage',
+            ));
+        
+        $wp_customize->add_control('client_name_url_four', array(
+            'label' => __('Name URL', 'tress'),
+            'section' => 'testimonial_slider_setting',
+            'settings' => 'client_name_url_four',
+            'priority' => 16,
+            
+        ));
       
+        
+        $wp_customize->add_setting('tslider_five', array(
+             'transport'=> 'postMessage',
+         ));
+        
+        $wp_customize->add_control(
+            new WP_Customize_Image_Control(
+            $wp_customize, 'tslider_five', array(
+        'label' => 'Slider 5',
+        'section' => 'testimonial_slider_setting',
+        'settings' => 'tslider_five',
+                 'priority' => 17,
+     
+                )
+            )
+    );
+    
+        $wp_customize->add_setting('tslider_five_description', array('default' => '',
+            'transport'=> 'postMessage',
+            ));
+        
+        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'tslider_five_description', array(
+            'label' => __('Description', 'tress'),
+            'section' => 'testimonial_slider_setting',
+            'settings' => 'tslider_five_description',
+            'priority' => 18,
+        )));
+        
+        $wp_customize->add_setting('client_name_five', array(
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport'=> 'postMessage',
+            ));
+        
+        $wp_customize->add_control('client_name_five', array(
+            'label' => __('Client Name', 'tress'),
+            'section' => 'testimonial_slider_setting',
+            'settings' => 'client_name_five',
+            'priority' => 19,
+           
+        ));
+        
+        $wp_customize->add_setting('client_name_url_five', array('default' => __('', 'tress'),
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport'=> 'postMessage',
+            ));
+        
+        $wp_customize->add_control('client_name_url_five', array(
+            'label' => __('Name URL', 'tress'),
+            'section' => 'testimonial_slider_setting',
+            'settings' => 'client_name_url_five',
+            'priority' => 20,
+            
+        ));
     
      // Add footer text section
     $wp_customize->add_section('tress_footer', array(
