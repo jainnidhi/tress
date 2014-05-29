@@ -1125,15 +1125,7 @@ function tress_customize_register($wp_customize) {
         'settings' => 'tress_front_featured_portfolio_count',
         'priority' => 20,
     ));
-       // select category for featured posts 
-    $wp_customize->add_setting('tress_front_featured_portfolio_cat', array('default' => 0,));
-    $wp_customize->add_control(new WP_Customize_Dropdown_Categories_Control($wp_customize, 'tress_front_featured_portfolio_cat', array(
-        'label' => __('Portfolio Category', 'tress'),
-        'section' => 'tress_front_page_portfolio_options',
-        'type' => 'dropdown-categories',
-        'settings' => 'tress_front_featured_portfolio_cat',
-        'priority' => 30,
-    )));
+     
     
     $wp_customize->add_setting('tress_portfolio_front_count', array(
             'default' => 9,
