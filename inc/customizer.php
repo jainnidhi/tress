@@ -1256,7 +1256,7 @@ function tress_customize_register($wp_customize) {
             
         ));
         
-            // Add new section for Home Contact Title settings
+            // Add new section for Home Feedback Title settings
     $wp_customize->add_section('feedback_title_setting', array(
         'title' => __('Testimonial Title', 'tress'),
         'priority' => 62,
@@ -1366,139 +1366,7 @@ function tress_customize_register($wp_customize) {
             'priority' => 6,
         )));
         
-        
-        
-            // Add new section for Contact settings
-    $wp_customize->add_section('contact_setting', array(
-        'title' => __('Contact Details', 'tress'),
-        'priority' => 64,
-    ));
-    
-    
-     // contact Title
-        $wp_customize->add_setting('contact_title', array(
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('contact_title', array(
-            'label' => __('Title', 'tress'),
-            'section' => 'contact_setting',
-            'settings' => 'contact_title',
-            'priority' => 1,
-           
-        ));
-        
-         $wp_customize->add_setting('contact_email', array(
-            'sanitize_callback' => 'sanitize_text_field',
-             'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('contact_email', array(
-            'label' => __('Email', 'tress'),
-            'section' => 'contact_setting',
-            'settings' => 'contact_email',
-            'priority' => 2,
-            
-        ));
-        
-        $wp_customize->add_setting('contact_phone', array(
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('contact_phone', array(
-            'label' => __('Phone', 'tress'),
-            'section' => 'contact_setting',
-            'settings' => 'contact_phone',
-            'priority' => 3,
-            
-        ));
-        
-    $wp_customize->add_setting('address_detail', array('default' => '',
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-    $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'address_detail', array(
-            'label' => __('Address', 'tress'),
-            'section' => 'contact_setting',
-            'settings' => 'address_detail',
-            'priority' => 4,
-        )));
-        
-        // Add new section for Home Contact Title settings
-    $wp_customize->add_section('home_contact_title_setting', array(
-        'title' => __('Home Contact Title', 'tress'),
-        'priority' => 63,
-    ));
-    
-    // section Title
-        $wp_customize->add_setting('home_contact_title', array(
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('home_contact_title', array(
-            'label' => __('Section Title', 'tress'),
-            'section' => 'home_contact_title_setting',
-            'settings' => 'home_contact_title',
-            'priority' => 1,
-           
-        ));
-        
-       
-        
-          // Add new section for Home Tagline settings
-    $wp_customize->add_section('tress_contact_form_setting', array(
-        'title' => __('Contact Form', 'tress'),
-        'priority' => 64,
-    ));    
-       
-    $wp_customize->add_setting('contact_form_title', array(
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('contact_form_title', array(
-            'label' => __('Title', 'tress'),
-            'section' => 'tress_contact_form_setting',
-            'settings' => 'contact_form_title',
-            'priority' => 1,
-           
-        ));
-        
-    $wp_customize->add_setting('tress_contact_form', array(
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('tress_contact_form', array(
-            'label' => __('Contact Form Short Code', 'tress'),
-            'section' => 'tress_contact_form_setting',
-            'settings' => 'tress_contact_form',
-            'priority' => 2,
-           
-        ));
-    
-        // Add new section for Home Tagline settings
-    $wp_customize->add_section('video_setting', array(
-        'title' => __('Home Map', 'tress'),
-        'priority' => 65,
-    ));    
-       
-        
-        $wp_customize->add_setting('contact_map', array('default' => '',
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control(new tress_customize_textarea_control($wp_customize, 'contact_map', array(
-            'label' => __('Map Code', 'tress'),
-            'section' => 'video_setting',
-            'settings' => 'contact_map',
-            'priority' => 1,
-        )));  
+      
     
      // Add footer text section
     $wp_customize->add_section('tress_footer', array(
