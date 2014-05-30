@@ -5,8 +5,13 @@
         <group>
             <file>file:/C:/xampp/htdocs/business-lite/wp-content/themes/tress/single-portfolio.php</file>
             <file>file:/C:/xampp/htdocs/business-lite/wp-content/themes/tress/inc/customizer.php</file>
+            <file>file:/C:/xampp/htdocs/business-lite/wp-content/themes/tress/functions.php</file>
+            <file>file:/C:/xampp/htdocs/business-lite/wp-content/themes/tress/front-page.php</file>
+            <file>file:/C:/xampp/htdocs/business-lite/wp-content/themes/tress/assets/js/customizer.js</file>
+            <file>file:/C:/xampp/htdocs/business-lite/wp-content/themes/tress/inc/theme-extras.php</file>
             <file>file:/C:/xampp/htdocs/business-lite/wp-content/themes/tress/portfolio.php</file>
             <file>file:/C:/xampp/htdocs/business-lite/wp-content/themes/tress/style.css</file>
+            <file>file:/C:/xampp/htdocs/business-lite/wp-content/themes/tress/content-frontportfolio.php</file>
         </group>
     </open-files>
 </project-private>

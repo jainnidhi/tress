@@ -3790,8 +3790,18 @@ img#wpstats {
         margin-bottom: 20px;
     }
     
-    .portfolio{
-        margin-bottom:20px;
+    .page .portfolio{
+        margin: 0 auto 20px;
+        width:350px;
+        float:none;
+    }
+    
+    .page .portfolio:first-child{
+        margin:0 auto 20px;
+    }
+    
+    .page .portfolio:nth-of-type(3n+1){
+        margin:0 auto 20px;
     }
     
     .notification-text p,
