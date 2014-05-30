@@ -2370,7 +2370,7 @@ li span.dots {
    ========================================================================== */
 
 .nav-container{
-    background: #239ACD;
+    background: #009cee;
     padding: 10px 40px;
     border-bottom: solid 5px #111;
 }
@@ -2416,7 +2416,7 @@ li span.dots {
 .main-navigation ul ul li {
     margin: 0;
     padding:10px 20px 0;
-    background:#fa7f53;
+    background:#009cee;
 }
 
 .main-navigation li.menu-parent-item > a:after { /* If you don't want the arrows on the top level drop down, simply remove this style */
