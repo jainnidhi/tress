@@ -457,7 +457,7 @@ get_header();
                             </div>
                             <div class="client-name">
                                  <a href="<?php echo esc_url(get_theme_mod('client_name_url_three')); ?>">
-                                     <?php esc_html(get_theme_mod('client_name_three')); ?>
+                                     <?php echo esc_html(get_theme_mod('client_name_three')); ?>
                                  </a>
                             </div>
                          </div>
@@ -475,7 +475,7 @@ get_header();
                             </div>
                             <div class="client-name">
                                  <a href="<?php echo esc_url(get_theme_mod('client_name_url_four')); ?>">
-                                     <?php esc_html(get_theme_mod('client_name_four')); ?>
+                                     <?php echo esc_html(get_theme_mod('client_name_four')); ?>
                                  </a>
                             </div>
                        </div>
