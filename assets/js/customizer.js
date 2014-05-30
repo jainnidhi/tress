@@ -230,11 +230,7 @@
 			$( '.home-featured-title h3' ).text( to );
 		} );
 	} );
-        wp.customize( 'home_menu_title', function( value ) {
-		value.bind( function( to ) {
-			$( '.home-navigation #m2 a' ).text( to );
-		} );
-	} );
+       
          wp.customize( 'home_title_one', function( value ) {
 		value.bind( function( to ) {
 			$( '.home-featured-one h3' ).text( to );
@@ -357,11 +353,7 @@
 			$( '.home-post-title h3' ).text( to );
 		} );
 	} );
-         wp.customize( 'tress_post_menu_title', function( value ) {
-		value.bind( function( to ) {
-			$( '.home-navigation #m3 a' ).text( to );
-		} );
-	} );
+       
         wp.customize( 'cta_title', function( value ) {
 		value.bind( function( to ) {
 			$( '.home-cta h3' ).text( to );
@@ -384,11 +376,7 @@
 			$( '.home-cta .cta-button' ).text( to );
 		} );
 	} );
-         wp.customize( 'feedback_menu_title', function( value ) {
-		value.bind( function( to ) {
-			$( '.home-navigation #m4 a' ).text( to );
-		} );
-	} );
+       
         wp.customize( 'feedback_title', function( value ) {
 		value.bind( function( to ) {
 			$( '.client-feedback-title h3' ).text( to );
