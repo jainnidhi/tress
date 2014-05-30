@@ -19,6 +19,8 @@ if (!class_exists('tress_SL_Theme_Updater')) {
 
 include(get_stylesheet_directory() . '/inc/theme-updater-config.php');
 
+/* Include plugin activation file to install plugins */
+include get_template_directory() . '/inc/plugin-activation/plugin-details.php';
 
 /**
  * Set the content width based on the theme's design and stylesheet.
