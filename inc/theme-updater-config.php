@@ -10,7 +10,7 @@
 // This is the URL our updater / license checker pings. This should be the URL of the site with Tress installed
 define('IDEABOX_STORE_URL', 'http://ideaboxthemes.com'); // add your own unique prefix to prevent conflicts
 // The name of your product. This should match the download name in Tress exactly
-define('IDEABOX_THEME_NAME', 'Tress One Page WordPress Theme'); // add your own unique prefix to prevent conflicts
+define('IDEABOX_THEME_NAME', 'Tress WordPress Theme'); // add your own unique prefix to prevent conflicts
 
 function ideabox_theme_updater() {
 

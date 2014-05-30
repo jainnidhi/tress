@@ -26,8 +26,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 ::-moz-selection { background: #009cee; color: #fff; text-shadow: none; }
 ::selection { background: #009cee; color: #fff; text-shadow: none; }
 
-a { color: #42A2CE; text-decoration: none; }
-/* a:visited { color: #42A2CE; } */
+a { color: #009cee; text-decoration: none; }
+/* a:visited { color: #009cee; } */
 a:hover { color: #222146; }
 
 menu { padding: 0; }
@@ -94,7 +94,7 @@ body {
     background:#eee;
 }
 
-.admin-bar #headercontainer{
+.admin-bar .notification-bar{
     top:32px !important;
 }
 /* Set the default behavior for touch-based browsing in IE10 on devices running Windows 8 */
@@ -151,7 +151,7 @@ img.wp-smiley,
 
 /* Header */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     color: #333;
@@ -245,7 +245,7 @@ strong em, b em {
 }
 
 ins {
-    background:#42a2ce;
+    background:#009cee;
     text-decoration: none;
 }
 
@@ -515,7 +515,7 @@ input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover,
 .entry-content .button:hover {
-    background-color: #42A2CE;
+    background-color: #009cee;
     border: 1px solid #ccc;
     text-decoration: none;
     color:#fff;
@@ -567,12 +567,13 @@ select {
 }
 
 .notification-bar{
-    background:#42a2ce;
+    background:#009cee;
     position: fixed;
     width: 100%;
     z-index: 999999;
     top:0;
-    box-shadow: 0 1px #ccc;
+    box-shadow: 0 5px 5px #999;
+    border-bottom:solid 3px #fff;
 }
 
 .notification-wrap{
@@ -597,7 +598,7 @@ select {
     width: 100%;
     position: relative;
     text-align: left;
-    margin: 50px auto; 
+    margin: 80px auto 30px; 
     max-width:1140px;
     background:#fff;
     box-shadow:0 0 1px #ccc;
@@ -621,7 +622,7 @@ select {
     font-family: "FontAwesome";
     content: "\f095";
     margin-right: 10px;
-    color: #42a2ce;
+    color: #009cee;
 }
 
 #headercontainer {
@@ -647,7 +648,7 @@ select {
     font-size: 16px;
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0;
+    padding: 30px 0;
     position: relative;
     color: #000;
 }
@@ -667,7 +668,7 @@ select {
 }
 
 .site-title a {
-    color: #42A2CE;
+    color: #009cee;
     font-size: 30px;
     font-weight: 400; 
     text-decoration: none;
@@ -686,7 +687,7 @@ select {
 }
 
 .home-featured-title-area{
-    background:#42a2ce;
+    background:#009cee;
 }
 
 .home-featured-title{
@@ -745,7 +746,7 @@ select {
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    border: 4px solid #42a2ce;
+    border: 4px solid #009cee;
     padding: 2px;
 }
 
@@ -754,15 +755,19 @@ select {
 }
 
 .home-featured .read-more {
-    background: #42A2ce;
+    background: #009cee !important;
     padding: 10px;
     display: block;
     text-align: center;
     color: #fff;
+    width: 90%;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 0 6px 0 #0073A8 !important;
 }
 
 .home-featured .read-more:hover {
-    background: #111 !important;
+    background: #0088C7 !important;
 }
 /* Home Testimonial Area */
 
@@ -784,7 +789,7 @@ select {
 }
 
 .client-feedback-area{
-    background: #42a2ce;
+    background: #009cee;
 }
 
 .client-feedback-title{
@@ -820,7 +825,7 @@ select {
     border-radius: 100px;
     height: 150px;
     padding: 2px;
-    border: 3px solid #42a2ce;
+    border: 3px solid #009cee;
     opacity:1;
     margin: 0 auto 20px;
 }
@@ -828,7 +833,7 @@ select {
 #reviewslider .flex-caption{
     width: 100%;
     margin: 10px 0;
-    background: #eee;
+    background: #111;
     border-radius: 5px;
     position: relative;
     padding: 20px;
@@ -839,23 +844,27 @@ select {
     content: "";
     display: block;
     border: solid 10px transparent;
-    border-bottom-color: #eee;
+    border-bottom-color: #111;
     position: absolute;
     bottom: 130px;
     left: 49%;
 }
 #reviewslider .flex-caption p{
     font-size:16px;
-    color: #111; 
+    color: #fff; 
     margin:20px 0;
+    text-align:center;
 }
 
+.client-name{
+    text-align:center;
+}
 #reviewslider .flex-control-nav li a{
     width:10px;
     height:10px;
 }
 .home-contact-area{
-    background:#42a2ce;
+    background:#009cee;
 }
 
 .home-contact-title{
@@ -901,28 +910,28 @@ select {
 .contact-details .fa{
     margin-right: 5px;
     font-size: 15px;
-    color: #42a2ce;
+    color: #009cee;
 }
 
 .contact-details #email:before{
     font-family:"FontAwesome";
     content:"\f0e0";
     margin-right:10px;
-    color:#42a2ce;
+    color:#009cee;
 }
 
 .contact-details #phone:before{
     font-family:"FontAwesome";
     content:"\f095";
     margin-right:10px;
-    color:#42a2ce;
+    color:#009cee;
 }
 
 .contact-details #address:before{
     font-family:"FontAwesome";
     content:"\f041";
     margin-right:10px;
-    color:#42a2ce;
+    color:#009cee;
 }
 
 .contact-map{
@@ -932,7 +941,7 @@ select {
 }
 
 .home-cta-title-area{
-    background:#42a2ce;
+    background:#009cee;
 }
 
 .home-cta-title{
@@ -950,10 +959,10 @@ select {
 /* Home CTA Area */
 
 .home-cta-area{
-    background:#cecece;
+    background:#111;
 }
 .home-cta{
-    padding: 30px;
+    padding: 60px 30px;
     max-width: 1140px;
     margin: 0 auto;
     text-align:center;
@@ -971,10 +980,12 @@ select {
 }
 
 .home-cta .cta-button{
-    background: #111;
+    background: #fff;
     padding: 12px 30px;
-    color: #fff;
+    color: #111;
     margin:10px 0;
+    border-radius: 5px;
+    box-shadow: 2px 3px 0 #999;
 }
 
 .home-cta .cta-button:hover{
@@ -1029,7 +1040,7 @@ select {
 }
 
 .flex-caption .slider-button{
-    background:#42a2ce;
+    background:#009cee;
     padding:15px 40px;
     border-radius:3px;
     color:#fff;
@@ -1068,7 +1079,7 @@ select {
 * Featured posts on front page 
 ================================== */
 .home-post-title-area{
-    background: #42a2ce;
+    background: #009cee;
 }
 
 .home-post-title{
@@ -1137,7 +1148,7 @@ select {
     margin-bottom: 20px;
 }
 .feature-more-link {
-    background: #42A2CE; 
+    background: #009cee; 
     position: absolute;
     bottom: 0;
     right: 0; 
@@ -1188,7 +1199,7 @@ select {
 }
 
 .home-portfolio-title-area{
-    background: #42a2ce;
+    background: #009cee;
 }
 
 .home-portfolio-title{
@@ -1319,7 +1330,7 @@ select {
 }
 
 .portfolio-buttons a{
-    background: #42a2ce;
+    background: #009cee;
     color: #fff;
     padding: 7px 10px;
 }
@@ -1356,12 +1367,12 @@ select {
 .entry-header .entry-title,
 .entry-header .entry-title a {
     text-decoration: none;
-    color: #42A2CE;
+    color: #009cee;
     margin-bottom: 16px;
 }
 
 .entry-header h1 a:visited {
-    color: #42A2CE;
+    color: #009cee;
 }
 
 .entry-header h1 a:hover {
@@ -1419,11 +1430,11 @@ article.sticky {
 }
 
 .header-meta a:hover {
-    color: #42a2ce;
+    color: #009cee;
 }
 
 .header-meta .fa{
-    color:#42a2ce;
+    color:#009cee;
 }
 .entry-content {
     margin-bottom: 20px;
@@ -1489,13 +1500,13 @@ article.sticky {
 }
 
 .page-links a:hover .page-numbers {
-    background-color: #42A2CE;
+    background-color: #009cee;
     color: #fff;
 }
 
 .more-link {
     text-decoration: none;
-    color:#42a2ce;
+    color:#009cee;
 }
 
 
@@ -1773,7 +1784,7 @@ article.sticky {
 .pagination .page-numbers:hover
 {
     color:#fff;
-    background:#42A2CE;
+    background:#009cee;
 }
 /* ==========================================================================
    Archives
@@ -1990,7 +2001,7 @@ a.comment-reply-link:hover {
 
 label .required,
 span.required {
-    color:#42A2CE;
+    color:#009cee;
 }
 
 form label.error {
@@ -2021,7 +2032,7 @@ form label.error {
 
 .gform_footer top_label input[type="submit"]:hover
 {
-    background:#42A2CE;
+    background:#009cee;
     color:#fff;
 }
 
@@ -2038,7 +2049,7 @@ div.gform_wrapper .ginput_complex label {
    ========================================================================== */
 
 #footercontainer {
-    background: #42A2CE;
+    background: #009cee;
     width: 100%;	
     clear:both;
 }
@@ -2134,7 +2145,7 @@ div.gform_wrapper .ginput_complex label {
 
 
 .sidebar a {
-    color: #42A2CE;
+    color: #009cee;
 }
 
 .sidebar .widget {
@@ -2293,7 +2304,7 @@ div.gform_wrapper .ginput_complex label {
 
 .nav-previous a:hover,
 .nav-next a:hover{
-    color:#42a2ce;
+    color:#009cee;
 }
 .nav-next,
 .next-image {
@@ -2324,7 +2335,7 @@ li span.page-numbers {
 
 
 li a:hover.page-numbers {
-    background-color: #42A2CE;
+    background-color: #009cee;
     color: #fff;
 }
 
@@ -2339,7 +2350,7 @@ li a:hover.next {
 }
 
 li span.current {
-    background-color: #42A2CE;
+    background-color: #009cee;
     color: #fff;
 }
 
@@ -2356,6 +2367,8 @@ li span.dots {
 
 .nav-container{
     background: #239ACD;
+    padding: 10px 40px;
+    border-bottom: solid 5px #111;
 }
 
 .main-navigation {
@@ -2398,6 +2411,8 @@ li span.dots {
 
 .main-navigation ul ul li {
     margin: 0;
+    padding:10px 20px 0;
+    background:#fa7f53;
 }
 
 .main-navigation li.menu-parent-item > a:after { /* If you don't want the arrows on the top level drop down, simply remove this style */
@@ -2422,6 +2437,8 @@ li span.dots {
 
 .main-navigation ul a {
     padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .main-navigation ul a:hover{
@@ -2441,7 +2458,7 @@ li span.dots {
 {
     display: block;
     text-decoration: none;
-    color: #42A2CE;
+    color: #009cee;
 }
 
 .main-small-navigation a:hover
@@ -2454,7 +2471,8 @@ li span.dots {
     left: 0;
     z-index: 99999;
     line-height: 1.7;
-    background-color: #42A2CE; /* Nav bar dropdown background color */
+    background:none; /* Nav bar dropdown background color */
+    padding-top:15px;
 }
 
 .main-navigation ul ul a
@@ -2529,7 +2547,7 @@ li span.dots {
     display: block;
     font-size: 14px;
     line-height: 2;
-    padding: 12px 10px;
+    padding: 12px 0px;
     white-space: normal;
     color: #fff;
 }
@@ -2891,7 +2909,6 @@ img#wpstats {
 .tress-red input:hover[type="button"],
 .tress-red input:hover[type="reset"],
 .tress-red .entry-content .button:hover,
-.tress-red .main-navigation ul ul,
 .tress-red .page-links .page-numbers:hover,
 .tress-red .flex-caption .slider-button,
 .tress-red .home-featured .read-more,
@@ -2963,7 +2980,6 @@ img#wpstats {
 .tress-green input:hover[type="reset"],
 .tress-green input:hover[type="submit"],
 .tress-green .entry-content .button:hover,
-.tress-green .main-navigation ul ul,
 .tress-green .page-links .page-numbers:hover,
 .tress-green .flex-caption .slider-button,
 .tress-green .home-featured .read-more,
@@ -3036,7 +3052,6 @@ img#wpstats {
 .tress-pink input:hover[type="reset"],
 .tress-pink input:hover[type="submit"],
 .tress-pink .entry-content .button:hover,
-.tress-pink .main-navigation ul ul,
 .tress-pink .page-links .page-numbers:hover,
 .tress-pink .flex-caption .slider-button,
 .tress-pink .home-featured .read-more,
@@ -3109,7 +3124,6 @@ img#wpstats {
 .tress-gray input:hover[type="reset"],
 .tress-gray input:hover[type="submit"],
 .tress-gray .entry-content .button:hover,
-.tress-gray .main-navigation ul ul,
 .tress-gray .page-links .page-numbers:hover,
 .tress-gray .flex-caption .slider-button,
 .tress-gray .home-featured .read-more,
@@ -3184,7 +3198,6 @@ img#wpstats {
 .tress-brown input:hover[type="reset"],
 .tress-brown input:hover[type="submit"],
 .tress-brown .entry-content .button:hover,
-.tress-brown .main-navigation ul ul,
 .tress-brown .page-links .page-numbers:hover,
 .tress-brown .flex-caption .slider-button,
 .tress-brown .home-featured .read-more,
@@ -3258,7 +3271,6 @@ img#wpstats {
 .tress-purple input:hover[type="reset"],
 .tress-purple input:hover[type="submit"],
 .tress-purple .entry-content .button:hover,
-.tress-purple .main-navigation ul ul,
 .tress-purple .page-links .page-numbers:hover,
 .tress-purple .flex-caption .slider-button,
 .tress-purple .home-featured .read-more,
@@ -3332,7 +3344,6 @@ img#wpstats {
 .tress-orange input:hover[type="reset"],
 .tress-orange input:hover[type="submit"],
 .tress-orange .entry-content .button:hover,
-.tress-orange .main-navigation ul ul,
 .tress-orange .page-links .page-numbers:hover,
 .tress-orange .flex-caption .slider-button,
 .tress-orange .home-featured .read-more,
@@ -3406,7 +3417,7 @@ img#wpstats {
 
 /*  Breakpoints are set based on the design, not based on device sizes */
 @media only screen and (max-width: 1100px) {
-   
+
     .home-featured,
     #featured-posts-container,
     #reviewslider,
@@ -3486,7 +3497,7 @@ img#wpstats {
         font-size:30px;
     }
 
-   
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -3596,11 +3607,11 @@ img#wpstats {
     .home-featured .home-featured-three{
         margin-left:0;
     }
-    
+
     .header-contact{
         text-align:center;
     }
-    
+
     .header-extras .social-links{
         float:none;
         margin-bottom:20px;
@@ -3789,21 +3800,21 @@ img#wpstats {
         width: 100%;
         margin-bottom: 20px;
     }
-    
+
     .page .portfolio{
         margin: 0 auto 20px;
         width:350px;
         float:none;
     }
-    
+
     .page .portfolio:first-child{
         margin:0 auto 20px;
     }
-    
+
     .page .portfolio:nth-of-type(3n+1){
         margin:0 auto 20px;
     }
-    
+
     .notification-text p,
     .notification-link{
         text-align:center;
