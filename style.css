@@ -755,7 +755,7 @@ select {
 }
 
 .home-featured .read-more {
-    background: #009cee !important;
+    background: #009cee;
     padding: 10px;
     display: block;
     text-align: center;
@@ -763,11 +763,11 @@ select {
     width: 90%;
     border-radius: 5px;
     margin: 0 auto;
-    box-shadow: 0 6px 0 #0073A8 !important;
+    box-shadow: 0 6px 0 #0073A8;
 }
 
 .home-featured .read-more:hover {
-    background: #0088C7 !important;
+    background: #0088C7;
 }
 /* Home Testimonial Area */
 
@@ -858,6 +858,10 @@ select {
 
 .client-name{
     text-align:center;
+}
+
+.client-name a{
+    color:#009cee;
 }
 #reviewslider .flex-control-nav li a{
     width:10px;
@@ -2919,7 +2923,8 @@ img#wpstats {
 .tress-red .notification-bar,
 .tress-red .nav-container,
 .tress-red .home-portfolio-title-area,
-.tress-red .portfolio-buttons a
+.tress-red .portfolio-buttons a,
+.tress-red .main-navigation ul ul li
 {
     background: #e55252;
 }
@@ -2928,6 +2933,14 @@ img#wpstats {
 {
     background:#e55252 !important;
     color:#fff;
+}
+
+.tress-red .home-featured .read-more{
+    box-shadow:0 6px 0 #c94848;
+}
+
+.tress-red .home-featured .read-more:hover{
+    background:#ad3a3a;
 }
 
 .tress-red .home-featured img{
@@ -2990,7 +3003,8 @@ img#wpstats {
 .tress-green .notification-bar,
 .tress-green .nav-container,
 .tress-green .home-portfolio-title-area,
-.tress-green .portfolio-buttons a
+.tress-green .portfolio-buttons a,
+.tress-green .main-navigation ul ul li
 {
     background: #3bb59c;
 }
@@ -3004,6 +3018,14 @@ img#wpstats {
 {
     background:#3bb59c;
     color:#fff;
+}
+
+.tress-green .home-featured .read-more{
+    box-shadow:0 6px 0 #2d8975;
+}
+
+.tress-green .home-featured .read-more:hover{
+    background:#2f7768;
 }
 
 .tress-green .home-featured img{
@@ -3062,13 +3084,22 @@ img#wpstats {
 .tress-pink .notification-bar,
 .tress-pink .nav-container,
 .tress-pink .home-portfolio-title-area,
-.tress-pink .portfolio-buttons a{
+.tress-pink .portfolio-buttons a,
+.tress-pink .main-navigation ul ul li{
     background: #ed409f;
 }
 
 .tress-pink .main-navigation ul ul a
 {
     color:#fff;
+}
+
+.tress-pink .home-featured .read-more{
+    box-shadow:0 6px 0 #c43e86;
+}
+
+.tress-pink .home-featured .read-more:hover{
+    background:#b23578;
 }
 
 .tress-pink ::selection
@@ -3134,7 +3165,8 @@ img#wpstats {
 .tress-gray .notification-bar,
 .tress-gray .nav-container,
 .tress-gray .home-portfolio-title-area,
-.tress-gray .portfolio-buttons a
+.tress-gray .portfolio-buttons a,
+.tress-gray .main-navigation ul ul li
 {
     background: #8e8e8e;
 }
@@ -3144,6 +3176,13 @@ img#wpstats {
     color:#fff;
 }
 
+.tress-gray .home-featured .read-more{
+    box-shadow:0 6px 0 #686363;
+}
+
+.tress-gray .home-featured .read-more:hover{
+    background:#5b5454;
+}
 
 .tress-gray ::selection
 {
@@ -3208,7 +3247,8 @@ img#wpstats {
 .tress-brown .notification-bar,
 .tress-brown .nav-container,
 .tress-brown .home-portfolio-title-area,
-.tress-brown .portfolio-buttons a
+.tress-brown .portfolio-buttons a,
+.tress-brown .main-navigation ul ul li
 {
     background: #875608;
 }
@@ -3218,6 +3258,13 @@ img#wpstats {
     color:#fff;
 }
 
+.tress-brown .home-featured .read-more{
+    box-shadow:0 6px 0 #5e3b07;
+}
+
+.tress-brown .home-featured .read-more:hover{
+    background:#4c2f06;
+}
 
 .tress-brown ::selection
 {
@@ -3281,7 +3328,8 @@ img#wpstats {
 .tress-purple .notification-bar,
 .tress-purple .nav-container,
 .tress-purple .home-portfolio-title-area,
-.tress-purple .portfolio-buttons a
+.tress-purple .portfolio-buttons a,
+.tress-purple .main-navigation ul ul li
 {
     background: #a678d3;
 }
@@ -3296,6 +3344,14 @@ img#wpstats {
 {
     background:#a678d3;
     color:#fff;
+}
+
+.tress-purple .home-featured .read-more{
+    box-shadow:0 6px 0 #7b43b2;
+}
+
+.tress-purple .home-featured .read-more:hover{
+    background:#723aaa;
 }
 
 .tress-purple .home-featured img{
@@ -3354,7 +3410,8 @@ img#wpstats {
 .tress-orange .notification-bar,
 .tress-orange .nav-container,
 .tress-orange .home-portfolio-title-area,
-.tress-orange .portfolio-buttons a
+.tress-orange .portfolio-buttons a,
+.tress-orange .main-navigation ul ul li
 {
     background: #fa7f53;
 }
@@ -3368,6 +3425,14 @@ img#wpstats {
 {
     background:#fa7f53;
     color:#fff;
+}
+
+.tress-orange .home-featured .read-more{
+    box-shadow:0 6px 0 #dd7552;
+}
+
+.tress-orange .home-featured .read-more:hover{
+    background:#d16c4b;
 }
 
 .tress-orange .home-featured img{
@@ -3445,6 +3510,11 @@ img#wpstats {
 
     .slicknav_menu a{
         padding:24px;
+    }
+    
+    .nav-container{
+        padding:0;
+        border-bottom:0;
     }
 
     .main-navigation li{

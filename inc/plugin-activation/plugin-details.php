@@ -21,7 +21,7 @@
  */
 require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
 
-add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
+add_action( 'tgmpa_register', 'tress_register_required_plugins' );
 /**
  * Register the required plugins for this theme.
  *
@@ -34,7 +34,7 @@ add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
  * This function is hooked into tgmpa_init, which is fired within the
  * TGM_Plugin_Activation class constructor.
  */
-function my_theme_register_required_plugins() {
+function tress_register_required_plugins() {
 
     /**
      * Array of plugin arrays. Required keys are name and slug.
@@ -42,28 +42,11 @@ function my_theme_register_required_plugins() {
      */
     $plugins = array(
 
-        // This is used to install Soliloquy Slider plugin pre-packaged with the theme.
+        // This is an example of how to include a plugin from the WordPress Plugin Repository.
         array(
-            'name'               => 'Soliloquy Slider Plugin', // The plugin name.
-            'slug'               => 'soliloquy', // The plugin slug (typically the folder name).
-            'source'             => get_stylesheet_directory() . '/inc/plugins/soliloquy.zip', // The plugin source.
-            'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-            'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
-            'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
-            'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-            'external_url'       => '', // If set, overrides default API URL and points to an external URL.
-        ),
-
-        // This is used to install Envira Gallery plugin pre-packaged with the theme.
-        array(
-            'name'               => 'Envira Gallery Plugin', // The plugin name.
-            'slug'               => 'envira-gallery', // The plugin slug (typically the folder name).
-            'source'             => get_stylesheet_directory() . '/inc/plugins/envira-gallery.zip', // The plugin source.
-            'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-            'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
-            'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
-            'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-            'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+            'name'      => 'Portfolio Post Type',
+            'slug'      => 'portfolio-post-type',
+            'required'  => true,
         ),
         
        
