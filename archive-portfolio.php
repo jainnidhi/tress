@@ -1,9 +1,8 @@
 <?php
 /**
- * Template Name: Portfolio
  * 
- * A custom store page template to display product grid
- * Requires Easy Digital Downloads plugin to be activated
+ * A custom portfolio page template to display portfolio grid
+ * Requires Portfolio Custom Post Type plugin to be activated
  * 
  * @package : Tress
  * @version : 1.0
