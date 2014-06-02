@@ -1510,7 +1510,16 @@ article.sticky {
 
 .more-link {
     text-decoration: none;
-    color:#009cee;
+    color:#fff;
+    background:#009cee;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 6px 0 #0073a8;
+}
+
+.more-link:hover{
+    color:#fff;
+    background: #0088C7;
 }
 
 
@@ -2924,7 +2933,8 @@ img#wpstats {
 .tress-red .nav-container,
 .tress-red .home-portfolio-title-area,
 .tress-red .portfolio-buttons a,
-.tress-red .main-navigation ul ul li
+.tress-red .main-navigation ul ul li,
+.tress-red .more-link
 {
     background: #e55252;
 }
@@ -2935,11 +2945,13 @@ img#wpstats {
     color:#fff;
 }
 
-.tress-red .home-featured .read-more{
+.tress-red .home-featured .read-more,
+.tress-red .more-link{
     box-shadow:0 6px 0 #c94848;
 }
 
-.tress-red .home-featured .read-more:hover{
+.tress-red .home-featured .read-more:hover,
+.tress-red .more-link:hover{
     background:#ad3a3a;
 }
 
@@ -2961,7 +2973,6 @@ img#wpstats {
 .tress-red .entry-header .entry-title a,
 .tress-red .entry-header .entry-title,
 .tress-red .entry-header h1 a:visited,
-.tress-red .more-link,
 .tress-red label .required,
 .tress-red span.required,
 .tress-red .header-meta .fa,
@@ -3004,7 +3015,8 @@ img#wpstats {
 .tress-green .nav-container,
 .tress-green .home-portfolio-title-area,
 .tress-green .portfolio-buttons a,
-.tress-green .main-navigation ul ul li
+.tress-green .main-navigation ul ul li,
+.tress-green .more-link
 {
     background: #3bb59c;
 }
@@ -3020,11 +3032,13 @@ img#wpstats {
     color:#fff;
 }
 
-.tress-green .home-featured .read-more{
+.tress-green .home-featured .read-more,
+.tress-green .more-link{
     box-shadow:0 6px 0 #2d8975;
 }
 
-.tress-green .home-featured .read-more:hover{
+.tress-green .home-featured .read-more:hover,
+.tress-green .more-link:hover{
     background:#2f7768;
 }
 
@@ -3042,7 +3056,6 @@ img#wpstats {
 .tress-green .entry-header .entry-title a,
 .tress-green .entry-header .entry-title,
 .tress-green .entry-header h1 a:visited,
-.tress-green .more-link,
 .tress-green label .required,
 .tress-green span.required,
 .tress-green .header-meta .fa,
@@ -3085,7 +3098,8 @@ img#wpstats {
 .tress-pink .nav-container,
 .tress-pink .home-portfolio-title-area,
 .tress-pink .portfolio-buttons a,
-.tress-pink .main-navigation ul ul li{
+.tress-pink .main-navigation ul ul li,
+.tress-pink .more-link{
     background: #ed409f;
 }
 
@@ -3094,11 +3108,13 @@ img#wpstats {
     color:#fff;
 }
 
-.tress-pink .home-featured .read-more{
+.tress-pink .home-featured .read-more,
+.tress-pink .more-link{
     box-shadow:0 6px 0 #c43e86;
 }
 
-.tress-pink .home-featured .read-more:hover{
+.tress-pink .home-featured .read-more:hover,
+.tress-pink .more-link:hover{
     background:#b23578;
 }
 
@@ -3122,7 +3138,6 @@ img#wpstats {
 .tress-pink .entry-header .entry-title a,
 .tress-pink .entry-header .entry-title,
 .tress-pink .entry-header h1 a:visited,
-.tress-pink .more-link,
 .tress-pink label .required,
 .tress-pink span.required,
 .tress-pink .header-meta .fa,
@@ -3166,7 +3181,8 @@ img#wpstats {
 .tress-gray .nav-container,
 .tress-gray .home-portfolio-title-area,
 .tress-gray .portfolio-buttons a,
-.tress-gray .main-navigation ul ul li
+.tress-gray .main-navigation ul ul li,
+.tress-gray .more-link
 {
     background: #8e8e8e;
 }
@@ -3176,11 +3192,13 @@ img#wpstats {
     color:#fff;
 }
 
-.tress-gray .home-featured .read-more{
+.tress-gray .home-featured .read-more,
+.tress-gray .more-link{
     box-shadow:0 6px 0 #686363;
 }
 
-.tress-gray .home-featured .read-more:hover{
+.tress-gray .home-featured .read-more:hover,
+.tress-gray .more-link:hover{
     background:#5b5454;
 }
 
@@ -3204,7 +3222,6 @@ img#wpstats {
 .tress-gray .entry-header .entry-title a,
 .tress-gray .entry-header .entry-title,
 .tress-gray .entry-header h1 a:visited,
-.tress-gray .more-link,
 .tress-gray label .required,
 .tress-gray span.required,
 .tress-gray .header-meta .fa,
@@ -3248,7 +3265,8 @@ img#wpstats {
 .tress-brown .nav-container,
 .tress-brown .home-portfolio-title-area,
 .tress-brown .portfolio-buttons a,
-.tress-brown .main-navigation ul ul li
+.tress-brown .main-navigation ul ul li,
+.tress-brown .more-link
 {
     background: #875608;
 }
@@ -3258,11 +3276,13 @@ img#wpstats {
     color:#fff;
 }
 
-.tress-brown .home-featured .read-more{
+.tress-brown .home-featured .read-more,
+.tress-brown .more-link{
     box-shadow:0 6px 0 #5e3b07;
 }
 
-.tress-brown .home-featured .read-more:hover{
+.tress-brown .home-featured .read-more:hover,
+.tress-brown .more-link:hover{
     background:#4c2f06;
 }
 
@@ -3286,7 +3306,6 @@ img#wpstats {
 .tress-brown .entry-header .entry-title a,
 .tress-brown .entry-header .entry-title,
 .tress-brown .entry-header h1 a:visited,
-.tress-brown .more-link,
 .tress-brown label .required,
 .tress-brown span.required,
 .tress-brown .header-meta .fa,
@@ -3329,7 +3348,8 @@ img#wpstats {
 .tress-purple .nav-container,
 .tress-purple .home-portfolio-title-area,
 .tress-purple .portfolio-buttons a,
-.tress-purple .main-navigation ul ul li
+.tress-purple .main-navigation ul ul li,
+.tress-purple .more-link
 {
     background: #a678d3;
 }
@@ -3346,11 +3366,13 @@ img#wpstats {
     color:#fff;
 }
 
-.tress-purple .home-featured .read-more{
+.tress-purple .home-featured .read-more,
+.tress-purple .more-link{
     box-shadow:0 6px 0 #7b43b2;
 }
 
-.tress-purple .home-featured .read-more:hover{
+.tress-purple .home-featured .read-more:hover,
+.tress-purple .more-link:hover{
     background:#723aaa;
 }
 
@@ -3368,7 +3390,6 @@ img#wpstats {
 .tress-purple .entry-header .entry-title a,
 .tress-purple .entry-header .entry-title,
 .tress-purple .entry-header h1 a:visited,
-.tress-purple .more-link,
 .tress-purple label .required,
 .tress-purple span.required,
 .tress-purple .header-meta .fa,
@@ -3411,7 +3432,8 @@ img#wpstats {
 .tress-orange .nav-container,
 .tress-orange .home-portfolio-title-area,
 .tress-orange .portfolio-buttons a,
-.tress-orange .main-navigation ul ul li
+.tress-orange .main-navigation ul ul li,
+.tress-orange .more-link
 {
     background: #fa7f53;
 }
@@ -3427,11 +3449,13 @@ img#wpstats {
     color:#fff;
 }
 
-.tress-orange .home-featured .read-more{
+.tress-orange .home-featured .read-more,
+.tress-orange .more-link{
     box-shadow:0 6px 0 #dd7552;
 }
 
-.tress-orange .home-featured .read-more:hover{
+.tress-orange .home-featured .read-more:hover,
+.tress-orange .more-link:hover{
     background:#d16c4b;
 }
 
@@ -3449,7 +3473,6 @@ img#wpstats {
 .tress-orange .entry-header .entry-title a,
 .tress-orange .entry-header .entry-title,
 .tress-orange .entry-header h1 a:visited,
-.tress-orange .more-link,
 .tress-orange label .required,
 .tress-orange span.required,
 .tress-orange .header-meta .fa,
@@ -3511,7 +3534,7 @@ img#wpstats {
     .slicknav_menu a{
         padding:24px;
     }
-    
+
     .nav-container{
         padding:0;
         border-bottom:0;
