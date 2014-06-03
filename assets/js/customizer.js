@@ -319,34 +319,6 @@
 			$( '.home-featured .read-more' ).text( to );
 		} );
 	} );
-         wp.customize( 'home_featured_four', function( value ) {
-		value.bind( function( to ) {
-			$( '.home-featured-four .featured-image img' ).attr('src', to );
-		} );
-	} );
-        wp.customize( 'home_title_four', function( value ) {
-		value.bind( function( to ) {
-			$( '.home-featured h3 a' ).text( to );
-		} );
-	} );
-        
-         wp.customize( 'home_description_four', function( value ) {
-		value.bind( function( to ) {
-			$( '.home-featured p' ).text( to );
-		} );
-            } );
-                
-         wp.customize( 'home_four_link_url', function( value ) {
-		value.bind( function( to ) {
-			$( '.home-featured .read-more' ).attr('href', to );
-		} );
-	} );
-        
-        wp.customize( 'home_four_link_text', function( value ) {
-		value.bind( function( to ) {
-			$( '.home-featured .read-more' ).text( to );
-		} );
-	} );
         
          wp.customize( 'tress_post_title', function( value ) {
 		value.bind( function( to ) {
