@@ -1180,6 +1180,7 @@ select {
 #featured-portfolio{
     padding: 80px 30px;
     margin: 0;
+    box-shadow:none;
 }
 
 #featured-portfolio h3{
@@ -1360,6 +1361,11 @@ select {
     color: #111;
 }
 
+.blog .hentry .wp-post-image{
+    float:left;
+    margin-right:15px;
+}
+
 article.sticky .featured-post {
     color: #333;
     line-height: 1.6;
@@ -1367,13 +1373,36 @@ article.sticky .featured-post {
     text-align: center;
 }
 
-article.sticky {
-    margin-top: 10px; 
-    padding: 20px 30px;
-    background: #eee;
-    border: solid 1px #f1f1f1;
+.blog .hentry .wp-post-image{
+    position:relative;
 }
 
+.blog .hentry .wp-post-image:hover{
+    opacity:0.5;
+}
+.blog .hentry .wp-post-image:hover span.link{
+    opacity:1 !important;
+}
+
+.blog .hentry span.link{
+    position: absolute;
+    bottom: 68%;
+    left: 20%;
+    background: #999;
+    padding: 10px;
+    border-radius: 100px;
+    display:block;
+    opacity:0;
+}
+
+.blog .hentry span.post_format{
+    position: absolute;
+    left: 0;
+    background: #009cee;
+    padding: 10px 15px;
+    font-size: 24px;
+    color: #fff;
+}
 .site-content article {
     margin-bottom: 40px;
     margin-right: 20px; 
@@ -1382,9 +1411,17 @@ article.sticky {
     word-wrap: break-word;
 }
 
+.blog .site-content article,
+.single-post .site-content article{
+    border-top:3px solid #009cee;
+}
+
+.blog .post-categories,
+.blog .comments-link{
+    display:none;
+}
+
 .header-meta {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
     color: #999;
     margin-bottom: 20px;
     padding: 15px 0;
@@ -1594,6 +1631,10 @@ article.sticky {
     font-size: 34px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.comment{
+    border-top:0 !important;
 }
 
 /* Author profiles */
@@ -1819,7 +1860,7 @@ article.sticky {
 }
 .comments-title {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 1.5;
     font-weight: 400;
     font-family:'Open Sans', sans-serif;
@@ -2132,7 +2173,7 @@ div.gform_wrapper .ginput_complex label {
    Sidebar
    ========================================================================== */
 .sidebar.section-title{
-    border-bottom:0;
+    border-bottom:0 !important;
 }
 .sidebar{
     padding:40px 30px 0 0;
@@ -2164,13 +2205,20 @@ div.gform_wrapper .ginput_complex label {
    ========================================================================== */
 
 .sidebar .widget-title {
-    margin-bottom: 20px; 
+    padding-bottom: 20px; 
+    margin-bottom: 0px;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: solid 4px; 
 }
 
+.sidebar .widget-title:after {
+    content:"";
+    display: block;
+    border: solid 1px; 
+}
 .widget-area ul {
     list-style: none outside none;
     padding-left: 0;
@@ -2887,7 +2935,8 @@ img#wpstats {
 .tress-red .nav-container,
 .tress-red .portfolio-buttons a,
 .tress-red .main-navigation ul ul li,
-.tress-red .more-link
+.tress-red .more-link,
+.tress-red.blog .hentry span.post_format
 {
     background: #c62020;
 }
@@ -2916,6 +2965,11 @@ img#wpstats {
 .tress-red .more-link:hover,
 .tress-red .portfolio-buttons a:hover{
     background:#ad3a3a;
+}
+
+.tress-red.blog .site-content article, 
+.tress-red.single-post .site-content article{
+    border-top:solid 3px #c62020;
 }
 
 .tress-red .home-featured img{
@@ -2974,7 +3028,8 @@ img#wpstats {
 .tress-green .nav-container,
 .tress-green .portfolio-buttons a,
 .tress-green .main-navigation ul ul li,
-.tress-green .more-link
+.tress-green .more-link,
+.tress-green.blog .hentry span.post_format
 {
     background: #3ac1c2;
 }
@@ -2988,6 +3043,11 @@ img#wpstats {
 {
     background:#3ac1c2;
     color:#fff;
+}
+
+.tress-green.blog .site-content article, 
+.tress-green.single-post .site-content article{
+    border-top:solid 3px #3ac1c2;
 }
 
 .tress-green .section-title{
@@ -3062,13 +3122,19 @@ img#wpstats {
 .tress-pink .nav-container,
 .tress-pink .portfolio-buttons a,
 .tress-pink .main-navigation ul ul li,
-.tress-pink .more-link{
+.tress-pink .more-link,
+.tress-pink.blog .hentry span.post_format{
     background: #ed409f;
 }
 
 .tress-pink .main-navigation ul ul a
 {
     color:#fff;
+}
+
+.tress-pink.blog .site-content article, 
+.tress-pink.single-post .site-content article{
+    border-top:solid 3px #ed409f;
 }
 
 .tress-pink .home-featured .read-more,
@@ -3150,7 +3216,8 @@ img#wpstats {
 .tress-yellow .nav-container,
 .tress-yellow .portfolio-buttons a,
 .tress-yellow .main-navigation ul ul li,
-.tress-yellow .more-link
+.tress-yellow .more-link,
+.tress-yellow.blog .hentry span.post_format
 {
     background: #d9ca39;
 }
@@ -3158,6 +3225,11 @@ img#wpstats {
 .tress-yellow .main-navigation ul ul a
 {
     color:#fff;
+}
+
+.tress-yellow.blog .site-content article, 
+.tress-yellow.single-post .site-content article{
+    border-top:solid 3px #d9ca39;
 }
 
 .tress-yellow .home-featured .read-more,
@@ -3239,7 +3311,8 @@ img#wpstats {
 .tress-brown .nav-container,
 .tress-brown .portfolio-buttons a,
 .tress-brown .main-navigation ul ul li,
-.tress-brown .more-link
+.tress-brown .more-link,
+.tress-brown.blog .hentry span.post_format
 {
     background: #875608;
 }
@@ -3247,6 +3320,11 @@ img#wpstats {
 .tress-brown .main-navigation ul ul a
 {
     color:#fff;
+}
+
+.tress-brown.blog .site-content article, 
+.tress-brown.single-post .site-content article{
+    border-top:solid 3px #875608;
 }
 
 .tress-brown .home-featured .read-more,
@@ -3327,7 +3405,8 @@ img#wpstats {
 .tress-purple .nav-container,
 .tress-purple .portfolio-buttons a,
 .tress-purple .main-navigation ul ul li,
-.tress-purple .more-link
+.tress-purple .more-link,
+.tress-purple.blog .hentry span.post_format
 {
     background: #996bc5;
 }
@@ -3336,6 +3415,11 @@ img#wpstats {
 .tress-purple .main-navigation ul ul a
 {
     color:#fff;
+}
+
+.tress-purple.blog .site-content article, 
+.tress-purple.single-post .site-content article{
+    border-top:solid 3px #996bc5;
 }
 
 .tress-purple ::selection
@@ -3416,7 +3500,8 @@ img#wpstats {
 .tress-orange .nav-container,
 .tress-orange .portfolio-buttons a,
 .tress-orange .main-navigation ul ul li,
-.tress-orange .more-link
+.tress-orange .more-link,
+.tress-orange.blog .hentry span.post_format
 {
     background: #fa7f53;
 }
@@ -3424,6 +3509,11 @@ img#wpstats {
 .tress-orange .main-navigation ul ul a
 {
     color:#fff;
+}
+
+.tress-orange.blog .site-content article, 
+.tress-orange.single-post .site-content article{
+    border-top:solid 3px #fa7f53;
 }
 
 .tress-orange ::selection

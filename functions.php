@@ -64,9 +64,9 @@ if ( ! function_exists( 'tress_setup' ) ) {
 		add_theme_support( 'post-thumbnails' );
 
 		// Create an extra image size for the Post featured image
-		add_image_size( 'post_feature_full_width', 680, 300, true );
+		add_image_size( 'post_feature_full_width', 300, 300, true );
                 
-                
+                 add_image_size('post-thumb', 716, 400, true); // custom thumbnail for post  
 		// Create an extra image size for the Post thumbnail image
 		add_image_size( 'post_feature_thumb', 368, 243, true );
                 
