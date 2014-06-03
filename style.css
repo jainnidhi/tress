@@ -1515,6 +1515,8 @@ article.sticky {
     padding: 10px;
     border-radius: 3px;
     box-shadow: 0 6px 0 #0073a8;
+    display:inline-block;
+    margin-top:10px;
 }
 
 .more-link:hover{
