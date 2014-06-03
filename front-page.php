@@ -214,7 +214,7 @@ get_header();
         <!-- Start home featured area -->
         
         <div class="home-featured-title-area" id="featured-title">
-            <div class="home-featured-title">
+            <div class="home-featured-title section-title">
                  <?php if ( get_theme_mod('home_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_title')); ?></h3>
                   <?php } else {  ?> <h3><?php esc_html_e('Theme Features', 'tress') ?></h3>
                            <?php } ?>
@@ -305,7 +305,7 @@ get_header();
             get_template_part('content', 'frontportfolio'); ?>
         
         <div class="client-feedback-area" id="feedback-title">
-            <div class="client-feedback-title">
+            <div class="client-feedback-title section-title">
                  <?php if ( get_theme_mod('feedback_title') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('feedback_title')); ?></h3>
                   <?php } else {  ?> <h3><?php esc_html_e('Our Clients Feedback', 'tress') ?></h3>
                            <?php } ?>

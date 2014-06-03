@@ -686,20 +686,20 @@ select {
     opacity:0.5;
 }
 
-.home-featured-title-area{
-    background:#009cee;
+
+
+.section-title{
+    margin: 0 20px !important;
+    padding: 10px 0px 0;
+    border-bottom: solid 1px #009cee;
 }
 
-.home-featured-title{
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 10px 0;
-}
-
-.home-featured-title h3{
-    text-align: center;
+.section-title h3{
     font-size: 40px;
-    color: #fff;
+    color: #111;
+    margin-bottom: 0;
+    border-bottom: solid 4px #009cee;
+    display: inline-block;
 }
 
 .home-featured-title h3 a{
@@ -788,21 +788,12 @@ select {
     text-align:center;
 }
 
-.client-feedback-area{
-    background: #009cee;
-}
 
 .client-feedback-title{
     max-width: 1140px;
     margin: 0 auto;
-    padding: 10px 0;
 }
 
-.client-feedback-title h3{
-    text-align:center;
-    font-size:40px;
-    color:#fff;
-}
 
 .testimonial-slider .flex-direction-nav{
     display:none;
@@ -1082,21 +1073,14 @@ select {
 /* ================================
 * Featured posts on front page 
 ================================== */
-.home-post-title-area{
-    background: #009cee;
-}
 
 .home-post-title{
     max-width: 1140px;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 10px 0 0;
 }
 
-.home-post-title h3 {
-    text-align: center;
-    font-size: 40px;
-    color: #fff;
-}
+
 .main-content #front-featured-posts {
     background: #eee; 
 }
@@ -1202,21 +1186,12 @@ select {
     text-align:center;
 }
 
-.home-portfolio-title-area{
-    background: #009cee;
-}
-
 .home-portfolio-title{
     max-width: 1140px;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 10px 0 0;
 }
 
-.home-portfolio-title h3 {
-    text-align: center;
-    font-size: 40px;
-    color: #fff;
-}
 
 .home-featured-portfolio a:hover,
 .portfolio a:hover{
@@ -2156,6 +2131,9 @@ div.gform_wrapper .ginput_complex label {
 /* ==========================================================================
    Sidebar
    ========================================================================== */
+.sidebar.section-title{
+    border-bottom:0;
+}
 .sidebar{
     padding:40px 30px 0 0;
 }
@@ -2905,13 +2883,8 @@ img#wpstats {
 .tress-red .page-links .page-numbers:hover,
 .tress-red .flex-caption .slider-button,
 .tress-red .home-featured .read-more,
-.tress-red .home-featured-title-area,
-.tress-red .client-feedback-area,
-.tress-red .home-contact-area,
-.tress-red .home-post-title-area,
 .tress-red .notification-bar,
 .tress-red .nav-container,
-.tress-red .home-portfolio-title-area,
 .tress-red .portfolio-buttons a,
 .tress-red .main-navigation ul ul li,
 .tress-red .more-link
@@ -2929,6 +2902,14 @@ img#wpstats {
 .tress-red .more-link,
 .tress-red .portfolio-buttons a{
     box-shadow:0 6px 0 #c94848;
+}
+
+.tress-red .section-title{
+    border-bottom:solid 1px #c62020; 
+}
+
+.tress-red .section-title h3{
+    border-bottom:solid 4px #c62020;
 }
 
 .tress-red .home-featured .read-more:hover,
@@ -2989,13 +2970,8 @@ img#wpstats {
 .tress-green .page-links .page-numbers:hover,
 .tress-green .flex-caption .slider-button,
 .tress-green .home-featured .read-more,
-.tress-green .home-featured-title-area,
-.tress-green .client-feedback-area,
-.tress-green .home-contact-area,
-.tress-green .home-post-title-area,
 .tress-green .notification-bar,
 .tress-green .nav-container,
-.tress-green .home-portfolio-title-area,
 .tress-green .portfolio-buttons a,
 .tress-green .main-navigation ul ul li,
 .tress-green .more-link
@@ -3012,6 +2988,14 @@ img#wpstats {
 {
     background:#3ac1c2;
     color:#fff;
+}
+
+.tress-green .section-title{
+    border-bottom:solid 1px #3ac1c2; 
+}
+
+.tress-green .section-title h3{
+    border-bottom:solid 4px #3ac1c2;
 }
 
 .tress-green .home-featured .read-more,
@@ -3074,13 +3058,8 @@ img#wpstats {
 .tress-pink .page-links .page-numbers:hover,
 .tress-pink .flex-caption .slider-button,
 .tress-pink .home-featured .read-more,
-.tress-pink .home-featured-title-area,
-.tress-pink .client-feedback-area,
-.tress-pink .home-contact-area,
-.tress-pink .home-post-title-area,
 .tress-pink .notification-bar,
 .tress-pink .nav-container,
-.tress-pink .home-portfolio-title-area,
 .tress-pink .portfolio-buttons a,
 .tress-pink .main-navigation ul ul li,
 .tress-pink .more-link{
@@ -3096,6 +3075,14 @@ img#wpstats {
 .tress-pink .more-link,
 .tress-pink .portfolio-buttons a{
     box-shadow:0 6px 0 #c43e86;
+}
+
+.tress-pink .section-title{
+    border-bottom:solid 1px #ed409f; 
+}
+
+.tress-pink .section-title h3{
+    border-bottom:solid 4px #ed409f;
 }
 
 .tress-pink .home-featured .read-more:hover,
@@ -3159,13 +3146,8 @@ img#wpstats {
 .tress-yellow .page-links .page-numbers:hover,
 .tress-yellow .flex-caption .slider-button,
 .tress-yellow .home-featured .read-more,
-.tress-yellow .home-featured-title-area,
-.tress-yellow .client-feedback-area,
-.tress-yellow .home-contact-area,
-.tress-yellow .home-post-title-area,
 .tress-yellow .notification-bar,
 .tress-yellow .nav-container,
-.tress-yellow .home-portfolio-title-area,
 .tress-yellow .portfolio-buttons a,
 .tress-yellow .main-navigation ul ul li,
 .tress-yellow .more-link
@@ -3194,6 +3176,14 @@ img#wpstats {
 {
     background:#d9ca39;
     color:#fff;
+}
+
+.tress-yellow .section-title{
+    border-bottom:solid 1px #d9ca39; 
+}
+
+.tress-yellow .section-title h3{
+    border-bottom:solid 4px #d9ca39;
 }
 
 .tress-yellow .home-featured img{
@@ -3245,13 +3235,8 @@ img#wpstats {
 .tress-brown .page-links .page-numbers:hover,
 .tress-brown .flex-caption .slider-button,
 .tress-brown .home-featured .read-more,
-.tress-brown .home-featured-title-area,
-.tress-brown .client-feedback-area,
-.tress-brown .home-contact-area,
-.tress-brown .home-post-title-area,
 .tress-brown .notification-bar,
 .tress-brown .nav-container,
-.tress-brown .home-portfolio-title-area,
 .tress-brown .portfolio-buttons a,
 .tress-brown .main-navigation ul ul li,
 .tress-brown .more-link
@@ -3268,6 +3253,14 @@ img#wpstats {
 .tress-brown .more-link,
 .tress-brown .portfolio-buttons a{
     box-shadow:0 6px 0 #5e3b07;
+}
+
+.tress-brown .section-title{
+    border-bottom:solid 1px #875608; 
+}
+
+.tress-brown .section-title h3{
+    border-bottom:solid 4px #875608;
 }
 
 .tress-brown .home-featured .read-more:hover,
@@ -3330,13 +3323,8 @@ img#wpstats {
 .tress-purple .page-links .page-numbers:hover,
 .tress-purple .flex-caption .slider-button,
 .tress-purple .home-featured .read-more,
-.tress-purple .home-featured-title-area,
-.tress-purple .client-feedback-area,
-.tress-purple .home-contact-area,
-.tress-purple .home-post-title-area,
 .tress-purple .notification-bar,
 .tress-purple .nav-container,
-.tress-purple .home-portfolio-title-area,
 .tress-purple .portfolio-buttons a,
 .tress-purple .main-navigation ul ul li,
 .tress-purple .more-link
@@ -3354,6 +3342,14 @@ img#wpstats {
 {
     background:#996bc5;
     color:#fff;
+}
+
+.tress-purple .section-title{
+    border-bottom:solid 1px #996bc5; 
+}
+
+.tress-purple .section-title h3{
+    border-bottom:solid 4px #996bc5;
 }
 
 .tress-purple .home-featured .read-more,
@@ -3416,13 +3412,8 @@ img#wpstats {
 .tress-orange .page-links .page-numbers:hover,
 .tress-orange .flex-caption .slider-button,
 .tress-orange .home-featured .read-more,
-.tress-orange .home-featured-title-area,
-.tress-orange .client-feedback-area,
-.tress-orange .home-contact-area,
-.tress-orange .home-post-title-area,
 .tress-orange .notification-bar,
 .tress-orange .nav-container,
-.tress-orange .home-portfolio-title-area,
 .tress-orange .portfolio-buttons a,
 .tress-orange .main-navigation ul ul li,
 .tress-orange .more-link
@@ -3439,6 +3430,14 @@ img#wpstats {
 {
     background:#fa7f53;
     color:#fff;
+}
+
+.tress-orange .section-title{
+    border-bottom:solid 1px #fa7f53; 
+}
+
+.tress-orange .section-title h3{
+    border-bottom:solid 4px #fa7f53;
 }
 
 .tress-orange .home-featured .read-more,

@@ -9,7 +9,7 @@
 <?php if(is_active_sidebar('sidebar-main')) { ?>
 	<div class="col grid_4_of_12">
 
-		<div id="secondary" class="sidebar" role="complementary">
+		<div id="secondary" class="sidebar section-title" role="complementary">
 			<?php
 			do_action( 'before_sidebar' );
                        
