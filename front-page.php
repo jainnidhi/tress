@@ -222,7 +222,7 @@ get_header();
         </div>
         <div class="home-featured-area">
             <div class="home-featured">
-                <div class="home-featured-one grid_3_of_12 col">
+                <div class="home-featured-one grid_4_of_12 col">
                     <?php if ( get_theme_mod('home_featured_one') !='' ) {  ?>
                      <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_one'); ?>" /></div>
                     <?php } else {  ?>
@@ -247,7 +247,7 @@ get_header();
                            <?php } ?></a>
                 </div>
 
-                <div class="home-featured-two grid_3_of_12 col">
+                <div class="home-featured-two grid_4_of_12 col">
                     <?php if ( get_theme_mod('home_featured_two') !='' ) {  ?>
                      <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_two'); ?>" /></div>
                     <?php } else {  ?>
@@ -273,7 +273,7 @@ get_header();
                 </div>
 
 
-                <div class="home-featured-three grid_3_of_12 col">
+                <div class="home-featured-three grid_4_of_12 col">
                     <?php if ( get_theme_mod('home_featured_three') !='' ) {  ?>
                      <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_three'); ?>" /></div>
                     <?php } else {  ?>
@@ -297,31 +297,7 @@ get_header();
                     <?php } else {  ?> <?php esc_html_e('Read More', 'tress') ?>
                            <?php } ?></a>
                 </div>
-                
-                <div class="home-featured-four grid_3_of_12 col">
-                    <?php if ( get_theme_mod('home_featured_four') !='' ) {  ?>
-                     <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_four'); ?>" /></div>
-                    <?php } else {  ?>
-                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img4.jpg" /></div>
-                     <?php } ?>
-
-
-                           <?php if ( get_theme_mod('home_title_four') !='' ) {  ?><h3><?php echo esc_html(get_theme_mod('home_title_four')); ?></h3>
-                  <?php } else {  ?> <h3><?php esc_html_e('Our Services', 'tress') ?></h3>
-                           <?php } ?>
-
-                  <?php if ( get_theme_mod('home_description_four') !='' ) {  ?>
-                  <p><?php echo esc_html(get_theme_mod('home_description_four')); ?></p>
-                           <?php } else { ?>
-                          <p><?php esc_html_e('Show testimonials of your clients that will build the trust among the audience.', 'tress') ?> </p>
-                                           <?php } ?>
-
-                      <a class="read-more" href="<?php if ( get_theme_mod('home_four_link_url') !='' ) { echo esc_url(get_theme_mod('home_four_link_url')); } ?>">
-                           <?php if ( get_theme_mod('home_four_link_text') !='' ) {  ?><?php echo esc_html(get_theme_mod('home_four_link_text')); ?>
-
-                    <?php } else {  ?> <?php esc_html_e('Read More', 'tress') ?>
-                           <?php } ?></a>
-                </div>
+               
             </div>
         </div><!-- end home featured area -->
         
