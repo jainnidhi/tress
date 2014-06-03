@@ -3341,7 +3341,7 @@ img#wpstats {
 .tress-purple .main-navigation ul ul li,
 .tress-purple .more-link
 {
-    background: #a678d3;
+    background: #996bc5;
 }
 
 
@@ -3352,7 +3352,7 @@ img#wpstats {
 
 .tress-purple ::selection
 {
-    background:#a678d3;
+    background:#996bc5;
     color:#fff;
 }
 
@@ -3369,7 +3369,7 @@ img#wpstats {
 }
 
 .tress-purple .home-featured img{
-    border:4px solid #a678d3;
+    border:4px solid #996bc5;
 }
 
 .tress-purple #reviewslider .slides img{
@@ -3395,7 +3395,7 @@ img#wpstats {
 .tress-purple .header-contact p:before,
 .tress-purple .client-name a
 {
-    color:#a678d3;
+    color:#996bc5;
 }
 
 .tress-purple .entry-header h1 a:hover{
