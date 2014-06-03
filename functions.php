@@ -113,6 +113,9 @@ function tress_scripts_styles() {
 	// We're using the awesome Font Awesome icon font. http://fortawesome.github.io/Font-Awesome
 	wp_enqueue_style( 'fontawesome', trailingslashit( get_template_directory_uri() ) . 'assets/css/font-awesome.min.css' , array(), '4.0.3', 'all' );
         
+        // Load animation stylesheet 
+        wp_enqueue_style( 'tress-animate', trailingslashit( get_template_directory_uri() ) . 'assets/css/animate.min.css' , array(), '1.0', 'all' );
+        
         if (class_exists('woocommerce')) {
             wp_enqueue_style( 'tress-woocommerce', trailingslashit( get_template_directory_uri() ) . 'assets/css/tress-woocommerce.css' , array(), '1.0', 'all' );
         }

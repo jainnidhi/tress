@@ -55,3 +55,8 @@ jQuery(document).ready(function($) {
     $('#site-navigation .menu>ul').slicknav({prependTo: '#mobile-menu'});
     $('#site-navigation .home-menu>ul').slicknav({prependTo: '#mobile-menu'});
 });
+
+/* Trigger animation for content effects */
+jQuery(document).ready(function($) {
+    $('.hentry').addClass('animated fadeInDown');
+});

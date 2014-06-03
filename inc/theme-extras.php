@@ -219,7 +219,7 @@ if ( ! function_exists( 'tress_posted_on' ) ) {
 		);
 
 		// Translators: 1: Date link 2: Author link 3: Categories 4: No. of Comments
-		$author = sprintf( '<i class="fa fa-pencil"></i> <address class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></address>',
+		$author = sprintf( '<i class="fa fa-user"></i> <address class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></address>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_attr( sprintf( esc_html__( 'View all posts by %s', 'tress' ), get_the_author() ) ),
 			get_the_author()
