@@ -1337,10 +1337,12 @@ select {
     background: #009cee;
     color: #fff;
     padding: 7px 10px;
+    border-radius: 5px;
+    box-shadow: 0 6px 0 #0073A8;
 }
 
 .portfolio-buttons a:hover{
-    background:#111 !important;
+    background: #0088C7;
     opacity:1;
 }
 /* ==========================================================================
@@ -2938,31 +2940,33 @@ img#wpstats {
 .tress-red .main-navigation ul ul li,
 .tress-red .more-link
 {
-    background: #e55252;
+    background: #c62020;
 }
 
 .tress-red ::selection
 {
-    background:#e55252 !important;
+    background:#c62020 !important;
     color:#fff;
 }
 
 .tress-red .home-featured .read-more,
-.tress-red .more-link{
+.tress-red .more-link,
+.tress-red .portfolio-buttons a{
     box-shadow:0 6px 0 #c94848;
 }
 
 .tress-red .home-featured .read-more:hover,
-.tress-red .more-link:hover{
+.tress-red .more-link:hover,
+.tress-red .portfolio-buttons a:hover{
     background:#ad3a3a;
 }
 
 .tress-red .home-featured img{
-    border:4px solid #e55252;
+    border:4px solid #c62020;
 }
 
 .tress-red #reviewslider .slides img{
-    border:3px solid #e55252;
+    border:3px solid #c62020;
 }
 
 .tress-red .main-navigation ul ul a
@@ -2988,7 +2992,7 @@ img#wpstats {
 .tress-red .header-contact p:before,
 .tress-red .client-name a
 {
-    color:#e55252;
+    color:#c62020;
 }
 
 .tress-red .entry-header h1 a:hover{
@@ -3020,7 +3024,7 @@ img#wpstats {
 .tress-green .main-navigation ul ul li,
 .tress-green .more-link
 {
-    background: #3bb59c;
+    background: #3ac1c2;
 }
 
 .tress-green .main-navigation ul ul a
@@ -3030,26 +3034,28 @@ img#wpstats {
 
 .tress-green ::selection
 {
-    background:#3bb59c;
+    background:#3ac1c2;
     color:#fff;
 }
 
 .tress-green .home-featured .read-more,
-.tress-green .more-link{
+.tress-green .more-link,
+.tress-green .portfolio-buttons a{
     box-shadow:0 6px 0 #2d8975;
 }
 
 .tress-green .home-featured .read-more:hover,
-.tress-green .more-link:hover{
+.tress-green .more-link:hover,
+.tress-green .portfolio-buttons a:hover{
     background:#2f7768;
 }
 
 .tress-green .home-featured img{
-    border:4px solid #3bb59c;
+    border:4px solid #3ac1c2;
 }
 
 .tress-green #reviewslider .slides img{
-    border:3px solid #3bb59c;
+    border:3px solid #3ac1c2;
 }
 
 .tress-green .site-title a,
@@ -3071,7 +3077,7 @@ img#wpstats {
 .tress-green .header-contact p:before,
 .tress-green .client-name a
 {
-    color:#3bb59c;
+    color:#3ac1c2;
 }
 
 .tress-green .entry-header h1 a:hover{
@@ -3111,12 +3117,14 @@ img#wpstats {
 }
 
 .tress-pink .home-featured .read-more,
-.tress-pink .more-link{
+.tress-pink .more-link,
+.tress-pink .portfolio-buttons a{
     box-shadow:0 6px 0 #c43e86;
 }
 
 .tress-pink .home-featured .read-more:hover,
-.tress-pink .more-link:hover{
+.tress-pink .more-link:hover,
+.tress-pink .portfolio-buttons a:hover{
     background:#b23578;
 }
 
@@ -3161,86 +3169,88 @@ img#wpstats {
 }
 
 
-/* ! Tress gray	*/
-.tress-gray .feature-more-link,
-.tress-gray #footercontainer,
-.tress-gray .pagination .page-numbers:hover,
-.tress-gray li span.current,
-.tress-gray li a:hover.page-numbers,
-.tress-gray button:hover,
-.tress-gray input:hover[type="button"],
-.tress-gray input:hover[type="reset"],
-.tress-gray input:hover[type="submit"],
-.tress-gray .entry-content .button:hover,
-.tress-gray .page-links .page-numbers:hover,
-.tress-gray .flex-caption .slider-button,
-.tress-gray .home-featured .read-more,
-.tress-gray .home-featured-title-area,
-.tress-gray .client-feedback-area,
-.tress-gray .home-contact-area,
-.tress-gray .home-post-title-area,
-.tress-gray .notification-bar,
-.tress-gray .nav-container,
-.tress-gray .home-portfolio-title-area,
-.tress-gray .portfolio-buttons a,
-.tress-gray .main-navigation ul ul li,
-.tress-gray .more-link
+/* ! Tress yellow	*/
+.tress-yellow .feature-more-link,
+.tress-yellow #footercontainer,
+.tress-yellow .pagination .page-numbers:hover,
+.tress-yellow li span.current,
+.tress-yellow li a:hover.page-numbers,
+.tress-yellow button:hover,
+.tress-yellow input:hover[type="button"],
+.tress-yellow input:hover[type="reset"],
+.tress-yellow input:hover[type="submit"],
+.tress-yellow .entry-content .button:hover,
+.tress-yellow .page-links .page-numbers:hover,
+.tress-yellow .flex-caption .slider-button,
+.tress-yellow .home-featured .read-more,
+.tress-yellow .home-featured-title-area,
+.tress-yellow .client-feedback-area,
+.tress-yellow .home-contact-area,
+.tress-yellow .home-post-title-area,
+.tress-yellow .notification-bar,
+.tress-yellow .nav-container,
+.tress-yellow .home-portfolio-title-area,
+.tress-yellow .portfolio-buttons a,
+.tress-yellow .main-navigation ul ul li,
+.tress-yellow .more-link
 {
-    background: #8e8e8e;
+    background: #d9ca39;
 }
 
-.tress-gray .main-navigation ul ul a
+.tress-yellow .main-navigation ul ul a
 {
     color:#fff;
 }
 
-.tress-gray .home-featured .read-more,
-.tress-gray .more-link{
-    box-shadow:0 6px 0 #686363;
+.tress-yellow .home-featured .read-more,
+.tress-yellow .more-link,
+.tress-yellow .portfolio-buttons a{
+    box-shadow:0 6px 0 #b5a730;
 }
 
-.tress-gray .home-featured .read-more:hover,
-.tress-gray .more-link:hover{
-    background:#5b5454;
+.tress-yellow .home-featured .read-more:hover,
+.tress-yellow .more-link:hover,
+.tress-yellow .portfolio-buttons a:hover{
+    background:#a59927;
 }
 
-.tress-gray ::selection
+.tress-yellow ::selection
 {
-    background:#8e8e8e;
+    background:#d9ca39;
     color:#fff;
 }
 
-.tress-gray .home-featured img{
-    border:4px solid #8e8e8e;
+.tress-yellow .home-featured img{
+    border:4px solid #d9ca39;
 }
 
-.tress-gray #reviewslider .slides img{
-    border:3px solid #8e8e8e;
+.tress-yellow #reviewslider .slides img{
+    border:3px solid #d9ca39;
 }
 
-.tress-gray .site-title a,
-.tress-gray .home-featured-post-title,
-.tress-gray .sidebar a,
-.tress-gray .entry-header .entry-title a,
-.tress-gray .entry-header .entry-title,
-.tress-gray .entry-header h1 a:visited,
-.tress-gray label .required,
-.tress-gray span.required,
-.tress-gray .header-meta .fa,
-.tress-gray .header-meta a:hover,
-.tress-gray .nav-previous a:hover,
-.tress-gray .nav-next a:hover,
-.tress-gray .contact-details .fa,
-.tress-gray .contact-details #address:before,
-.tress-gray .contact-details #phone:before,
-.tress-gray .contact-details #email:before,
-.tress-gray .header-contact p:before,
-.tress-gray .client-name a
+.tress-yellow .site-title a,
+.tress-yellow .home-featured-post-title,
+.tress-yellow .sidebar a,
+.tress-yellow .entry-header .entry-title a,
+.tress-yellow .entry-header .entry-title,
+.tress-yellow .entry-header h1 a:visited,
+.tress-yellow label .required,
+.tress-yellow span.required,
+.tress-yellow .header-meta .fa,
+.tress-yellow .header-meta a:hover,
+.tress-yellow .nav-previous a:hover,
+.tress-yellow .nav-next a:hover,
+.tress-yellow .contact-details .fa,
+.tress-yellow .contact-details #address:before,
+.tress-yellow .contact-details #phone:before,
+.tress-yellow .contact-details #email:before,
+.tress-yellow .header-contact p:before,
+.tress-yellow .client-name a
 {
-    color:#8e8e8e;
+    color:#d9ca39;
 }
 
-.tress-gray .entry-header h1 a:hover{
+.tress-yellow .entry-header h1 a:hover{
     color:#111;
 }
 
@@ -3279,12 +3289,14 @@ img#wpstats {
 }
 
 .tress-brown .home-featured .read-more,
-.tress-brown .more-link{
+.tress-brown .more-link,
+.tress-brown .portfolio-buttons a{
     box-shadow:0 6px 0 #5e3b07;
 }
 
 .tress-brown .home-featured .read-more:hover,
-.tress-brown .more-link:hover{
+.tress-brown .more-link:hover,
+.tress-brown .portfolio-buttons a:hover{
     background:#4c2f06;
 }
 
@@ -3369,12 +3381,14 @@ img#wpstats {
 }
 
 .tress-purple .home-featured .read-more,
-.tress-purple .more-link{
+.tress-purple .more-link,
+.tress-purple .portfolio-buttons a{
     box-shadow:0 6px 0 #7b43b2;
 }
 
 .tress-purple .home-featured .read-more:hover,
-.tress-purple .more-link:hover{
+.tress-purple .more-link:hover,
+.tress-purple .portfolio-buttons a:hover{
     background:#723aaa;
 }
 
@@ -3452,12 +3466,14 @@ img#wpstats {
 }
 
 .tress-orange .home-featured .read-more,
-.tress-orange .more-link{
+.tress-orange .more-link,
+.tress-orange .portfolio-buttons a{
     box-shadow:0 6px 0 #dd7552;
 }
 
 .tress-orange .home-featured .read-more:hover,
-.tress-orange .more-link:hover{
+.tress-orange .more-link:hover,
+.tress-orange .portfolio-buttons a:hover{
     background:#d16c4b;
 }
 

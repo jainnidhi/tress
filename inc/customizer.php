@@ -151,7 +151,7 @@ function tress_customize_register($wp_customize) {
             'blue' => __('Blue', 'tress'),
             'red' => __('Red', 'tress'),
             'green' => __('Green', 'tress'),
-            'gray' => __('Gray', 'tress'),
+            'yellow' => __('Yellow', 'tress'),
             'purple' => __('Purple', 'tress'),
             'orange' => __('Orange', 'tress'),
             'brown' => __('Brown', 'tress'),
@@ -1590,7 +1590,7 @@ function tress_sanitize_checkbox( $input ) {
  * @since Tress 1.0
  */
 function tress_sanitize_color_scheme_option($colorscheme_option){
-    if ( ! in_array( $colorscheme_option, array( 'blue','red','green','gray','purple','orange','brown','pink' ) ) ) {
+    if ( ! in_array( $colorscheme_option, array( 'blue','red','green','yellow','purple','orange','brown','pink' ) ) ) {
 		$colorscheme_option = 'blue';
 	}
 
