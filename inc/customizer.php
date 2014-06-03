@@ -1103,7 +1103,7 @@ function tress_customize_register($wp_customize) {
        
     // enable featured portfolio on front page?
     $wp_customize->add_setting('tress_front_featured_portfolio_check', array(
-        'default' => 1, 
+        'default' => 0, 
         'sanitize_callback' => 'tress_sanitize_checkbox',
     ));
     $wp_customize->add_control('tress_front_featured_portfolio_check', array(
