@@ -2890,30 +2890,6 @@ img#wpstats {
 
 
 /* ==========================================================================
-   Background Color Schemes
-   ========================================================================== */
-.tress-bg-dark{
-    background: url('assets/images/squares.png') transparent repeat;
-}
-.dark-tress-front-page,
-.dark-tress-front-page h1,
-.dark-tress-front-page h2,
-.dark-tress-front-page h3,
-.dark-tress-front-page h4,
-.dark-tress-front-page h5,
-.dark-tress-front-page h6 {
-    color: #fff;
-}
-
-.tress-bg-light {
-    background: url('assets/images/cream_pixels.png') transparent repeat; 
-}
-
-.tress-bg-light .site-content {
-    border: solid 1px #eee; 
-}
-
-/* ==========================================================================
    Color Schemes
    ========================================================================== */
 /* ! Tress red	*/

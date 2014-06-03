@@ -115,26 +115,7 @@ function tress_customize_register($wp_customize) {
         'priority' => 30,
     ));
 
-    // Add color scheme options
    
-    $wp_customize->add_setting('tress_bg_color_scheme', array(
-        'default' => 'light',
-        'sanitize_callback' => 'tress_sanitize_bg_color_scheme_option',
-    ));
-
-    $wp_customize->add_control('tress_bg_color_scheme', array(
-        'label' => 'Background Color Schemes',
-        'section' => 'tress_theme_layout_settings',
-        'default' => 'light',
-        'type' => 'radio',
-        'choices' => array(
-            'light' => __('Light', 'tress'),
-            'dark' => __('Dark', 'tress'),
-           
-           
-        ),
-    ));
-    
     // Add color scheme options
    
     $wp_customize->add_setting('tress_color_scheme', array(
@@ -1597,19 +1578,6 @@ function tress_sanitize_color_scheme_option($colorscheme_option){
 	return $colorscheme_option;
 }
 
-
-/*
- * Sanitize background color scheme options 
- * 
- * @since Tress 1.0
- */
-function tress_sanitize_bg_color_scheme_option($bg_colorscheme_option){
-    if ( ! in_array( $bg_colorscheme_option, array( 'light','dark') ) ) {
-		$bg_colorscheme_option = 'light';
-	}
-
-	return $bg_colorscheme_option;
-}
 
 /**
  * Bind JS handlers to make Theme Customizer preview reload changes asynchronously.
