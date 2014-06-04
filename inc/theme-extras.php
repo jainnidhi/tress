@@ -210,7 +210,7 @@ if ( ! function_exists( 'tress_posted_on' ) ) {
 		}
 
 		// Translators: 1: Icon 2: Permalink 3: Post date and time 4: Publish date in ISO format 5: Post date
-		$date = sprintf( '<i class="fa %1$s"></i> <a href="%2$s" title="Posted %3$s" rel="bookmark"><time class="entry-date" datetime="%4$s" itemprop="datePublished">%5$s</time></a>',
+		$date = sprintf( '<i class="fa fa-clock-o"></i> <a href="%2$s" title="Posted %3$s" rel="bookmark"><time class="entry-date" datetime="%4$s" itemprop="datePublished">%5$s</time></a>',
 			$post_icon,
 			esc_url( get_permalink() ),
 			sprintf( esc_html__( '%1$s @ %2$s', 'tress' ), esc_html( get_the_date() ), esc_attr( get_the_time() ) ),
@@ -259,10 +259,6 @@ if ( ! function_exists( 'tress_posted_on' ) ) {
 function tress_post_format_icon() { 
     if(!is_single()) {
     ?>
-                                
-     <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>" >
-         <span class="read_more"></span>
-     </a>
      <?php $format = get_post_format();
       ?>
      <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>" ><span class="post_format">
