@@ -858,6 +858,11 @@ select {
     width:10px;
     height:10px;
 }
+
+#reviewslider .flex-control-nav{
+    position:relative;
+    bottom:-10px;
+}
 .home-contact-area{
     background:#009cee;
 }
