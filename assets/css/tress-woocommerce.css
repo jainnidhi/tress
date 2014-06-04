@@ -1267,6 +1267,7 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
     margin-bottom:20px;
     margin-top:-10px;
     font-size:14px;
+    color:#111;
 }
 
 .woocommerce-page a.button:hover{

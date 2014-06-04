@@ -267,7 +267,7 @@ function tress_post_format_icon() {
      <?php } elseif ($format == 'gallery')  { ?>
      <i class="fa fa-picture-o"></i>
      <?php } elseif ($format == 'image')  { ?>
-     <i class="fa fa-file-image-o"></i>
+     <i class="fa fa-user"></i>
      <?php } elseif ($format == 'quote')  { ?>
      <i class="fa fa-quote-left"></i>
      <?php } elseif ($format == 'link')  { ?>
