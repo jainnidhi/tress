@@ -250,6 +250,40 @@ if ( ! function_exists( 'tress_posted_on' ) ) {
 }
 
 
+/* Display icon for blog post using 
+ * Post Format - get_post_format() function 
+ * 
+ * @since Tress 1.0
+ */
+
+function tress_post_format_icon() { 
+    if(!is_single()) {
+    ?>
+                                
+     <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>" >
+         <span class="read_more"></span>
+     </a>
+     <?php $format = get_post_format();
+      ?>
+     <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>" ><span class="post_format">
+     <?php if ($format == 'video')  { ?>
+     <i class="fa fa-film"></i>
+     <?php } elseif ($format == 'gallery')  { ?>
+     <i class="fa fa-picture-o"></i>
+     <?php } elseif ($format == 'image')  { ?>
+     <i class="fa fa-file-image-o"></i>
+     <?php } elseif ($format == 'quote')  { ?>
+     <i class="fa fa-quote-left"></i>
+     <?php } elseif ($format == 'link')  { ?>
+     <i class="fa fa-link"></i>
+     <?php } else { ?>
+     <i class="fa fa-file-text"></i>
+
+     <?php } ?>
+     </span></a>
+<?php }
+}
+
 /**
  * Prints HTML with meta information for current post: categories, tags, permalink
  *

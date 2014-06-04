@@ -9,6 +9,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+             <?php tress_post_format_icon(); ?>
                 <h1 class="entry-title"><?php the_title(); ?></h1>
 		<?php tress_posted_on(); ?>
 	</header> <!-- /.entry-header -->
