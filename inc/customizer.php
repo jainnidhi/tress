@@ -70,6 +70,18 @@ function tress_customize_register($wp_customize) {
         'priority' => 29,
     ));
     
+    // enable notification bar on front page?
+    $wp_customize->add_setting('tress_notification_bar_check', array(
+        'default' => 0, 
+        'sanitize_callback' => 'tress_sanitize_checkbox',
+    ));
+    $wp_customize->add_control('tress_notification_bar_check', array(
+        'label' => __('Show Notification Bar on Front Page', 'tress'),
+        'section' => 'tress_notification_bar_settings',
+        'priority' => 1,
+        'type' => 'checkbox',
+    ));
+    
     $wp_customize->add_setting('notification_text', array('default' => '',
             'sanitize_js_callback' => 'tress_sanitize_escaping', 
             ));
