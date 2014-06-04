@@ -42,7 +42,7 @@ global $edd_options;
         </head>
 
         <body <?php body_class(); ?>>
-            
+           <?php if (get_theme_mod('tress_notification_bar_check')) { ?>
              <div class="notification-bar">
                     <div class="notification-wrap clearfix">
                         <div class="col grid_6_of_12 notification-text">
@@ -60,7 +60,7 @@ global $edd_options;
                         </div>
                     </div>
                 </div>
-            
+           <?php } ?>
             <div id="wrapper" class="hfeed site">
 
                 <div class="visuallyhidden skip-link"><a href="#primary" title="<?php esc_attr_e('Skip to main content', 'tress'); ?>"><?php esc_html_e('Skip to main content', 'tress'); ?></a></div>
