@@ -76,7 +76,7 @@ function tress_customize_register($wp_customize) {
         'sanitize_callback' => 'tress_sanitize_checkbox',
     ));
     $wp_customize->add_control('tress_notification_bar_check', array(
-        'label' => __('Show Notification Bar on Front Page', 'tress'),
+        'label' => __('Show Notification Bar', 'tress'),
         'section' => 'tress_notification_bar_settings',
         'priority' => 1,
         'type' => 'checkbox',
