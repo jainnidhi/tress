@@ -1350,7 +1350,7 @@ select {
     color: #111;
 }
 
-.blog .hentry .wp-post-image{
+.hentry .wp-post-image{
     float:left;
     margin-right:15px;
 }
@@ -1362,18 +1362,18 @@ article.sticky .featured-post {
     text-align: center;
 }
 
-.blog .hentry .wp-post-image{
+.hentry .wp-post-image{
     position:relative;
 }
 
-.blog .hentry .wp-post-image:hover{
+.hentry .wp-post-image:hover{
     opacity:0.5;
 }
-.blog .hentry .wp-post-image:hover span.link{
+.hentry .wp-post-image:hover span.link{
     opacity:1 !important;
 }
 
-.blog .hentry span.link{
+.hentry span.link{
     position: absolute;
     bottom: 68%;
     left: 20%;
@@ -1384,8 +1384,7 @@ article.sticky .featured-post {
     opacity:0;
 }
 
-.blog .hentry span.post_format{
-    position: absolute;
+.hentry span.post_format{
     left: 0;
     background: #009cee;
     padding: 10px 15px;
@@ -1393,6 +1392,7 @@ article.sticky .featured-post {
     color: #fff;
     min-width: 50px;
     min-height: 50px;
+    float:right;
 }
 .site-content article {
     margin-bottom: 40px;
@@ -1403,7 +1403,8 @@ article.sticky .featured-post {
 }
 
 .blog .site-content article,
-.single-post .site-content article{
+.single .site-content article,
+archive .site-content article{
     border-top:3px solid #009cee;
 }
 
@@ -1782,9 +1783,9 @@ article.sticky .featured-post {
    404 page
    ========================================================================== */
 .error404 input[type="text"]{
-   padding:15px;
-   width:auto;
-   
+    padding:15px;
+    width:auto;
+
 }
 
 .error404 .entry-header,
@@ -2181,7 +2182,7 @@ div.gform_wrapper .ginput_complex label {
     border-bottom:0 !important;
 }
 .sidebar{
-    padding:40px 30px 0 0;
+    padding:20px 30px 0 0;
 }
 
 
@@ -2210,22 +2211,23 @@ div.gform_wrapper .ginput_complex label {
    ========================================================================== */
 
 .sidebar .widget-title {
-    padding-bottom: 0px; 
+    padding-bottom: 10px; 
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
-    letter-spacing: 1px;
-    border-bottom: solid 1px 009cee; 
+    letter-spacing: 0px;
+    border-bottom: solid 1px #009cee; 
 }
 
 .site-footer li:before, 
 .sidebar .widget li:before {
-content: "\f054";
-display: block;
-float: left;
-font-family: "FontAwesome";
-padding: 5px;
-font-size: 12px;
+    content: "\f054";
+    display: block;
+    float: left;
+    font-family: "FontAwesome";
+    padding: 5px;
+    font-size: 12px;
+    color:#009cee;
 }
 
 .widget-area ul {

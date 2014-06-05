@@ -35,13 +35,13 @@ if (get_theme_mod('tress_front_featured_portfolio_check')) {
     </div>
    
 
-            <div id="featured-portfolio" class="flexslider">
+            <div class="flexslider ">
                 <ul class="slides">
                 
                 <?php if ($featuredportfolio->have_posts()) : $i = 1; ?>
 
                     <?php while ($featuredportfolio->have_posts()) : $featuredportfolio->the_post(); ?>
-                    
+
                     <li>
                         <div class="home-featured-portfolio">
 

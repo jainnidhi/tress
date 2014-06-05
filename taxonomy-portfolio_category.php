@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * A custom portfolio page template to display portfolio grid
+ * A custom portfolio category page template to display portfolio grid
  * Requires Portfolio Custom Post Type plugin to be activated
  * 
  * @package : Tress
@@ -16,19 +16,9 @@ get_header(); ?>
 	<div id="primary" class="site-content row" role="main">
 		<div class="col grid_12_of_12">
                     <div class="main-content"> 
-        <?php
-        $current_page = get_query_var('paged');
-        $per_page = intval(get_theme_mod('tress_portfolio_front_count'));
-        $offset = $current_page > 0 ? $per_page * ($current_page - 1) : 0;
-        $portfolio_args = array(
-            'post_type' => 'portfolio',
-            'posts_per_page' => $per_page,
-            'offset' => $offset
-        );
-        $products = new WP_Query($portfolio_args);
-        ?>
-        <?php if ($products->have_posts()) : $i = 1; ?>
-            <?php while ($products->have_posts()) : $products->the_post(); ?>
+        
+        <?php if (have_posts()) : $i = 1; ?>
+            <?php while (have_posts()) : the_post(); ?>
 
                 <div id="post-<?php the_ID(); ?>" class="col grid_4_of_12 portfolio<?php if ($i % 4 == 0) { echo ' last'; } ?>">
 
@@ -70,7 +60,7 @@ get_header(); ?>
                 <?php get_search_form(); ?>
 
 <?php endif; ?>
-    </div> <!-- /.main-content -->
+                 </div> <!-- /.main-content -->
 		</div> <!-- /.col.grid_12_of_12 -->
 	</div><!-- /#primary.site-content.row -->
 </div> <!-- /#maincontentcontainer -->
