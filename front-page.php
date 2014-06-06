@@ -485,7 +485,7 @@ get_header();
         
         
         <?php  // Display featured posts on front page
-            get_template_part('content', 'frontposts'); ?>
+            get_template_part('content/content', 'frontposts'); ?>
         
         <div class="home-cta-area">
                 <div class="home-cta">
