@@ -45,10 +45,7 @@
 				tress_entry_meta();
 			} ?>
 			<?php edit_post_link( esc_html__( 'Edit', 'tress' ) . ' <i class="fa fa-angle-right"></i>', '<div class="edit-link">', '</div>' ); ?>
-			<?php if ( is_singular() && get_the_author_meta( 'description' ) && is_multi_author() ) {
-				// If a user has filled out their description and this is a multi-author blog, show their bio
-				get_template_part( 'author-bio' );
-			} ?>
+			
 		</footer> <!-- /.entry-meta -->
           
 	</article> <!-- /#post -->
