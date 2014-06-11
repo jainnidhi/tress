@@ -308,9 +308,7 @@ function tress_customize_register($wp_customize) {
         'priority' => 36,
     ));
 
-    $wp_customize->add_setting('slider_one', array(
-        'transport'=> 'postMessage',
-    ));
+    $wp_customize->add_setting('slider_one');
 
     $wp_customize->add_control(
             new WP_Customize_Image_Control(
@@ -337,20 +335,7 @@ function tress_customize_register($wp_customize) {
              'priority' => 2,
            
         ));
-        
-        $wp_customize->add_setting('slider_one_url', array(
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('slider_one_url', array(
-            'label' => __('Slider One URL', 'tress'),
-            'section' => 'home_slider_setting',
-            'settings' => 'slider_one_url',
-             'priority' => 3,
-           
-        ));
-        
+       
         $wp_customize->add_setting('slider_one_description', array('default' => '',
             'sanitize_callback' => 'sanitize_text_field',
             'transport'=> 'postMessage',
@@ -390,9 +375,7 @@ function tress_customize_register($wp_customize) {
     ));
         
 
-   $wp_customize->add_setting('slider_two', array(
-       'transport'=> 'postMessage',
-   ));
+   $wp_customize->add_setting('slider_two');
 
     $wp_customize->add_control(
             new WP_Customize_Image_Control(
@@ -417,19 +400,6 @@ function tress_customize_register($wp_customize) {
             'settings' => 'slider_title_two',
              'priority' => 8,
             
-        ));
-        
-        $wp_customize->add_setting('slider_two_url', array(
-            'sanitize_callback' => 'sanitize_text_field',
-            'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('slider_two_url', array(
-            'label' => __('Slider Two URL', 'tress'),
-            'section' => 'home_slider_setting',
-            'settings' => 'slider_two_url',
-             'priority' => 9,
-           
         ));
         
         $wp_customize->add_setting('slider_two_description', array('default' => '',
@@ -470,9 +440,7 @@ function tress_customize_register($wp_customize) {
         'priority' => 12,
     ));
 
-    $wp_customize->add_setting('slider_three', array(
-        'transport'=> 'postMessage',
-    ));
+    $wp_customize->add_setting('slider_three');
 
     $wp_customize->add_control(
             new WP_Customize_Image_Control(
@@ -498,19 +466,6 @@ function tress_customize_register($wp_customize) {
             'settings' => 'slider_title_three',
              'priority' => 14,
             
-        ));
-        
-         $wp_customize->add_setting('slider_three_url', array(
-            'sanitize_callback' => 'sanitize_text_field',
-             'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('slider_three_url', array(
-            'label' => __('Slider Three URL', 'tress'),
-            'section' => 'home_slider_setting',
-            'settings' => 'slider_three_url',
-             'priority' => 15,
-           
         ));
         
        $wp_customize->add_setting('slider_three_description', array('default' => '',
@@ -551,9 +506,7 @@ function tress_customize_register($wp_customize) {
         'priority' => 18,
     ));
     
-    $wp_customize->add_setting('slider_four', array(
-        'transport'=> 'postMessage',
-    ));
+    $wp_customize->add_setting('slider_four');
 
     $wp_customize->add_control(
             new WP_Customize_Image_Control(
@@ -578,19 +531,6 @@ function tress_customize_register($wp_customize) {
             'settings' => 'slider_title_four',
              'priority' => 20,
             
-        ));
-        
-         $wp_customize->add_setting('slider_four_url', array(
-            'sanitize_callback' => 'sanitize_text_field',
-             'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('slider_four_url', array(
-            'label' => __('Slider Four URL', 'tress'),
-            'section' => 'home_slider_setting',
-            'settings' => 'slider_four_url',
-             'priority' => 21,
-           
         ));
         
         $wp_customize->add_setting('slider_four_description', array('default' => '',
@@ -632,9 +572,7 @@ function tress_customize_register($wp_customize) {
             'priority' => 24,
         ));
 
-        $wp_customize->add_setting('slider_five', array(
-            'transport'=> 'postMessage',
-        ));
+        $wp_customize->add_setting('slider_five');
 
         $wp_customize->add_control(
                 new WP_Customize_Image_Control(
@@ -659,19 +597,6 @@ function tress_customize_register($wp_customize) {
             'settings' => 'slider_title_five',
              'priority' => 26,
             
-        ));
-        
-         $wp_customize->add_setting('slider_five_url', array(
-            'sanitize_callback' => 'sanitize_text_field',
-             'transport'=> 'postMessage',
-            ));
-        
-        $wp_customize->add_control('slider_five_url', array(
-            'label' => __('Slider Five URL', 'tress'),
-            'section' => 'home_slider_setting',
-            'settings' => 'slider_five_url',
-             'priority' => 27,
-           
         ));
         
         $wp_customize->add_setting('slider_five_description', array('default' => '',

@@ -2557,6 +2557,7 @@ li span.dots {
 .main-navigation ul ul ul {
     left: 100%;
     top: 0;
+    padding-top:0;
 }
 
 .main-navigation ul ul a {

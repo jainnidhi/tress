@@ -75,11 +75,7 @@
 			$( '#slider1 img' ).attr('src', to );
 		} );
 	} );
-        wp.customize( 'slider_one_url', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider1 .flex-caption h2 a' ).attr('href', to );
-		} );
-	} );
+       
          wp.customize( 'slider_one_description', function( value ) {
 		value.bind( function( to ) {
 			$( '#slider1 .flex-caption p' ).text( to );
@@ -105,11 +101,7 @@
 			$( '#slider2 .flex-caption h2 a' ).text( to );
 		} );
 	} );
-         wp.customize( 'slider_two_url', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider2 .flex-caption h2 a' ).attr('href', to );
-		} );
-	} );
+        
          wp.customize( 'slider_two_description', function( value ) {
 		value.bind( function( to ) {
 			$( '#slider2 .flex-caption p' ).text( to );
@@ -135,11 +127,7 @@
 			$( '#slider3 .flex-caption h2 a' ).text( to );
 		} );
 	} );
-         wp.customize( 'slider_three_url', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider3 .flex-caption h2 a' ).attr('href', to );
-		} );
-	} );
+       
          wp.customize( 'slider_three_description', function( value ) {
 		value.bind( function( to ) {
 			$( '#slider4 .flex-caption p' ).text( to );
@@ -165,11 +153,7 @@
 			$( '#slider4 .flex-caption h2 a' ).text( to );
 		} );
 	} );
-         wp.customize( 'slider_four_url', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider4 .flex-caption h2 a' ).attr('href', to );
-		} );
-	} );
+        
          wp.customize( 'slider_four_description', function( value ) {
 		value.bind( function( to ) {
 			$( '#slider4 .flex-caption p' ).text( to );
@@ -195,11 +179,7 @@
 			$( '#slider5 .flex-caption h2 a' ).text( to );
 		} );
 	} );
-        wp.customize( 'slider_five_url', function( value ) {
-		value.bind( function( to ) {
-			$( '#slider5 .flex-caption h2 a' ).attr('href', to );
-		} );
-	} );
+      
          wp.customize( 'slider_five_description', function( value ) {
 		value.bind( function( to ) {
 			$( '#slider5 .flex-caption p' ).text( to );
