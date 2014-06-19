@@ -595,6 +595,19 @@ select {
     text-align:right;
 }
 
+.notification-text,
+.notification-link{
+    width:50%;
+}
+
+.notification-text{
+    float:left;
+}
+
+.notification-link{
+    float:right;
+}
+
 #wrapper {
     width: 100%;
     position: relative;
@@ -702,6 +715,10 @@ select {
     margin-bottom: 0;
     border-bottom: solid 4px #009cee;
     display: inline-block;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
 }
 
 .home-featured-title h3 a{
@@ -2127,6 +2144,15 @@ div.gform_wrapper .ginput_complex label {
     margin-bottom: 5px;
     border-bottom: dotted 1px #fff; 
 }
+
+.site-footer .widget li:hover{
+    padding-left:20px !important;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -khtml-transition: all 0.5s ease;
+    -moz-transitiokn: all 0.5s ease;
+
+}
 .site-footer a { 
     color: #fff;
 }
@@ -2137,7 +2163,6 @@ div.gform_wrapper .ginput_complex label {
 
 .site-footer a:hover { 
     color: #eee;
-    padding-left:20px !important;
 }
 
 .site-footer a:focus { 
@@ -4033,6 +4058,12 @@ img#wpstats {
     .notification-link{
         text-align:center;
         margin-bottom:10px;
+    }
+
+    .notification-text,
+    .notification-link{
+        width:100%;
+        text-align:center;
     }
 
 }
