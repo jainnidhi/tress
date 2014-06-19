@@ -158,7 +158,7 @@ p.stars {
     position: relative;
     line-height: 1em;
     font-size: 1em;
-   
+
 }
 
 p.stars a {
@@ -1231,8 +1231,8 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 }
 
 .cart-collaterals .cross-sells {
-        display:none;
-    }
+    display:none;
+}
 
 /* ==========================================================================
    Woo Commerce Product 
@@ -1368,13 +1368,14 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
     border:3px solid #333;
     color:#333;
     font-weight:400;
-    border-radius:0;
+    border-radius:25px;
     padding:5px 15px;
 }
 
 .woocommerce button.button.alt:hover{
     background:#009cee;
     color:#fff;
+    border:3px solid #009cee;
 }
 
 .woocommerce #content div.product span.price{
@@ -1626,7 +1627,7 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 }
 
 @media only screen and (max-width: 767px) {
-.single-product ul.products li.product{
+    .single-product ul.products li.product{
         margin-right:0;
         width:48%;
     }
@@ -1664,9 +1665,12 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
     background:#c62020 !important;
 }
 
+.tress-red .woocommerce button.button.alt:hover{
+    border:3px solid #c62020 !important;
+}
 .tress-red .woocommerce-message,
 .tress-red .woocommerce-info{
-        border-top: 3px solid #c62020 !important;
+    border-top: 3px solid #c62020 !important;
 }
 
 .tress-red .star-rating span:before,
@@ -1675,7 +1679,7 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 .tress-red .site-header .cart-contents:after,
 .tress-red .fa-shopping-cart:before
 {
-	color:#c62020;
+    color:#c62020;
 }
 
 /* ! Tress green */
@@ -1691,13 +1695,15 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 .tress-green ins,
 .tress-green input:hover[type="submit"],
 .tress-green .button:hover
-	{
-	background: #3ac1c2 !important;
-	}
-        
+{
+    background: #3ac1c2 !important;
+}
+.tress-green .woocommerce button.button.alt:hover{
+    border:3px solid #3ac1c2 !important;
+}    
 .tress-green .woocommerce-message,
 .tress-green .woocommerce-info{
-        border-top: 3px solid #3ac1c2;
+    border-top: 3px solid #3ac1c2;
 }
 
 .tress-green .star-rating span:before,
@@ -1706,7 +1712,7 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 .tress-green .site-header .cart-contents:after,
 .tress-green .fa-shopping-cart:before
 {
-	color:#3ac1c2;
+    color:#3ac1c2;
 }
 
 /* ! Tress pink	*/
@@ -1722,13 +1728,17 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 .tress-pink ins,
 .tress-pink input:hover[type="submit"],
 .tress-pink .button:hover
-	{
-	background: #ed409f !important;
-	}
-        
+{
+    background: #ed409f !important;
+}
+
 .tress-pink  .woocommerce-message,
 .tress-pink  .woocommerce-info{
-        border-top: 3px solid #ed409f;
+    border-top: 3px solid #ed409f;
+}
+
+.tress-pink .woocommerce button.button.alt:hover{
+    border:3px solid #ed409f !important;
 }
 
 .tress-pink .star-rating span:before,
@@ -1737,7 +1747,7 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 .tress-pink .site-header .cart-contents:after,
 .tress-pink .fa-shopping-cart:before
 {
-	color:#ed409f;
+    color:#ed409f;
 }
 
 /* ! Tress Yellow	*/
@@ -1753,13 +1763,17 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 .tress-yellow ins,
 .tress-yellow input:hover[type="submit"],
 .tress-yellow .button:hover
-	{
-	background: #d9ca39 !important;
-	}
-        
+{
+    background: #d9ca39 !important;
+}
+
+.tress-yellow .woocommerce button.button.alt:hover{
+    border:3px solid #d9ca39 !important;
+}
+
 .tress-yellow .woocommerce-message,
 .tress-yellow .woocommerce-info{
-        border-top: 3px solid #d9ca39 !important;
+    border-top: 3px solid #d9ca39 !important;
 }
 
 .tress-yellow .star-rating span:before,
@@ -1768,7 +1782,7 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 .tress-yellow .site-header .cart-contents:after,
 .tress-yellow .fa-shopping-cart:before
 {
-	color:#d9ca39;
+    color:#d9ca39;
 }
 
 /* ! Tress brown */
@@ -1784,13 +1798,17 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 .tress-brown ins,
 .tress-brown input:hover[type="submit"],
 .tress-brown .button:hover
-	{
-	background: #875608 !important;
-	}
-        
+{
+    background: #875608 !important;
+}
+
+.tress-brown .woocommerce button.button.alt:hover{
+    border:3px solid #875608 !important;
+}
+
 .tress-brown .woocommerce-message,
 .tress-brown .woocommerce-info{
-        border-top: 3px solid #875608 !important;
+    border-top: 3px solid #875608 !important;
 }
 
 .tress-brown .star-rating span:before,
@@ -1799,7 +1817,7 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 .tress-brown .site-header .cart-contents:after,
 .tress-brown .fa-shopping-cart:before
 {
-	color:#875608;
+    color:#875608;
 }
 
 /* ! Tress purple */
@@ -1815,13 +1833,17 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 .tress-purple ins,
 .tress-purple input:hover[type="submit"],
 .tress-purple .button:hover
-	{
-	background: #996bc5 !important;
-	}
+{
+    background: #996bc5 !important;
+}
+
+.tress-purple .woocommerce button.button.alt:hover{
+    border:3px solid #996bc5 !important;
+}
 
 .tress-purple .woocommerce-message,
 .tress-purple .woocommerce-info{
-        border-top: 3px solid #a678d3 !important;
+    border-top: 3px solid #a678d3 !important;
 }
 
 .tress-purple .star-rating span:before,
@@ -1830,7 +1852,7 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 .tress-purple .site-header .cart-contents:after,
 .tress-purple .fa-shopping-cart:before
 {
-	color:#996bc5;
+    color:#996bc5;
 }
 
 /* ! Tress orange */
@@ -1847,13 +1869,17 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 .tress-orange input:hover[type="submit"],
 .tress-orange .button:hover
 
-	{
-	background: #fa7f53 !important;
-	}
-        
+{
+    background: #fa7f53 !important;
+}
+
+.tress-orange .woocommerce button.button.alt:hover{
+    border:3px solid #fa7f53 !important;
+}
+
 .tress-orange .woocommerce-message,
 .tress-orange .woocommerce-info{
-        border-top: 3px solid #fa7f53 !important;
+    border-top: 3px solid #fa7f53 !important;
 }
 
 .tress-orange .star-rating span:before,
@@ -1862,5 +1888,5 @@ div.pp_woocommerce #respond #commentform .comment-form-rating {
 .tress-orange .site-header .cart-contents:after,
 .tress-orange .fa-shopping-cart:before
 {
-	color:#fa7f53;
+    color:#fa7f53;
 }

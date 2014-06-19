@@ -19,9 +19,9 @@
                             <?php the_post_thumbnail('post_feature_full_width'); ?> 
                                      <?php tress_post_format_icon(); ?>
                                 </a>
-				<h1 class="entry-title">
+				<h2 class="entry-title">
 					<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'tress' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
-				</h1>
+				</h2>
 			<?php } // is_single() ?>
 			<?php tress_posted_on(); ?>
 			<?php if ( has_post_thumbnail() && is_single() && !is_search() ) { ?>
