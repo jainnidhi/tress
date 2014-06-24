@@ -45,19 +45,17 @@ global $edd_options;
            <?php if (get_theme_mod('tress_notification_bar_check')) { ?>
              <div class="notification-bar">
                     <div class="notification-wrap clearfix">
-                        <div class="notification-text">
+                     
                                 <?php if ( get_theme_mod('notification_text') !='' ) {  ?>
                                 <p><?php echo esc_html(get_theme_mod('notification_text')); ?></p>
                                <?php } else { ?>
                               <p><?php esc_html_e('This is the notification text block.', 'tress') ?> </p>
                                  <?php } ?>
-                        </div>
-                        <div class="notification-link last">
                             <a class="read-more" href="<?php if ( get_theme_mod('notification_link_url') !='' ) { echo esc_url(get_theme_mod('notification_link_url')); } ?>">
                            <?php if ( get_theme_mod('notification_link_text') !='' ) {  ?><?php echo esc_html(get_theme_mod('notification_link_text')); ?>
                              <?php } else {  ?> <?php esc_html_e('Read More', 'tress') ?>
                            <?php } ?></a>
-                        </div>
+                      
                     </div>
                 </div>
            <?php } ?>

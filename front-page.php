@@ -302,7 +302,9 @@ get_header();
         </div><!-- end home featured area -->
         
          <?php  // Display featured posts on front page
-            get_template_part('content/content', 'frontportfolio'); ?>
+            get_template_part('content/content', 'frontportfolio'); 
+            
+            get_template_part('content/content', 'frontproducts');?>
         
         <div class="client-feedback-area" id="feedback-title">
             <div class="client-feedback-title section-title">

@@ -593,6 +593,9 @@ select {
 .notification-wrap p{
     margin:0;
     text-align:right;
+    float: left;
+    width: 50%;
+    margin-right: 10px;
 }
 
 .notification-text,
@@ -1330,6 +1333,29 @@ select {
 .portfolio-buttons a:hover{
     background: #0088C7;
     opacity:1;
+}
+
+/* ==========================================================================
+   Front woo products
+   ========================================================================== */
+.home-products{
+    padding:80px 30px;
+}
+
+.home-products h3{
+    text-align:center;
+}
+
+.home-product{
+    position:relative;
+}
+.home-product .product-buttons a{
+    position: absolute;
+    bottom: 9px;
+    right: 0;
+    background: #009cee;
+    padding: 10px;
+    color: #fff;
 }
 /* ==========================================================================
    Main Content
@@ -3003,7 +3029,8 @@ img#wpstats {
 .tress-red .main-navigation ul ul li,
 .tress-red .more-link,
 .tress-red .hentry span.post_format,
-.tress-red .social-meta a
+.tress-red .social-meta a,
+.tress-red .home-product .product-buttons a
 {
     background: #c62020;
 }
@@ -3097,7 +3124,8 @@ img#wpstats {
 .tress-green .main-navigation ul ul li,
 .tress-green .more-link,
 .tress-green .hentry span.post_format,
-.tress-green .social-meta a
+.tress-green .social-meta a,
+.tress-green .home-product .product-buttons a
 {
     background: #3ac1c2;
 }
@@ -3192,7 +3220,8 @@ img#wpstats {
 .tress-pink .main-navigation ul ul li,
 .tress-pink .more-link,
 .tress-pink .hentry span.post_format,
-.tress-pink .social-meta a{
+.tress-pink .social-meta a,
+.tress-pink .home-product .product-buttons a{
     background: #ed409f;
 }
 
@@ -3287,7 +3316,8 @@ img#wpstats {
 .tress-yellow .main-navigation ul ul li,
 .tress-yellow .more-link,
 .tress-yellow .hentry span.post_format,
-.tress-yellow .social-meta a
+.tress-yellow .social-meta a,
+.tress-yellow .home-product .product-buttons a
 {
     background: #d9ca39;
 }
@@ -3382,7 +3412,8 @@ img#wpstats {
 .tress-brown .main-navigation ul ul li,
 .tress-brown .more-link,
 .tress-brown .hentry span.post_format,
-.tress-brown .social-meta a
+.tress-brown .social-meta a,
+.tress-brown .home-product .product-buttons a
 {
     background: #875608;
 }
@@ -3476,7 +3507,8 @@ img#wpstats {
 .tress-purple .main-navigation ul ul li,
 .tress-purple .more-link,
 .tress-purple .hentry span.post_format,
-.tress-purple .social-meta a
+.tress-purple .social-meta a,
+.tress-purple .home-product .product-buttons a
 {
     background: #996bc5;
 }
@@ -3572,7 +3604,8 @@ img#wpstats {
 .tress-orange .main-navigation ul ul li,
 .tress-orange .more-link,
 .tress-orange .hentry span.post_format,
-.tress-orange .social-meta a
+.tress-orange .social-meta a,
+.tress-orange .home-product .product-buttons a
 {
     background: #fa7f53;
 }
@@ -3669,6 +3702,10 @@ img#wpstats {
     .home-cta,
     .business-tagline-area .business-tagline{
         padding:60px 30px;
+    }
+    
+    #featured-portfolio li{
+        width:325px !important;
     }
 
 }
@@ -4067,9 +4104,13 @@ img#wpstats {
         margin-bottom:10px;
     }
 
-    .notification-text,
+    .notification-wrap p,
     .notification-link{
         width:100%;
+        text-align:center;
+    }
+
+    .notification-wrap{
         text-align:center;
     }
 
@@ -4131,6 +4172,21 @@ img#wpstats {
 
     .slick-nav a{
         padding:10px;
+    }
+
+    .notification-bar{
+        position:relative;
+        top:48px;
+        z-index:0;
+    }
+
+    .main-navigation{
+        position:fixed;
+        top:0;
+    }
+
+    .slider-wrapper .flex-caption{
+        display:none;
     }
 
 }

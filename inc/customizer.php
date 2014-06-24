@@ -17,7 +17,8 @@
  */
 function tress_customize_register($wp_customize) {
     
-     $wp_customize->get_section( 'header_image'  )->priority     = 33;
+     $wp_customize->get_section( 'header_image'  )->priority     = 26;
+     $wp_customize->get_section( 'nav'  )->priority     = 27;
 
     /** ===============
      * Extends CONTROLS class to add textarea
@@ -67,7 +68,7 @@ function tress_customize_register($wp_customize) {
     // Add new section for theme layout and color schemes
     $wp_customize->add_section('tress_notification_bar_settings', array(
         'title' => __('Notification Bar', 'tress'),
-        'priority' => 29,
+        'priority' => 30,
     ));
     
     // enable notification bar on front page?
@@ -124,7 +125,7 @@ function tress_customize_register($wp_customize) {
     // Add new section for theme layout and color schemes
     $wp_customize->add_section('tress_theme_layout_settings', array(
         'title' => __('Color Scheme', 'tress'),
-        'priority' => 30,
+        'priority' => 29,
     ));
 
    
@@ -157,7 +158,7 @@ function tress_customize_register($wp_customize) {
       // Add new section for custom favicon settings
     $wp_customize->add_section('tress_custom_favicon_setting', array(
         'title' => __('Custom Favicon', 'tress'),
-        'priority' => 31,
+        'priority' => 77,
     ));
     
     
@@ -177,7 +178,7 @@ function tress_customize_register($wp_customize) {
      // Add new section for custom favicon settings
     $wp_customize->add_section('tress_tracking_code_setting', array(
         'title' => __('Tracking Code', 'tress'),
-        'priority' => 32,
+        'priority' => 76,
     ));
     
     $wp_customize->add_setting('tracking_code', array('default' => '',
@@ -979,14 +980,56 @@ function tress_customize_register($wp_customize) {
             'settings' => 'tress_portfolio_front_count',
             'priority' => 40,
         ));
-    
-    
+        
+        
+        /* ========================================================= */
+        // Add new section for Woocommerce featured products on Front Page
+        /* ========================================================= */
+         if (class_exists('woocommerce')) {
+        $wp_customize->add_section('tress_woo_front_page_options', array(
+            'title' => __('Front Page Woo Products', 'tress'),
+            'description' => __('Settings for displaying featured products on Front Page', 'tress'),
+            'priority' => 60,
+        ));
+        // enable featured products on front page?
+        $wp_customize->add_setting('tress_woo_front_featured_products', array('default' => 0,
+            'sanitize_callback' => 'tress_sanitize_checkbox',
+            ));
+        
+        $wp_customize->add_control('tress_woo_front_featured_products', array(
+            'label' => __('Show featured products on Front Page', 'tress'),
+            'section' => 'tress_woo_front_page_options',
+            'priority' => 10,
+            'type' => 'checkbox',
+        ));
+        // Front featured products section headline
+        $wp_customize->add_setting('tress_woo_front_featured_title', array('default' => __('Latest Products', 'tress'),
+            'sanitize_callback' => 'sanitize_text_field',
+            ));
+        
+        $wp_customize->add_control('tress_woo_front_featured_title', array(
+            'label' => __('Main Title', 'tress'),
+            'section' => 'tress_woo_front_page_options',
+            'settings' => 'tress_woo_front_featured_title',
+            'priority' => 10,
+        ));
+        
+        $wp_customize->add_setting('tress_woo_store_front_count', array('default' => 3,
+             'sanitize_callback' => 'tress_sanitize_integer',
+            ));
+        $wp_customize->add_control('tress_woo_store_front_count', array(
+            'label' => __('Number of products to display', 'tress'),
+            'section' => 'tress_woo_front_page_options',
+            'settings' => 'tress_woo_store_front_count',
+            'priority' => 20,
+        ));
+    }
         
         // Add new section for displaying Featured Posts on Front Page
     $wp_customize->add_section('tress_front_page_post_options', array(
         'title' => __('Featured Posts', 'tress'),
         'description' => __('Settings for displaying featured posts on Front Page', 'tress'),
-        'priority' => 55,
+        'priority' => 56,
     ));
     // post Title
         $wp_customize->add_setting('tress_post_title', array(
@@ -1101,7 +1144,7 @@ function tress_customize_register($wp_customize) {
             // Add new section for Home Feedback Title settings
     $wp_customize->add_section('feedback_title_setting', array(
         'title' => __('Testimonial Title', 'tress'),
-        'priority' => 62,
+        'priority' => 54,
     ));
     
     // home Title
@@ -1122,7 +1165,7 @@ function tress_customize_register($wp_customize) {
         // Add new section for Testimonial slider settings
     $wp_customize->add_section('testimonial_slider_setting', array(
         'title' => __('Testimonial Slider', 'tress'),
-        'priority' => 63,
+        'priority' => 55,
     ));
 
     $wp_customize->add_setting('tslider_one', array(
@@ -1172,7 +1215,7 @@ function tress_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('client_name_url_one', array(
-            'label' => __('Name URL', 'tress'),
+            'label' => __('URL', 'tress'),
             'section' => 'testimonial_slider_setting',
             'settings' => 'client_name_url_one',
             'priority' => 4,
@@ -1225,7 +1268,7 @@ function tress_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('client_name_url_two', array(
-            'label' => __('Name URL', 'tress'),
+            'label' => __('URL', 'tress'),
             'section' => 'testimonial_slider_setting',
             'settings' => 'client_name_url_two',
             'priority' => 8,
@@ -1278,7 +1321,7 @@ function tress_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('client_name_url_three', array(
-            'label' => __('Name URL', 'tress'),
+            'label' => __('URL', 'tress'),
             'section' => 'testimonial_slider_setting',
             'settings' => 'client_name_url_three',
             'priority' => 12,
@@ -1331,7 +1374,7 @@ function tress_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('client_name_url_four', array(
-            'label' => __('Name URL', 'tress'),
+            'label' => __('URL', 'tress'),
             'section' => 'testimonial_slider_setting',
             'settings' => 'client_name_url_four',
             'priority' => 16,
@@ -1385,7 +1428,7 @@ function tress_customize_register($wp_customize) {
             ));
         
         $wp_customize->add_control('client_name_url_five', array(
-            'label' => __('Name URL', 'tress'),
+            'label' => __('URL', 'tress'),
             'section' => 'testimonial_slider_setting',
             'settings' => 'client_name_url_five',
             'priority' => 20,
@@ -1428,18 +1471,6 @@ function tress_customize_register($wp_customize) {
         'settings' => 'tress_custom_css', 
     )));
     
-   
-    // Disable one page navigation on front page.
-    $wp_customize->add_setting('tress_one_page_nav_check', array(
-        'default' => 0, 
-        'sanitize_callback' => 'tress_sanitize_checkbox',
-    ));
-    $wp_customize->add_control('tress_one_page_nav_check', array(
-        'label' => __('Disable one page navigation', 'tress'),
-        'section' => 'nav',
-        'priority' => 10,
-        'type' => 'checkbox',
-    ));
 
     //remove default customizer sections
     $wp_customize->remove_section('background_image');
