@@ -76,10 +76,11 @@ if (get_theme_mod('tress_front_featured_portfolio_check')) {
            </ul>         
         </div> <!-- /#featured-portfolio -->
 
-      
+    
 <?php
-} else { // end Featured portfolio query ?>
-        <div class="home-portfolio-title-area" id="portfolio-title">
+} if (!get_theme_mod('tress_front_featured_portfolio_check') && !get_theme_mod('tress_hide_sample_portfolio'))
+    { // end Featured portfolio query ?>
+        <div class="home-portfolio-title-area" id="portfolio-title"><!-- Sample Content -->
             <div class="home-portfolio-title section-title">
                 <h3><?php esc_html_e('Recent Portfolio', 'tress') ?></h3>
             </div>
@@ -94,14 +95,14 @@ if (get_theme_mod('tress_front_featured_portfolio_check')) {
 
                             <div class="featured-portfolio-content">
 
-                                <a href="<?php the_permalink(); ?>">
+                                <a href="#">
                                 <img alt='' width="310" height="205" src='<?php echo get_template_directory_uri(); ?>/assets/images/img1.jpg' />
                                     <span><i class="fa fa-link"></i></span>
                                 </a>
                                
                             </div> <!--end .featured-post-content -->
 
-                            <a href="<?php the_permalink(); ?>">
+                            <a href="#">
 
                                 <h4 class="home-featured-portfolio-title">Portfolio #1</h4>
 
@@ -115,14 +116,14 @@ if (get_theme_mod('tress_front_featured_portfolio_check')) {
 
                             <div class="featured-portfolio-content">
 
-                                <a href="<?php the_permalink(); ?>">
+                                <a href="#">
                                 <img alt=''width="310" height="205" src='<?php echo get_template_directory_uri(); ?>/assets/images/img2.jpg' />
                                     <span><i class="fa fa-link"></i></span>
                                 </a>
                                
                             </div> <!--end .featured-post-content -->
 
-                            <a href="<?php the_permalink(); ?>">
+                            <a href="#">
 
                                 <h4 class="home-featured-portfolio-title">Portfolio #2</h4>
 
@@ -136,14 +137,14 @@ if (get_theme_mod('tress_front_featured_portfolio_check')) {
 
                             <div class="featured-portfolio-content">
 
-                                <a href="<?php the_permalink(); ?>">
+                                <a href="#">
                                 <img alt='' width="310" height="205" src='<?php echo get_template_directory_uri(); ?>/assets/images/img3.jpg' />
                                     <span><i class="fa fa-link"></i></span>
                                 </a>
                                
                             </div> <!--end .featured-post-content -->
 
-                            <a href="<?php the_permalink(); ?>">
+                            <a href="#">
 
                                 <h4 class="home-featured-portfolio-title">Portfolio #3</h4>
 
@@ -157,14 +158,14 @@ if (get_theme_mod('tress_front_featured_portfolio_check')) {
 
                             <div class="featured-portfolio-content">
 
-                                <a href="<?php the_permalink(); ?>">
+                                <a href="#">
                                 <img alt='' width="310" height="205" src='<?php echo get_template_directory_uri(); ?>/assets/images/img4.jpg' />
                                     <span><i class="fa fa-link"></i></span>
                                 </a>
                                
                             </div> <!--end .featured-post-content -->
 
-                            <a href="<?php the_permalink(); ?>">
+                            <a href="#">
 
                                 <h4 class="home-featured-portfolio-title">Portfolio #4</h4>
 

@@ -1440,6 +1440,7 @@ article.sticky .featured-post {
     min-width: 50px;
     min-height: 50px;
     float:right;
+    margin-top:-15px;
 }
 .site-content article {
     margin-bottom: 40px;
@@ -2437,6 +2438,29 @@ div.gform_wrapper .ginput_complex label {
 .nav-next a:hover{
     color:#009cee;
 }
+
+.site-navigation .fa {
+    font-size: 20px;
+    border-radius: 100%;
+    border: 1px solid #999;
+    padding: 4px 10px;
+}
+
+.site-navigation .fa:hover{
+    background:#009cee;
+    color:#fff;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -khtml-transtransiition: all 0.3s ease;
+    -moz-transitiokn: all 0.3s ease;
+}
+
+.blog .site-navigation .fa{
+    font-size:12px;
+    border-radius:0;
+    border:0px;
+    padding:0;
+}
 .nav-next,
 .next-image {
     float: right;
@@ -2508,7 +2532,7 @@ li span.dots {
     text-align: left; 
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
-    -khtml-transition: all 0.3s ease;
+    -khtml-transtransiition: all 0.3s ease;
     -moz-transitiokn: all 0.3s ease;
 }
 
@@ -3030,7 +3054,8 @@ img#wpstats {
 .tress-red .more-link,
 .tress-red .hentry span.post_format,
 .tress-red .social-meta a,
-.tress-red .home-product .product-buttons a
+.tress-red .home-product .product-buttons a,
+.tress-red .site-navigation .fa:hover
 {
     background: #c62020;
 }
@@ -3125,7 +3150,8 @@ img#wpstats {
 .tress-green .more-link,
 .tress-green .hentry span.post_format,
 .tress-green .social-meta a,
-.tress-green .home-product .product-buttons a
+.tress-green .home-product .product-buttons a,
+.tress-green .site-navigation .fa:hover
 {
     background: #3ac1c2;
 }
@@ -3221,7 +3247,8 @@ img#wpstats {
 .tress-pink .more-link,
 .tress-pink .hentry span.post_format,
 .tress-pink .social-meta a,
-.tress-pink .home-product .product-buttons a{
+.tress-pink .home-product .product-buttons a,
+.tress-pink .site-navigation .fa:hover{
     background: #ed409f;
 }
 
@@ -3317,7 +3344,8 @@ img#wpstats {
 .tress-yellow .more-link,
 .tress-yellow .hentry span.post_format,
 .tress-yellow .social-meta a,
-.tress-yellow .home-product .product-buttons a
+.tress-yellow .home-product .product-buttons a,
+.tress-yellow .site-navigation .fa:hover
 {
     background: #d9ca39;
 }
@@ -3413,7 +3441,8 @@ img#wpstats {
 .tress-brown .more-link,
 .tress-brown .hentry span.post_format,
 .tress-brown .social-meta a,
-.tress-brown .home-product .product-buttons a
+.tress-brown .home-product .product-buttons a,
+.tress-brown .site-navigation .fa:hover
 {
     background: #875608;
 }
@@ -3508,7 +3537,8 @@ img#wpstats {
 .tress-purple .more-link,
 .tress-purple .hentry span.post_format,
 .tress-purple .social-meta a,
-.tress-purple .home-product .product-buttons a
+.tress-purple .home-product .product-buttons a,
+.tress-purple .site-navigation .fa:hover
 {
     background: #996bc5;
 }
@@ -3605,7 +3635,8 @@ img#wpstats {
 .tress-orange .more-link,
 .tress-orange .hentry span.post_format,
 .tress-orange .social-meta a,
-.tress-orange .home-product .product-buttons a
+.tress-orange .home-product .product-buttons a,
+.tress-orange .site-navigation .fa:hover
 {
     background: #fa7f53;
 }
@@ -3703,7 +3734,7 @@ img#wpstats {
     .business-tagline-area .business-tagline{
         padding:60px 30px;
     }
-    
+
     #featured-portfolio li{
         width:325px !important;
     }

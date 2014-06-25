@@ -10,7 +10,18 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
              <?php tress_post_format_icon(); ?>
-                <h1 class="entry-title"><?php the_title(); ?></h1>
+                <?php if ( is_single() ) { ?>
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+			<?php }
+			else { ?>
+                                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                            <?php the_post_thumbnail('post_feature_full_width'); ?> 
+                                     <?php tress_post_format_icon(); ?>
+                                </a>
+				<h2 class="entry-title">
+					<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'tress' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
+				</h2>
+			<?php } // is_single() ?>
 		<?php tress_posted_on(); ?>
 	</header> <!-- /.entry-header -->
 	<div class="entry-content">
