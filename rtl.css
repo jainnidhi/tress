@@ -793,7 +793,6 @@ ul.woocommerce_error {
 
 ul.products li.product {
     float: right;
-    clear: right;
 }
 
 ul.products li.product:nth-child(2n) {
