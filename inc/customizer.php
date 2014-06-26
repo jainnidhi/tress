@@ -1589,6 +1589,6 @@ function tress_header_output() {
 add_action('wp_head', 'tress_header_output');
 
 function tress_footer_tracking_code() {
-    echo esc_attr(get_theme_mod('tracking_code'));
+    echo get_theme_mod('tracking_code');
 }
 add_action('wp_footer','tress_footer_tracking_code'); 
