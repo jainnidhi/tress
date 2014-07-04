@@ -113,18 +113,23 @@ Tress utilises the following awesomeness:
 [jQuery Validation](http://bassistance.de/jquery-plugins/jquery-plugin-validation) which is dual licensed under the MIT license and GPL licenses
 [Font Awesome](http://fortawesome.github.io/Font-Awesome) icon font, which is licensed under SIL Open Font License and MIT License
 [Open Sans font](http://www.google.com/fonts/specimen/Open+Sans), which is licensed under SIL Open Font License 1.1
-[Montserrat font](http://www.google.com/fonts/specimen/Montserrat), which is licensed under SIL Open Font License 1.1
 [Flexslider] (https://github.com/woothemes/FlexSlider), by WooThemes, licensed under GPLv2 
-[SMINT] (http://www.outyear.co.uk/smint/), for one page navigation, licensed under MIT Creative Commons License http://opensource.org/licenses/mit-license.php
+[Animate.css] (https://github.com/daneden/animate.css), Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 [Slicknav] (https://github.com/ComputerWolf/SlickNav) , mobile responsive navigation, licensed under MIT License
 
-Feature Image 1: img1.jpg (http://pixabay.com/en/beach-beverage-caribbean-cocktail-84533/)
-Feature Image 2: img2.jpg (http://pixabay.com/en/keyboard-apple-input-keys-hardware-338513/)
-Feature Image 3: img3.jpg (http://pixabay.com/en/fall-autumn-tree-leaves-348316/)
-Feature Image 4: img4.jpg (http://pixabay.com/en/hot-air-balloon-balloon-colorful-4761/)
+Feature Image 1: feature1.jpg (http://unsplash.com/post/85385371509/download-by-drew-patrick-miller)
+Feature Image 2: feature2.jpg (http://unsplash.com/post/87343080194/download-by-alex-talmon)
+Feature Image 3: img1.jpg (http://unsplash.com/post/51494993093/download-by-alejandro-escamilla)
 
-Slider Image 1: slider1.jpg (http://unsplash.com/post/51495156548/download-by-alejandro-escamilla)
-Slider Image 2: slider2.jpg (http://unsplash.com/post/85385371509/download-by-drew-patrick-miller)
+Slider Image 1: slide1.jpg (http://unsplash.com/post/85385371509/download-by-drew-patrick-miller)
+Slider Image 2: slide2.jpg (http://unsplash.com/post/51495156548/download-by-alejandro-escamilla)
+Slider Image 2: slide2.jpg (http://unsplash.com/post/75618978410/download-by-paul-e-harrer)
+
+Testimonial Image 1: testimonial1.jpg (http://pixabay.com/en/model-boy-man-portrait-attractive-334735/)
+Testimonial Image 2: testimonial2.jpg (http://pixabay.com/en/portrait-man-male-head-face-298984/)
+Testimonial Image 3: testimonial3.jpg (http://pixabay.com/en/autumn-beautiful-coat-face-fall-164233/)
+Testimonial Image 4: testimonial4.jpg (http://pixabay.com/en/man-boy-person-portrait-face-324103/)
+Testimonial Image 5: testimonial5.jpg (http://pixabay.com/en/flower-child-hippie-flower-people-336658/)
 
 = 1.0 =
 - Initial version

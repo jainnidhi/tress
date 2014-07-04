@@ -2486,7 +2486,6 @@ li span.page-numbers {
     padding: 10px 17px;
     border: 2px solid #111;
     text-decoration: none;
-    border-radius:100px;
 }
 
 
@@ -2498,7 +2497,7 @@ li a:hover.page-numbers {
 li a:hover.prev,
 li a:hover.next {
     background-color: transparent;
-    color: #222146;
+    color: #fff;
 }
 
 .page-numbers li {
@@ -2509,12 +2508,6 @@ li a:hover.next {
 li span.current {
     background-color: #009cee;
     color: #fff;
-}
-
-li a.prev,
-li a.next,
-li span.dots {
-    border: none;
 }
 
 

@@ -28,7 +28,7 @@ get_header();
             
             if ( get_theme_mod('slider_one') =='' ) {  ?>
                 <li>
-                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slider1.jpg" alt=""/>
+                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.jpg" alt=""/>
                 <div class="flex-caption">
                     <div class="slider-text-container">
                      <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'tress') ?></a></h2>
@@ -41,7 +41,7 @@ get_header();
                 </li>
                 
                 <li>
-                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slider2.jpg" alt=""/>
+                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slide2.jpg" alt=""/>
                 <div class="flex-caption">
                     <div class="slider-text-container">
                      <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'tress') ?></a></h2>
@@ -54,7 +54,7 @@ get_header();
                 </li>
                 
                 <li>
-                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slider2.jpg" alt=""/>
+                <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/slide3.jpg" alt=""/>
                 <div class="flex-caption">
                     <div class="slider-text-container">
                      <h2 class="slider-title"><a href="#"><?php esc_html_e('Showcase Your Restaurant Services', 'tress') ?></a></h2>
@@ -226,7 +226,7 @@ get_header();
                     <?php if ( get_theme_mod('home_featured_one') !='' ) {  ?>
                      <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_one'); ?>" /></div>
                     <?php } else {  ?>
-                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img1.jpg" /></div>
+                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature1.jpg" /></div>
                      <?php } ?>
 
 
@@ -251,7 +251,7 @@ get_header();
                     <?php if ( get_theme_mod('home_featured_two') !='' ) {  ?>
                      <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_two'); ?>" /></div>
                     <?php } else {  ?>
-                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img2.jpg" /></div>
+                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/feature2.jpg" /></div>
                      <?php } ?>
 
 
@@ -277,7 +277,7 @@ get_header();
                     <?php if ( get_theme_mod('home_featured_three') !='' ) {  ?>
                      <div class="featured-image"><img src="<?php echo get_theme_mod('home_featured_three'); ?>" /></div>
                     <?php } else {  ?>
-                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img3.jpg" /></div>
+                     <div class="featured-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/img1.jpg" /></div>
                      <?php } ?>
 
 
@@ -319,7 +319,7 @@ get_header();
                 <ul class="slides">
                     <?php if ( get_theme_mod('tslider_one') =='' ) {  ?>
                         <li id="tslider1">
-                        <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img1.jpg" alt=""/>
+                        <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonial1.jpg" alt=""/>
                         <div class="flex-caption">
                             <div class="client-testimonial">
                                 <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
@@ -333,7 +333,7 @@ get_header();
                     </li>
                     
                     <li id="tslider2">
-                        <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img2.jpg" alt=""/>
+                        <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonial2.jpg" alt=""/>
                         <div class="flex-caption">
                             <div class="client-testimonial">
                                <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>                  
@@ -347,7 +347,7 @@ get_header();
                     </li>
                     
                      <li id="tslider3">
-                        <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img3.jpg" alt=""/>
+                        <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonial3.jpg" alt=""/>
                         <div class="flex-caption">
                             <div class="client-testimonial">
                                 <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
@@ -361,7 +361,7 @@ get_header();
                     </li>
                     
                     <li id="tslider4">
-                        <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img4.jpg" alt=""/>
+                        <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonial4.jpg" alt=""/>
                         <div class="flex-caption">
                             <div class="client-testimonial">
                                 <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
@@ -375,7 +375,7 @@ get_header();
                     </li>
                     
                     <li id="tslider5">
-                        <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/img5.jpg" alt=""/>
+                        <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonial5.jpg" alt=""/>
                         <div class="flex-caption">
                             <div class="client-testimonial">
                                 <p><?php esc_html_e('Showcase your multiple services and let users understand about your business.', 'tress') ?> </p>
