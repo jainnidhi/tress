@@ -8,6 +8,19 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+Tress WordPress Theme, Copyright (C) 2014 IdeaBox Themes
+Tress is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
 Tress is a beautiful, easy to use, mobile responsive, one page, multipurpose theme with WooCommerce support. You can either use it as a one page theme or a standard theme. It comes with unique one click installation and live cusotmization features which makes it easy to use and setup for all kind of users. Multiple color schemes and beautiful typography make it a perfect fit for all kind of websites. 
 
 
@@ -104,18 +117,35 @@ This program is free software; you can redistribute it and/or modify it under th
 Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
 
-== Credits ==
+== License ==
+
+Tress WordPress Theme is derived from Underscores WordPress Theme, Copyright 2013 Automattic, Inc.
+Tress WordPress Theme is distributed under the terms of the GNU GPL
 
 Tress utilises the following awesomeness:
 
-[Modernizr](http://modernizr.com), which is licensed under the MIT license
-[Normalize.css](https://github.com/necolas/normalize.css), which is licensed under the MIT license
-[jQuery Validation](http://bassistance.de/jquery-plugins/jquery-plugin-validation) which is dual licensed under the MIT license and GPL licenses
+Modernizr is licensed under the MIT license
+Source: http://modernizr.com
+
+Normalize.css Copyright Nicolas Gallagher 
+Normalize.css is licensed under the MIT license
+Source: https://github.com/necolas/normalize.css
+
+jQuery Validation Copyright 2013 Jorn Zaefferer 
+jQuery Validation is licensed under the MIT license
+Source: http://bassistance.de/jquery-plugins/jquery-plugin-validation
+
 [Font Awesome](http://fortawesome.github.io/Font-Awesome) icon font, which is licensed under SIL Open Font License and MIT License
 [Open Sans font](http://www.google.com/fonts/specimen/Open+Sans), which is licensed under SIL Open Font License 1.1
 [Flexslider] (https://github.com/woothemes/FlexSlider), by WooThemes, licensed under GPLv2 
 [Animate.css] (https://github.com/daneden/animate.css), Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 [Slicknav] (https://github.com/ComputerWolf/SlickNav) , mobile responsive navigation, licensed under MIT License
+
+
+== Credits ==
+
+Tress uses the following images licensed under Creative Commons public domain deed CC0
+http://creativecommons.org/publicdomain/zero/1.0/
 
 Feature Image 1: feature1.jpg (http://unsplash.com/post/85385371509/download-by-drew-patrick-miller)
 Feature Image 2: feature2.jpg (http://unsplash.com/post/87343080194/download-by-alex-talmon)
