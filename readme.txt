@@ -135,11 +135,25 @@ jQuery Validation Copyright 2013 Jorn Zaefferer
 jQuery Validation is licensed under the MIT license
 Source: http://bassistance.de/jquery-plugins/jquery-plugin-validation
 
-[Font Awesome](http://fortawesome.github.io/Font-Awesome) icon font, which is licensed under SIL Open Font License and MIT License
-[Open Sans font](http://www.google.com/fonts/specimen/Open+Sans), which is licensed under SIL Open Font License 1.1
-[Flexslider] (https://github.com/woothemes/FlexSlider), by WooThemes, licensed under GPLv2 
-[Animate.css] (https://github.com/daneden/animate.css), Animate.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
-[Slicknav] (https://github.com/ComputerWolf/SlickNav) , mobile responsive navigation, licensed under MIT License
+Font Awesome Copyright Dave Gandy
+Font Awesome is licensed under the MIT license
+source: http://fortawesome.github.io/Font-Awesome
+
+Open Sans font Copyright Steve Metteson
+Open Sans font is licensed under Apache License 2.0
+source: http://www.google.com/fonts/specimen/Open+Sans
+
+Flexslider Copyright 2012 WooThemes
+Flexslider by WooThemes, licensed under GPLv2 
+source: https://github.com/woothemes/FlexSlider by WooThemes, licensed under GPLv2
+ 
+Animate.css Copyright 2014 Daniel Eden
+Animate.css is licensed under the MIT license
+source: https://github.com/daneden/animate.css
+
+Slicknav Copyright 2014 Josh Cope
+Slicknav is licensed under MIT License
+source: https://github.com/ComputerWolf/SlickNav
 
 
 == Credits ==
