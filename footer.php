@@ -50,7 +50,7 @@
         <?php if (get_theme_mod('tress_footer_footer_text') == '') { ?>
             <div class="smallprint">
                 <p>
-                    <a href="<?php $my_theme = wp_get_theme(); echo $my_theme->get( 'ThemeURI' ); ?>">
+                    <a href="<?php $tress_theme = wp_get_theme(); echo $tress_theme->get( 'ThemeURI' ); ?>">
                         <?php _e('Tress WordPress theme by IdeaBox', 'tress'); ?>
                     </a>
                 </p>

@@ -8,6 +8,19 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+Tress WordPress Theme, Copyright (C) 2014 IdeaBox Themes
+Tress is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
 Tress is a beautiful, easy to use, mobile responsive, one page, multipurpose theme with WooCommerce support. You can either use it as a one page theme or a standard theme. It comes with unique one click installation and live cusotmization features which makes it easy to use and setup for all kind of users. Multiple color schemes and beautiful typography make it a perfect fit for all kind of websites. 
 
 
@@ -104,27 +117,63 @@ This program is free software; you can redistribute it and/or modify it under th
 Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
 
-== Credits ==
+== License ==
+
+Tress WordPress Theme is derived from Underscores WordPress Theme, Copyright 2013 Automattic, Inc.
+Tress WordPress Theme is distributed under the terms of the GNU GPL
 
 Tress utilises the following awesomeness:
 
-[Modernizr](http://modernizr.com), which is licensed under the MIT license
-[Normalize.css](https://github.com/necolas/normalize.css), which is licensed under the MIT license
-[jQuery Validation](http://bassistance.de/jquery-plugins/jquery-plugin-validation) which is dual licensed under the MIT license and GPL licenses
-[Font Awesome](http://fortawesome.github.io/Font-Awesome) icon font, which is licensed under SIL Open Font License and MIT License
-[Open Sans font](http://www.google.com/fonts/specimen/Open+Sans), which is licensed under SIL Open Font License 1.1
-[Montserrat font](http://www.google.com/fonts/specimen/Montserrat), which is licensed under SIL Open Font License 1.1
-[Flexslider] (https://github.com/woothemes/FlexSlider), by WooThemes, licensed under GPLv2 
-[SMINT] (http://www.outyear.co.uk/smint/), for one page navigation, licensed under MIT Creative Commons License http://opensource.org/licenses/mit-license.php
-[Slicknav] (https://github.com/ComputerWolf/SlickNav) , mobile responsive navigation, licensed under MIT License
+Modernizr is licensed under the MIT license
+Source: http://modernizr.com
 
-Feature Image 1: img1.jpg (http://pixabay.com/en/beach-beverage-caribbean-cocktail-84533/)
-Feature Image 2: img2.jpg (http://pixabay.com/en/keyboard-apple-input-keys-hardware-338513/)
-Feature Image 3: img3.jpg (http://pixabay.com/en/fall-autumn-tree-leaves-348316/)
-Feature Image 4: img4.jpg (http://pixabay.com/en/hot-air-balloon-balloon-colorful-4761/)
+Normalize.css Copyright Nicolas Gallagher 
+Normalize.css is licensed under the MIT license
+Source: https://github.com/necolas/normalize.css
 
-Slider Image 1: slider1.jpg (http://unsplash.com/post/51495156548/download-by-alejandro-escamilla)
-Slider Image 2: slider2.jpg (http://unsplash.com/post/85385371509/download-by-drew-patrick-miller)
+jQuery Validation Copyright 2013 Jorn Zaefferer 
+jQuery Validation is licensed under the MIT license
+Source: http://bassistance.de/jquery-plugins/jquery-plugin-validation
+
+Font Awesome Copyright Dave Gandy
+Font Awesome is licensed under the MIT license
+source: http://fortawesome.github.io/Font-Awesome
+
+Open Sans font Copyright Steve Metteson
+Open Sans font is licensed under Apache License 2.0
+source: http://www.google.com/fonts/specimen/Open+Sans
+
+Flexslider Copyright 2012 WooThemes
+Flexslider by WooThemes, licensed under GPLv2 
+source: https://github.com/woothemes/FlexSlider by WooThemes, licensed under GPLv2
+ 
+Animate.css Copyright 2014 Daniel Eden
+Animate.css is licensed under the MIT license
+source: https://github.com/daneden/animate.css
+
+Slicknav Copyright 2014 Josh Cope
+Slicknav is licensed under MIT License
+source: https://github.com/ComputerWolf/SlickNav
+
+
+== Credits ==
+
+Tress uses the following images licensed under Creative Commons public domain deed CC0
+http://creativecommons.org/publicdomain/zero/1.0/
+
+Feature Image 1: feature1.jpg (http://unsplash.com/post/85385371509/download-by-drew-patrick-miller)
+Feature Image 2: feature2.jpg (http://unsplash.com/post/87343080194/download-by-alex-talmon)
+Feature Image 3: img1.jpg (http://unsplash.com/post/51494993093/download-by-alejandro-escamilla)
+
+Slider Image 1: slide1.jpg (http://unsplash.com/post/85385371509/download-by-drew-patrick-miller)
+Slider Image 2: slide2.jpg (http://unsplash.com/post/51495156548/download-by-alejandro-escamilla)
+Slider Image 2: slide2.jpg (http://unsplash.com/post/75618978410/download-by-paul-e-harrer)
+
+Testimonial Image 1: testimonial1.jpg (http://pixabay.com/en/model-boy-man-portrait-attractive-334735/)
+Testimonial Image 2: testimonial2.jpg (http://pixabay.com/en/portrait-man-male-head-face-298984/)
+Testimonial Image 3: testimonial3.jpg (http://pixabay.com/en/autumn-beautiful-coat-face-fall-164233/)
+Testimonial Image 4: testimonial4.jpg (http://pixabay.com/en/man-boy-person-portrait-face-324103/)
+Testimonial Image 5: testimonial5.jpg (http://pixabay.com/en/flower-child-hippie-flower-people-336658/)
 
 = 1.0 =
 - Initial version
